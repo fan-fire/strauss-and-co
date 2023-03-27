@@ -17,4 +17,6 @@ jobs:
         id: testing
         run: |
           npm install --only=dev
-          npx hardhat test
+          # Run tests and output the results as a comment on the PR
+          npx hardhat test | tee test-results.txt
+          echo "::set-output name=results::$(cat test-results.txt)"
