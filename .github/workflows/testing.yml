@@ -20,3 +20,13 @@ jobs:
           # Run tests and output the results as a comment on the PR
           npx hardhat test | tee test-results.txt
           echo "::set-output name=results::$(cat test-results.txt)"
+
+      - name: Comment on PR
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## Test Results
+            ```
+            ${{ steps.testing.outputs.results }}
+            ```
