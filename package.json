@@ -21,7 +21,8 @@
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@openzeppelin/test-helpers": "^0.5.16",
     "hardhat": "^2.13.0",
-    "hardhat-contract-sizer": "^2.8.0"
+    "hardhat-contract-sizer": "^2.8.0",
+    "solidity-coverage": "^0.8.2"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.2"

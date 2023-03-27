@@ -44,7 +44,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
      *
      * Emits a Create event
      */
-    function create(address _to, string memory _uri) public {
+    function mint(address _to, string memory _uri) public {
         // effects
         uint256 basketId = curBasketId();
         _state[basketId] = BasketState.OPEN;
@@ -53,7 +53,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         // integrations
         safeMint(_to, _uri);
 
-        emit Create(basketId, _to, _uri);
+        emit Mint(basketId, _to, _uri);
     }
 
     /**

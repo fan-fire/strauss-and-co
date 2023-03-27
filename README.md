@@ -4,6 +4,17 @@ The basket NFT allows users to create a NFT Basket that contains multiple ERC721
 
 ## Introduction
 
+The Basket NFT is a ERC721 NFT that contains multiple ERC721 NFTs. The Basket NFT can be used to trade multiple NFTs at once.
+
+The basket supports all the standard ERC721 functions, including transfer, approve, and safeTransferFrom, and adds the following
+
+-   minting a basket using the `mint` function
+-   burning a basket using the `burn` function
+-   closing a basket using the `close` function
+-   opening a basket using the `open` function
+-   adding to a basket using the `add` function
+-   removing from a basket using the `remove` function
+
 ## Royalties
 
 The ability to set royalties can be set on a basket NFT.

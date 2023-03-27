@@ -1,6 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-contract-sizer";
+import 'solidity-coverage';
 
 const config: HardhatUserConfig = {
   solidity: "0.8.18",
@@ -9,8 +10,8 @@ const config: HardhatUserConfig = {
     disambiguatePaths: false,
     runOnCompile: true,
     strict: true,
-    only: ['Basket']
-  }
+    only: ['Basket'],
+  },
 };
 
 export default config;

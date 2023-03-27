@@ -8,7 +8,7 @@ on:
       - develop
 
 jobs:
-  tests-with-cache-on-ubuntu-latest:
+  hardhat-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,4 +17,20 @@ jobs:
         id: testing
         run: |
           npm install --only=dev
-          npx hardhat test
+          npx hardhat coverage
+          npx hardhat size-contracts
+
+      # - name: Comment on PR
+      #   uses: peter-evans/create-or-update-comment@v1
+      #   with:
+      #     issue-number: ${{ github.event.pull_request.number }}
+      #     body: |
+      #       ## Size Report
+      #       ```
+      #       ${{ steps.testing.outputs.SIZE_REPORT }}
+      #       ```
+      #       ## Test Results
+      #       ```
+      #       ${{ steps.testing.outputs.TEST_RESULTS }}
+      #       ```
+

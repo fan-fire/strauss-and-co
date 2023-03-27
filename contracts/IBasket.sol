@@ -22,9 +22,11 @@ interface IBasket is IERC721, IERC721Receiver {
         uint256 listPtr;
     }
 
+    event Burn(uint256 indexed basketId);
+    event Mint(uint256 indexed basketId, address indexed owner, string uri);
+    
     event Close(uint256 indexed basketId);
     event Open(uint256 indexed basketId);
-    event Burn(uint256 indexed basketId);
     event Add(
         uint256 indexed basketId,
         address indexed tokenAddress,
@@ -35,13 +37,14 @@ interface IBasket is IERC721, IERC721Receiver {
         address indexed tokenAddress,
         uint256 indexed tokenId
     );
-    event Create(uint256 indexed basketId, address indexed owner, string uri);
+    
     event Received(
         address indexed operator,
         address indexed from,
         uint256 indexed tokenId
     );
-    function create(address _to, string memory _uri) external;
+    function mint(address _to, string memory _uri) external;
+    function burn(uint256 _basketId) external;
 
     function add(
         uint256 _basketId,
@@ -55,7 +58,6 @@ interface IBasket is IERC721, IERC721Receiver {
         uint256 _tokenId
     ) external;
 
-    function burn(uint256 _basketId) external;
 
     function close(uint256 _basketId) external;
 
