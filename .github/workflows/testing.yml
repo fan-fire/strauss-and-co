@@ -1,0 +1,20 @@
+name: Test Suite
+
+on:
+  pull_request:
+    branches:
+      - main
+      - staging
+      - develop
+
+jobs:
+  tests-with-cache-on-ubuntu-latest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Hardhat Tests
+        id: testing
+        run: |
+          npm install --only=dev
+          npx hardhat test
