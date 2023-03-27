@@ -11,7 +11,6 @@ const config: HardhatUserConfig = {
     runOnCompile: true,
     strict: true,
     only: ['Basket'],
-    outputFile: 'contractSizes.json',
   },
 };
 

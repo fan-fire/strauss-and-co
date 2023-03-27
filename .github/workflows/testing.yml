@@ -17,9 +17,7 @@ jobs:
         id: testing
         run: |
           npm install --only=dev
-          # Run tests and save full output to file
-          npx hardhat coverage > test-results.txt
-          echo "TEST_RESULTS= $(cat test-results.txt)" >> $GITHUB_OUTPUT
+          echo "TEST_RESULTS= $(npx hardhat coverage)" >> $GITHUB_OUTPUT
           echo "SIZE_REPORT= $(npx hardhat size-contracts)" >> $GITHUB_OUTPUT
 
       - name: Comment on PR
