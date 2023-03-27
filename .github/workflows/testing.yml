@@ -17,16 +17,22 @@ jobs:
         id: testing
         run: |
           npm install --only=dev
-          # Run tests and output the results as a comment on the PR
-          npx hardhat test | tee test-results.txt
-          echo "::set-output name=results::$(cat test-results.txt)"
+          # Run tests and save full output to file
+          npx hardhat coverage > test-results.txt
+          echo "TEST_RESULTS= $(cat test-results.txt)" >> $GITHUB_OUTPUT
+          echo "SIZE_REPORT= $(npx hardhat size-contracts)" >> $GITHUB_OUTPUT
 
       - name: Comment on PR
         uses: peter-evans/create-or-update-comment@v1
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
+            ## Size Report
+            ```
+            ${{ steps.testing.outputs.SIZE_REPORT }}
+            ```
             ## Test Results
             ```
-            ${{ steps.testing.outputs.results }}
+            ${{ steps.testing.outputs.TEST_RESULTS }}
             ```
+
