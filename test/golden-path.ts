@@ -47,7 +47,7 @@ describe("Basket", function () {
             await erc721.connect(owner).setApprovalForAll(basket.address, true);
 
             // Create basket for owner 
-            await basket.connect(owner).create(owner.address, 'uri');
+            await basket.connect(owner).mint(owner.address, 'uri');
 
             // Check basket is in open state
             expect(await basket.connect(owner).stateOf(owner.address)).to.be.equal(BASKET_STATE.OPEN);
