@@ -17,20 +17,20 @@ jobs:
         id: testing
         run: |
           npm install --only=dev
-          echo "TEST_RESULTS= $(npx hardhat coverage)" >> $GITHUB_OUTPUT
-          echo "SIZE_REPORT= $(npx hardhat size-contracts)" >> $GITHUB_OUTPUT
+          npx hardhat coverage
+          npx hardhat size-contracts
 
-      - name: Comment on PR
-        uses: peter-evans/create-or-update-comment@v1
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            ## Size Report
-            ```
-            ${{ steps.testing.outputs.SIZE_REPORT }}
-            ```
-            ## Test Results
-            ```
-            ${{ steps.testing.outputs.TEST_RESULTS }}
-            ```
+      # - name: Comment on PR
+      #   uses: peter-evans/create-or-update-comment@v1
+      #   with:
+      #     issue-number: ${{ github.event.pull_request.number }}
+      #     body: |
+      #       ## Size Report
+      #       ```
+      #       ${{ steps.testing.outputs.SIZE_REPORT }}
+      #       ```
+      #       ## Test Results
+      #       ```
+      #       ${{ steps.testing.outputs.TEST_RESULTS }}
+      #       ```
 
