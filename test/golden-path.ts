@@ -141,6 +141,42 @@ describe("Basket", function () {
             expect(await erc721.connect(receiver).ownerOf(1)).to.be.equal(basket.address);
             expect(await erc721.connect(receiver).ownerOf(2)).to.be.equal(owner.address);
             expect(await erc721.connect(receiver).ownerOf(3)).to.be.equal(receiver.address);
+
+            // try to burn basket as receiver
+            await expect(basket.connect(receiver).burn(basketId)).to.be.revertedWith("Basket: not closed");
+
+            // close basket
+            await basket.connect(receiver).close(basketId);
+
+            // Check basket is in closed state
+            expect(await basket.connect(receiver).stateOf(basketId)).to.be.equal(BASKET_STATE.CLOSED);
+
+            // try to burn with a token still in basket
+            await expect(basket.connect(receiver).burn(basketId)).to.be.revertedWith("Basket: not empty");
+
+            // remove token 1 from basket
+            await basket.connect(receiver).open(basketId);
+            await basket.connect(receiver).remove(basketId, erc721.address, 1);
+            await basket.connect(receiver).close(basketId);
+
+            // Check basket contents
+            const tokens4 = (await basket.connect(receiver).tokensIn(basketId)).map(cleanToken);
+            expect(tokens4).to.be.deep.equal([]);
+
+            // Check ERC721 ownership after removing from basket
+            expect(await erc721.connect(receiver).ownerOf(1)).to.be.equal(receiver.address);
+            expect(await erc721.connect(receiver).ownerOf(2)).to.be.equal(owner.address);
+            expect(await erc721.connect(receiver).ownerOf(3)).to.be.equal(receiver.address);
+
+            // burn basket
+            await basket.connect(receiver).burn(basketId);
+
+            // Check basket is in burned state
+            expect(await basket.connect(receiver).stateOf(basketId)).to.be.equal(BASKET_STATE.BURNED);
+
+            // Check if basket still exists
+            await expect(basket.connect(receiver).ownerOf(basketId)).to.be.revertedWith("ERC721: invalid token ID");
+            
         });
     });
 });

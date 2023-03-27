@@ -7,7 +7,7 @@ const CONTRACT_URI = "https://temp/collection.json";
 const BASKET_STATE = {
   OPEN: 0,
   CLOSED: 1,
-  DESTROYED: 2,
+  BURNED: 2,
 };
 
 
