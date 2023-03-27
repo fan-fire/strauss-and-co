@@ -8,7 +8,7 @@ on:
       - develop
 
 jobs:
-  tests-with-cache-on-ubuntu-latest:
+  hardhat-tests:
     runs-on: ubuntu-latest
 
     steps:
