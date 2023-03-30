@@ -30,19 +30,19 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
     modifier allBasketsClosed(uint256 _basketId) {
         require(
-        isAllBasketsClosed(ownerOf(_basketId)),
-        "Basket: not all closed"
+            isAllBasketsClosed(ownerOf(_basketId)),
+            "Basket: not all closed"
         );
         _;
     }
 
     /**
-     * @dev Creates a new basket in an open state
+     * @dev Mints a new basket in an open state
      *
      * @param _to The address of the basket owner
      * @param _uri The URI of the basket
      *
-     * Emits a Create event
+     * Emits a Mint event
      */
     function mint(address _to, string memory _uri) public {
         // effects
@@ -88,10 +88,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         );
 
         require(_exists(_basketId), "Basket: does not exist");
-        require(
-            _state[_basketId] == BasketState.OPEN,
-            "Basket: is not open"
-        );
+        require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
 
         // Effects
         uint256 listPtr = _tokens[_basketId].length;
@@ -140,13 +137,11 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
             lastToken.listPtr = listPtr;
             _tokens[_basketId][listPtr] = lastToken;
             _tokens[_basketId].pop();
-            _listPtr[_basketId][lastToken.tokenAddress][
-                lastToken.tokenId
-            ] = listPtr;
+            _listPtr[_basketId][lastToken.erc721][lastToken.tokenId] = listPtr;
         }
 
         // Integrations
-        IERC721(token.tokenAddress).safeTransferFrom(
+        IERC721(token.erc721).safeTransferFrom(
             address(this),
             _msgSender(),
             token.tokenId
@@ -256,7 +251,6 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         address to,
         uint256 tokenId
     ) internal override(ERC721) allBasketsClosed(tokenId) {
-
         bool found = false;
         uint256 indx;
 
@@ -304,8 +298,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256 listPtr = _listPtr[_basketId][_contract][_tokenId];
         if (listPtr < _tokens[_basketId].length) {
             Token memory token = _tokens[_basketId][listPtr];
-            return ((token.tokenAddress == _contract) &&
-                (token.tokenId == _tokenId));
+            return ((token.erc721 == _contract) && (token.tokenId == _tokenId));
         } else {
             return false;
         }
@@ -391,7 +384,9 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         return super.isApprovedForAll(owner, operator);
     }
 
-    function basketsOf(address _owner) external view returns (uint256[] memory) {
+    function basketsOf(
+        address _owner
+    ) external view returns (uint256[] memory) {
         return _baskets[_owner];
     }
 
@@ -401,7 +396,9 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         return _state[_basketId];
     }
 
-    function tokensIn(uint256 _basketId) external view returns (Token[] memory) {
+    function tokensIn(
+        uint256 _basketId
+    ) external view returns (Token[] memory) {
         return _tokens[_basketId];
     }
 
