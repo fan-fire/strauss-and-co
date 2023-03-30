@@ -17,33 +17,35 @@ interface IBasket is IERC721, IERC721Receiver {
     }
 
     struct Token {
-        address tokenAddress;
+        address erc721;
         uint256 tokenId;
         uint256 listPtr;
     }
 
     event Burn(uint256 indexed basketId);
     event Mint(uint256 indexed basketId, address indexed owner, string uri);
-    
+
     event Close(uint256 indexed basketId);
     event Open(uint256 indexed basketId);
     event Add(
         uint256 indexed basketId,
-        address indexed tokenAddress,
+        address indexed erc721,
         uint256 indexed tokenId
     );
     event Remove(
         uint256 indexed basketId,
-        address indexed tokenAddress,
+        address indexed erc721,
         uint256 indexed tokenId
     );
-    
+
     event Received(
         address indexed operator,
         address indexed from,
         uint256 indexed tokenId
     );
+
     function mint(address _to, string memory _uri) external;
+
     function burn(uint256 _basketId) external;
 
     function add(
@@ -57,7 +59,6 @@ interface IBasket is IERC721, IERC721Receiver {
         address _contract,
         uint256 _tokenId
     ) external;
-
 
     function close(uint256 _basketId) external;
 
@@ -81,7 +82,9 @@ interface IBasket is IERC721, IERC721Receiver {
         uint256 _tokenId
     ) external view returns (bool isTokenInBasket);
 
-    function isAllBasketsClosed(address _owner) external view returns (bool isAllBasketsClosed);
+    function isAllBasketsClosed(
+        address _owner
+    ) external view returns (bool isAllBasketsClosed);
 
     function curBasketId() external view returns (uint256 basketId);
 
