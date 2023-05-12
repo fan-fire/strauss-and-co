@@ -1,6 +1,6 @@
 import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { expect } from "chai";
-import { cleanToken, BASKET_STATE, basketFixture } from "./utils";
+import { cleanToken, BASKET_STATE, basketFixture, INTERFACE_IDS } from "./utils";
 describe("Golden Path", function () {
     it("Able to deploy Basket", async function () {
         const { basket } = await loadFixture(basketFixture);
@@ -10,6 +10,31 @@ describe("Golden Path", function () {
     it("Able to deploy ERC721", async function () {
         const { erc721 } = await loadFixture(basketFixture);
         expect(erc721.address).to.be.properAddress;
+    });
+
+    it("Basket support IBasket's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IBasket)).to.be.true;
+    });
+
+    it("Basket support IERC721's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IERC721)).to.be.true;
+    });
+
+    it("Basket support IERC721Receiver's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IERC721Receiver)).to.be.true;
+    });
+
+    it("Basket support IERC165's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IERC165)).to.be.true;
+    });
+
+    it("Basket support IERC721Metadata's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IERC721Metadata)).to.be.true;
     });
 
     it("Can complete the full life cyle of a basket", async function () {
