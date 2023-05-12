@@ -44,8 +44,8 @@ const REVERT_MESSAGES = {
 
   BASKET_DOES_NOT_EXIST: "Basket: does not exist",
   BASKET_NOT_OWNER: "Basket: caller is not the basket owner",
-  BASKET_NOT_OPEN: "Basket: basket is not open",
-  BASKET_NOT_CLOSED: "Basket: basket is not closed",
+  BASKET_NOT_OPEN: "Basket: is not open",
+  BASKET_NOT_CLOSED: "Basket: is not closed",
 };
 
 const INTERFACE_IDS = {
