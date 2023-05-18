@@ -1,6 +1,8 @@
 import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { expect } from "chai";
-import { cleanToken, BASKET_STATE, basketFixture } from "./utils";
+import { cleanToken, BASKET_STATE, basketFixture, INTERFACE_IDS, OPEN_COOL_DOWN_S } from "./utils";
+const { testUtils } = require('hardhat');
+const { time } = testUtils;
 describe("Golden Path", function () {
     it("Able to deploy Basket", async function () {
         const { basket } = await loadFixture(basketFixture);
@@ -10,6 +12,31 @@ describe("Golden Path", function () {
     it("Able to deploy ERC721", async function () {
         const { erc721 } = await loadFixture(basketFixture);
         expect(erc721.address).to.be.properAddress;
+    });
+
+    it("Basket support IBasket's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IBasket)).to.be.true;
+    });
+
+    it("Basket support IERC721's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IERC721)).to.be.true;
+    });
+
+    it("Basket support IERC721Receiver's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IERC721Receiver)).to.be.true;
+    });
+
+    it("Basket support IERC165's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IERC165)).to.be.true;
+    });
+
+    it("Basket support IERC721Metadata's interfaceId", async function () {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.supportsInterface(INTERFACE_IDS.IERC721Metadata)).to.be.true;
     });
 
     it("Can complete the full life cyle of a basket", async function () {
@@ -80,6 +107,7 @@ describe("Golden Path", function () {
         // Try to send basket to receiver
         await expect(basket.connect(owner).transferFrom(owner.address, receiver.address, basketId)).to.be.revertedWith("Basket: not all closed");
 
+        await time.increase(OPEN_COOL_DOWN_S + 1)
         // Close basket
         await basket.connect(owner).close(basketId);
 
@@ -128,6 +156,7 @@ describe("Golden Path", function () {
         // try to burn basket as receiver
         await expect(basket.connect(receiver).burn(basketId)).to.be.revertedWith("Basket: not closed");
 
+        await time.increase(OPEN_COOL_DOWN_S + 1)
         // close basket
         await basket.connect(receiver).close(basketId);
 
@@ -140,6 +169,7 @@ describe("Golden Path", function () {
         // remove token 1 from basket
         await basket.connect(receiver).open(basketId);
         await basket.connect(receiver).remove(basketId, erc721.address, 1);
+        await time.increase(OPEN_COOL_DOWN_S + 1)
         await basket.connect(receiver).close(basketId);
 
         // Check basket contents

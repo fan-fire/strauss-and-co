@@ -13,6 +13,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
     string internal _contractURI = "<ADD CONTRACT URI HERE>";
     string internal _baseTokenURI = "<ADD BASE URI HERE>";
+    uint256 public constant OPEN_COOL_DOWN_S = 60;
     Counters.Counter internal _tokenIdCounter;
 
     mapping(uint256 => BasketState) internal _state; // basketId -> BasketState
@@ -20,6 +21,8 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     mapping(uint256 => mapping(address => mapping(uint256 => uint256)))
         internal _listPtr; // basketId -> contract -> tokenId -> listPtr
     mapping(address => uint256[]) internal _baskets; // basketOwners owner -> basketIds
+    mapping(uint256 => uint256) internal _basketOpenCoolDown; // vaultId -> openCoolDown
+
 
     constructor() ERC721("Fanfire Basket", "FFB") {}
 
@@ -49,6 +52,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256 basketId = curBasketId();
         _state[basketId] = BasketState.OPEN;
         _baskets[_to].push(basketId);
+        _basketOpenCoolDown[basketId] = block.timestamp + OPEN_COOL_DOWN_S;
 
         // integrations
         safeMint(_to, _uri);
@@ -60,53 +64,57 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
      * @dev Add a token to a basket
      *
      * @param _basketId The id of the basket
-     * @param _contract The address of the ERC721 contract
+     * @param _erc721 The address of the ERC721 contract
      * @param _tokenId The id of the token
      *
      * Emits a Add event
      */
     function add(
         uint256 _basketId,
-        address _contract,
+        address _erc721,
         uint256 _tokenId
     ) public {
         // Checks
-        require(
-            _contract != address(0) || _contract != address(this),
-            "Basket: _contract 0 or this contract"
-        );
-        require(
-            IERC165(_contract).supportsInterface(type(IERC721).interfaceId),
-            "Basket: _contract not IERC721"
-        );
-
-        IERC721 erc721 = IERC721(_contract);
-        address tokenOwner = erc721.ownerOf(_tokenId);
-        require(
-            erc721.isApprovedForAll(tokenOwner, address(this)),
-            "Basket: _contract not approved for basket"
-        );
 
         require(_exists(_basketId), "Basket: does not exist");
         require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
 
+        require(
+            _erc721 != address(0) && _erc721 != address(this),
+            "Basket: erc721 0 or this contract"
+        );
+        require(
+            IERC165(_erc721).supportsInterface(type(IERC721).interfaceId),
+            "Basket: erc721 not IERC721"
+        );
+
+        IERC721 erc721 = IERC721(_erc721);
+        address tokenOwner = erc721.ownerOf(_tokenId);
+        require(tokenOwner == _msgSender(), "Basket: caller not token owner");
+        require(
+            erc721.isApprovedForAll(tokenOwner, address(this)),
+            "Basket: erc721 not approved for basket"
+        );
+
+
+
         // Effects
         uint256 listPtr = _tokens[_basketId].length;
-        Token memory token = Token(_contract, _tokenId, listPtr);
+        Token memory token = Token(_erc721, _tokenId, listPtr);
         _tokens[_basketId].push(token);
-        _listPtr[_basketId][_contract][_tokenId] = listPtr;
+        _listPtr[_basketId][_erc721][_tokenId] = listPtr;
 
         // Integrations
         erc721.safeTransferFrom(tokenOwner, address(this), _tokenId);
 
-        emit Add(_basketId, _contract, _tokenId);
+        emit Add(_basketId, _erc721, _tokenId);
     }
 
     /**
      * @dev Remove a token from a basket
      *
      * @param _basketId The id of the basket
-     * @param _contract The address of the ERC721 contract
+     * @param _erc721 The address of the ERC721 contract
      * @param _tokenId The id of the token
      *
      * Emits a Remove event
@@ -114,18 +122,18 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
     function remove(
         uint256 _basketId,
-        address _contract,
+        address _erc721,
         uint256 _tokenId
     ) public onlyBasketOwner(_basketId) {
         // Checks
         require(_state[_basketId] == BasketState.OPEN, "Basket: not open");
         require(_tokens[_basketId].length > 0, "Basket: not empty");
         require(
-            isTokenInBasket(_basketId, _contract, _tokenId),
+            isTokenInBasket(_basketId, _erc721, _tokenId),
             "Basket: token not in basket"
         );
 
-        uint256 listPtr = _listPtr[_basketId][_contract][_tokenId];
+        uint256 listPtr = _listPtr[_basketId][_erc721][_tokenId];
         Token memory token = _tokens[_basketId][listPtr];
 
         // Effects
@@ -137,7 +145,9 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
             lastToken.listPtr = listPtr;
             _tokens[_basketId][listPtr] = lastToken;
             _tokens[_basketId].pop();
-            _listPtr[_basketId][lastToken.erc721][lastToken.tokenId] = listPtr;
+            _listPtr[_basketId][lastToken.erc721][
+                lastToken.tokenId
+            ] = listPtr;
         }
 
         // Integrations
@@ -147,7 +157,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
             token.tokenId
         );
 
-        emit Remove(_basketId, _contract, _tokenId);
+        emit Remove(_basketId, _erc721, _tokenId);
     }
 
     /**
@@ -209,6 +219,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         // Checks
         require(_exists(_basketId), "Basket: does not exist");
         require(_state[_basketId] == BasketState.OPEN, "Basket: not open");
+        require(basketOpenCoolDown(_basketId) < block.timestamp, "Basket: open cooldown not passed");
 
         // Effects
         _state[_basketId] = BasketState.CLOSED;
@@ -231,6 +242,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
         // Effects
         _state[_basketId] = BasketState.OPEN;
+        _basketOpenCoolDown[_basketId] = block.timestamp + OPEN_COOL_DOWN_S;
 
         // Integrations
         emit Open(_basketId);
@@ -281,7 +293,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
      * @dev isTokenInBasket
      *
      * @param _basketId The id of the basket
-     * @param _contract The address of the token contract
+     * @param _erc721 The address of the token contract
      * @param _tokenId The id of the token
      *
      * Checks if a token is in a basket
@@ -292,13 +304,14 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
      */
     function isTokenInBasket(
         uint256 _basketId,
-        address _contract,
+        address _erc721,
         uint256 _tokenId
     ) public view returns (bool) {
-        uint256 listPtr = _listPtr[_basketId][_contract][_tokenId];
+        uint256 listPtr = _listPtr[_basketId][_erc721][_tokenId];
         if (listPtr < _tokens[_basketId].length) {
             Token memory token = _tokens[_basketId][listPtr];
-            return ((token.erc721 == _contract) && (token.tokenId == _tokenId));
+            return ((token.erc721 == _erc721) &&
+                (token.tokenId == _tokenId));
         } else {
             return false;
         }
@@ -402,6 +415,23 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         return _tokens[_basketId];
     }
 
+        function tokenURI(
+        uint256 tokenId
+    ) public view override(ERC721, ERC721URIStorage) returns (string memory) {
+        return super.tokenURI(tokenId);
+    }
+
+    // The following functions are overrides required by Solidity.
+    function _burn(
+        uint256 tokenId
+    ) internal override(ERC721, ERC721URIStorage) {
+        super._burn(tokenId);
+    }
+
+    function basketOpenCoolDown(uint256 _basketId) public view returns (uint256) {
+        return _basketOpenCoolDown[_basketId];
+    }
+
     function curBasketId() public view returns (uint256) {
         return _tokenIdCounter.current();
     }
@@ -422,6 +452,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         return (interfaceId == type(IERC721).interfaceId ||
             interfaceId == type(IERC165).interfaceId ||
             interfaceId == type(IERC721Metadata).interfaceId ||
+            interfaceId == type(IERC721Receiver).interfaceId ||
             interfaceId == type(IBasket).interfaceId);
     }
 
@@ -439,16 +470,5 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         return this.onERC721Received.selector;
     }
 
-    function tokenURI(
-        uint256 tokenId
-    ) public view override(ERC721, ERC721URIStorage) returns (string memory) {
-        return super.tokenURI(tokenId);
-    }
 
-    // The following functions are overrides required by Solidity.
-    function _burn(
-        uint256 tokenId
-    ) internal override(ERC721, ERC721URIStorage) {
-        super._burn(tokenId);
-    }
 }
