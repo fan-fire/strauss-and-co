@@ -1,8 +1,9 @@
 import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { AddressZero } from "@ethersproject/constants";
 import { expect } from "chai";
-import { BASKET_STATE, INTERFACE_IDS, REVERT_MESSAGES, basketFixture, cleanToken } from "./utils";
-
+import { BASKET_STATE, INTERFACE_IDS, OPEN_COOL_DOWN_S, REVERT_MESSAGES, basketFixture, cleanToken } from "./utils";
+const { testUtils } = require('hardhat');
+const { time } = testUtils;
 describe("Add", function () {
 
     it("can't add token of 721 if it has not yet been minted", async () => {
@@ -125,6 +126,8 @@ describe("Add", function () {
         await basket.connect(deployer).mint(owner.address, uri);
         await erc721.connect(deployer).safeMint(owner.address, 0);
         await erc721.connect(owner).setApprovalForAll(basket.address, true);
+
+        await time.increase(OPEN_COOL_DOWN_S + 1);
 
         await basket.connect(owner).close(basketId);
 

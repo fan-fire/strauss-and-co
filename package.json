@@ -22,6 +22,7 @@
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "hardhat": "^2.13.0",
     "hardhat-contract-sizer": "^2.8.0",
+    "hardhat-test-utils": "^0.1.1",
     "solidity-coverage": "^0.8.2"
   },
   "dependencies": {

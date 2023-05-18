@@ -91,4 +91,6 @@ interface IBasket is IERC721, IERC721Receiver {
     function baseTokenURI() external view returns (string memory);
 
     function contractURI() external view returns (string memory);
+
+    function basketOpenCoolDown(uint256 _basketId) external view returns (uint256);
 }

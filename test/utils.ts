@@ -4,6 +4,8 @@ import { ethers } from "hardhat";
 const BASE_TOKEN_URI = "https://temp/";
 const CONTRACT_URI = "https://temp/collection.json";
 
+const OPEN_COOL_DOWN_S = 60;
+
 
 const BASKET_STATE = {
   OPEN: 0,
@@ -52,7 +54,7 @@ const INTERFACE_IDS = {
   IERC721: "0x80ac58cd",
   IERC721Metadata: "0x5b5e139f",
   IERC165: "0x01ffc9a7",
-  IBasket: "0xced56fdb",
+  IBasket: "0x710a0b91",
   IERC721Receiver: "0x150b7a02",
 };
 
@@ -65,4 +67,5 @@ export {
   REVERT_MESSAGES,
   // getInterfaceID,
   INTERFACE_IDS,
+  OPEN_COOL_DOWN_S,
 };
