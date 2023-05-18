@@ -237,6 +237,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
         // Effects
         _state[_basketId] = BasketState.OPEN;
+        // remove approval for basket
 
         // Integrations
         emit Open(_basketId);

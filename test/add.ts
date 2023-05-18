@@ -342,7 +342,27 @@ describe("Add", function () {
 
         expect(await basket.connect(owner).isTokenInBasket(basketId, erc721.address, tokenId0)).to.be.equal(true);
         expect(await basket.connect(owner).isTokenInBasket(basketId, erc721.address, tokenId1)).to.be.equal(false);
+    });
 
+    it("isTokenInBasket works when there are no tokens in basket", async () => {
+        const { deployer, owner, basket, erc721 } = await loadFixture(basketFixture);
+        const uri = 'uri';
+        const basketId = 0;
+        const tokenId0 = 0;
+        const tokenId1 = 1;
+
+        await basket.connect(deployer).mint(owner.address, uri);
+        await erc721.connect(deployer).safeMint(owner.address, tokenId0);
+        await erc721.connect(deployer).safeMint(owner.address, tokenId1);
+        await erc721.connect(owner).setApprovalForAll(basket.address, true);
+
+        expect(await basket.connect(owner).tokensIn(basketId)).to.have.lengthOf(0);
+        expect(await erc721.ownerOf(tokenId0)).to.be.equal(owner.address);
+        expect(await erc721.ownerOf(tokenId1)).to.be.equal(owner.address);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+
+        expect(await basket.connect(owner).isTokenInBasket(basketId, erc721.address, tokenId0)).to.be.equal(false);
+        expect(await basket.connect(owner).isTokenInBasket(basketId, erc721.address, tokenId1)).to.be.equal(false);
     });
 
 
