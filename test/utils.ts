@@ -64,6 +64,11 @@ const INTERFACE_IDS = {
 
 const ZERO_ADDRESS = ethers.constants.AddressZero
 
+const TX_RECEIPT_STATUS = {
+  SUCCESS: 1,
+  FAILURE: 0,
+};
+
 export {
   BASE_TOKEN_URI,
   CONTRACT_URI,
@@ -73,6 +78,7 @@ export {
   REVERT_MESSAGES,
   INTERFACE_IDS,
   OPEN_COOL_DOWN_S,
-  ZERO_ADDRESS
+  ZERO_ADDRESS,
+  TX_RECEIPT_STATUS
 };
 
