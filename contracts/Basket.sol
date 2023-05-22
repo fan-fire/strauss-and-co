@@ -23,7 +23,6 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     mapping(address => uint256[]) internal _baskets; // basketOwners owner -> basketIds
     mapping(uint256 => uint256) internal _basketOpenCoolDown; // vaultId -> openCoolDown
 
-
     constructor() ERC721("Fanfire Basket", "FFB") {}
 
     modifier onlyBasketOwner(uint256 _basketId) {
@@ -34,7 +33,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     modifier allBasketsClosed(uint256 _basketId) {
         require(
             isAllBasketsClosed(ownerOf(_basketId)),
-            "Basket: not all closed"
+            "Basket: not all baskets owned by owner closed"
         );
         _;
     }
@@ -69,11 +68,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
      *
      * Emits a Add event
      */
-    function add(
-        uint256 _basketId,
-        address _erc721,
-        uint256 _tokenId
-    ) public {
+    function add(uint256 _basketId, address _erc721, uint256 _tokenId) public {
         // Checks
 
         require(_exists(_basketId), "Basket: does not exist");
@@ -95,8 +90,6 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
             erc721.isApprovedForAll(tokenOwner, address(this)),
             "Basket: erc721 not approved for basket"
         );
-
-
 
         // Effects
         uint256 listPtr = _tokens[_basketId].length;
@@ -145,9 +138,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
             lastToken.listPtr = listPtr;
             _tokens[_basketId][listPtr] = lastToken;
             _tokens[_basketId].pop();
-            _listPtr[_basketId][lastToken.erc721][
-                lastToken.tokenId
-            ] = listPtr;
+            _listPtr[_basketId][lastToken.erc721][lastToken.tokenId] = listPtr;
         }
 
         // Integrations
@@ -171,7 +162,10 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256 _basketId
     ) public override(IBasket, ERC721Burnable) onlyBasketOwner(_basketId) {
         // Checks
-        require(_state[_basketId] == BasketState.CLOSED, "Basket: is not closed");
+        require(
+            _state[_basketId] == BasketState.CLOSED,
+            "Basket: is not closed"
+        );
         address _basketOwner = ownerOf(_basketId);
         // require all tokens to have been taken out of basket
         require(_tokens[_basketId].length == 0, "Basket: is not empty");
@@ -219,7 +213,10 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         // Checks
         require(_exists(_basketId), "Basket: does not exist");
         require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
-        require(basketOpenCoolDown(_basketId) < block.timestamp, "Basket: open cooldown not passed");
+        require(
+            basketOpenCoolDown(_basketId) < block.timestamp,
+            "Basket: open cooldown not passed"
+        );
 
         // Effects
         _state[_basketId] = BasketState.CLOSED;
@@ -238,11 +235,16 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     function open(uint256 _basketId) public onlyBasketOwner(_basketId) {
         // Checks
         require(_exists(_basketId), "Basket: does not exist");
-        require(_state[_basketId] == BasketState.CLOSED, "Basket: is not closed");
+        require(
+            _state[_basketId] == BasketState.CLOSED,
+            "Basket: is not closed"
+        );
 
         // Effects
         _state[_basketId] = BasketState.OPEN;
         _basketOpenCoolDown[_basketId] = block.timestamp + OPEN_COOL_DOWN_S;
+        // set approve to ZERO address to ensure that when you open the vault wallet that was allowed to spend is revoked
+        _approve(address(0), _basketId);
 
         // Integrations
         emit Open(_basketId);
@@ -310,8 +312,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256 listPtr = _listPtr[_basketId][_erc721][_tokenId];
         if (listPtr < _tokens[_basketId].length) {
             Token memory token = _tokens[_basketId][listPtr];
-            return ((token.erc721 == _erc721) &&
-                (token.tokenId == _tokenId));
+            return ((token.erc721 == _erc721) && (token.tokenId == _tokenId));
         } else {
             return false;
         }
@@ -378,7 +379,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     ) public override(IERC721, ERC721) {
         require(
             isAllBasketsClosed(_msgSender()),
-            "Basket: all baskets not closed"
+            "Basket: not all baskets owned by owner closed"
         );
         _setApprovalForAll(_msgSender(), operator, approved);
     }
@@ -393,8 +394,11 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         address owner,
         address operator
     ) public view override(IERC721, ERC721) returns (bool) {
-        require(isAllBasketsClosed(owner), "Basket: all baskets not closed");
-        return super.isApprovedForAll(owner, operator);
+        if (isAllBasketsClosed(owner)) {
+            return super.isApprovedForAll(owner, operator);
+        }
+
+        return false;
     }
 
     function basketsOf(
@@ -415,7 +419,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         return _tokens[_basketId];
     }
 
-        function tokenURI(
+    function tokenURI(
         uint256 tokenId
     ) public view override(ERC721, ERC721URIStorage) returns (string memory) {
         return super.tokenURI(tokenId);
@@ -428,7 +432,9 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         super._burn(tokenId);
     }
 
-    function basketOpenCoolDown(uint256 _basketId) public view returns (uint256) {
+    function basketOpenCoolDown(
+        uint256 _basketId
+    ) public view returns (uint256) {
         return _basketOpenCoolDown[_basketId];
     }
 
@@ -469,6 +475,4 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         emit Received(_operator, _from, _tokenId);
         return this.onERC721Received.selector;
     }
-
-
 }
