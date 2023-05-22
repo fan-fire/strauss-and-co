@@ -1,7 +1,6 @@
 import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
-import { AddressZero } from "@ethersproject/constants";
 import { expect } from "chai";
-import { BASKET_STATE, INTERFACE_IDS, REVERT_MESSAGES, OPEN_COOL_DOWN_S, basketFixture, cleanToken } from "./utils";
+import { BASKET_STATE, REVERT_MESSAGES, OPEN_COOL_DOWN_S, basketFixture } from "./utils";
 const { testUtils } = require('hardhat');
 const { time } = testUtils;
 
