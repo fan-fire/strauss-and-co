@@ -13,7 +13,7 @@ import { ethers } from "hardhat";
 const { testUtils } = require('hardhat');
 const { time, block } = testUtils;
 
-describe.only("Transfer", function () {
+describe("Transfer", function () {
     it("can't transfer non-existent basket", async () => {
         const { owner, basket } = await loadFixture(basketFixture);
         let basketId = 0;
