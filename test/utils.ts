@@ -49,9 +49,11 @@ const REVERT_MESSAGES = {
   BASKET_NOT_OWNER: "Basket: not owner",
   BASKET_NOT_OPEN: "Basket: is not open",
   BASKET_NOT_EMPTY: "Basket: is not empty",
+  BASKET_EMPTY: "Basket: is empty",
   BASKET_NOT_CLOSED: "Basket: is not closed",
   BASKET_NOT_ALL_CLOSED: "Basket: not all baskets owned by owner closed",
   BASKET_OPEN_COOLDOWN_NOT_PASSED: "Basket: open cooldown not passed",
+  BASKET_TOKEN_NOT_IN_BASKET: "Basket: token not in basket",
 };
 
 const INTERFACE_IDS = {

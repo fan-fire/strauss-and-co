@@ -120,7 +120,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     ) public onlyBasketOwner(_basketId) {
         // Checks
         require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
-        require(_tokens[_basketId].length > 0, "Basket: is not empty");
+        require(_tokens[_basketId].length > 0, "Basket: is empty");
         require(
             isTokenInBasket(_basketId, _erc721, _tokenId),
             "Basket: token not in basket"
