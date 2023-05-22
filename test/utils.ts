@@ -1,8 +1,8 @@
 import { IBasket } from "../typechain-types/contracts/Basket";
 import { ethers } from "hardhat";
 
-const BASE_TOKEN_URI = "https://temp/";
-const CONTRACT_URI = "https://temp/collection.json";
+const CONTRACT_URI = "<ADD CONTRACT URI HERE>";
+const BASE_TOKEN_URI= "<ADD BASE URI HERE>";
 
 const OPEN_COOL_DOWN_S = 60;
 

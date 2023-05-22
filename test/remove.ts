@@ -13,7 +13,7 @@ import { ethers } from "hardhat";
 const { testUtils } = require('hardhat');
 const { time } = testUtils;
 
-describe.only("Remove", function () {
+describe("Remove", function () {
     it("can't remove on non-existant basket", async () => {
         const { owner, basket } = await loadFixture(basketFixture);
         let basketId = 0;

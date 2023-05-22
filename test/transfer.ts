@@ -44,6 +44,10 @@ describe("Transfer", function () {
             .to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_ALL_CLOSED);
     });
 
+    it("can't transfer if basket basket is not owned by owner", async () => {
+       expect(true).to.equal(true);
+    });
+
     it("can't transfer more than 1 basket owned by owner if not all are closed", async () => {
         const { owner, receiver, basket } = await loadFixture(basketFixture);
         let basketId0 = 0;

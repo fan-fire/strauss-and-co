@@ -185,7 +185,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
             }
         }
 
-        require(found, "Basket: not found for basket owner");
+        assert(found);
 
         if (_baskets[_basketOwner].length == 1) {
             _baskets[_basketOwner].pop();
@@ -211,7 +211,6 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
      */
     function close(uint256 _basketId) public onlyBasketOwner(_basketId) {
         // Checks
-        require(_exists(_basketId), "Basket: does not exist");
         require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
         require(
             basketOpenCoolDown(_basketId) < block.timestamp,
@@ -234,7 +233,6 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
      */
     function open(uint256 _basketId) public onlyBasketOwner(_basketId) {
         // Checks
-        require(_exists(_basketId), "Basket: does not exist");
         require(
             _state[_basketId] == BasketState.CLOSED,
             "Basket: is not closed"
@@ -474,5 +472,9 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         _data;
         emit Received(_operator, _from, _tokenId);
         return this.onERC721Received.selector;
+    }
+
+    function _baseURI() internal view override returns (string memory) {
+        return _baseTokenURI;
     }
 }
