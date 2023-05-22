@@ -45,9 +45,12 @@ const REVERT_MESSAGES = {
   BASKET_ERC721_0_OR_THIS: "Basket: erc721 0 or this contract",
 
   BASKET_DOES_NOT_EXIST: "Basket: does not exist",
-  BASKET_NOT_OWNER: "Basket: caller is not the basket owner",
+  BASKET_NOT_OWNER: "Basket: not owner",
   BASKET_NOT_OPEN: "Basket: is not open",
+  BASKET_NOT_EMPTY: "Basket: is not empty",
   BASKET_NOT_CLOSED: "Basket: is not closed",
+  BASKET_NOT_ALL_CLOSED: "Basket: not all closed",
+  BASKET_OPEN_COOLDOWN_NOT_PASSED: "Basket: open cooldown not passed",
 };
 
 const INTERFACE_IDS = {

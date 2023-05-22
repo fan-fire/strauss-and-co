@@ -126,8 +126,8 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256 _tokenId
     ) public onlyBasketOwner(_basketId) {
         // Checks
-        require(_state[_basketId] == BasketState.OPEN, "Basket: not open");
-        require(_tokens[_basketId].length > 0, "Basket: not empty");
+        require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
+        require(_tokens[_basketId].length > 0, "Basket: is not empty");
         require(
             isTokenInBasket(_basketId, _erc721, _tokenId),
             "Basket: token not in basket"
@@ -171,10 +171,10 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256 _basketId
     ) public override(IBasket, ERC721Burnable) onlyBasketOwner(_basketId) {
         // Checks
-        require(_state[_basketId] == BasketState.CLOSED, "Basket: not closed");
+        require(_state[_basketId] == BasketState.CLOSED, "Basket: is not closed");
         address _basketOwner = ownerOf(_basketId);
         // require all tokens to have been taken out of basket
-        require(_tokens[_basketId].length == 0, "Basket: not empty");
+        require(_tokens[_basketId].length == 0, "Basket: is not empty");
 
         // Effects
         _state[_basketId] = BasketState.BURNED;
@@ -218,7 +218,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     function close(uint256 _basketId) public onlyBasketOwner(_basketId) {
         // Checks
         require(_exists(_basketId), "Basket: does not exist");
-        require(_state[_basketId] == BasketState.OPEN, "Basket: not open");
+        require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
         require(basketOpenCoolDown(_basketId) < block.timestamp, "Basket: open cooldown not passed");
 
         // Effects
@@ -238,7 +238,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     function open(uint256 _basketId) public onlyBasketOwner(_basketId) {
         // Checks
         require(_exists(_basketId), "Basket: does not exist");
-        require(_state[_basketId] == BasketState.CLOSED, "Basket: not closed");
+        require(_state[_basketId] == BasketState.CLOSED, "Basket: is not closed");
 
         // Effects
         _state[_basketId] = BasketState.OPEN;
