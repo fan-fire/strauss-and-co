@@ -44,8 +44,21 @@ describe("Transfer", function () {
             .to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_ALL_CLOSED);
     });
 
-    it("can't transfer if basket basket is not owned by owner", async () => {
-       expect(true).to.equal(true);
+    it("can't transfer if basket is not owned by owner", async () => {
+        const { owner, receiver, basket } = await loadFixture(basketFixture);
+        let basketId = 0;
+        let uri = 'uri';
+
+        await basket.connect(owner).mint(owner.address, uri);
+        expect(await basket.balanceOf(owner.address)).to.equal(1);
+
+        await time.increase(OPEN_COOL_DOWN_S + 1);
+        await basket.connect(owner).close(basketId);
+
+        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.CLOSED);
+
+        await expect(basket.connect(receiver).transferFrom(owner.address, receiver.address, basketId))
+            .to.be.revertedWith(REVERT_MESSAGES.ERC721_NOT_OWNER_OR_APPROVED);
     });
 
     it("can't transfer more than 1 basket owned by owner if not all are closed", async () => {
@@ -139,7 +152,7 @@ describe("Transfer", function () {
         await basket.connect(owner).approve(receiver.address, basketId0);
 
         await basket.connect(receiver)["safeTransferFrom(address,address,uint256)"](owner.address, receiver.address, basketId0)
-        await expect(basket.connect(receiver)["safeTransferFrom(address,address,uint256,bytes)"](owner.address, receiver.address, basketId1, '0x')).to.be.revertedWith(REVERT_MESSAGES.ERC721_NOT_APPROVED);
+        await expect(basket.connect(receiver)["safeTransferFrom(address,address,uint256,bytes)"](owner.address, receiver.address, basketId1, '0x')).to.be.revertedWith(REVERT_MESSAGES.ERC721_NOT_OWNER_OR_APPROVED);
 
         expect(await basket.ownerOf(basketId0)).to.equal(receiver.address);
         expect(await basket.ownerOf(basketId1)).to.equal(owner.address);

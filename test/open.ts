@@ -26,13 +26,8 @@ describe("Open", function () {
         expect(await basket.ownerOf(basketId)).to.equal(owner.address);
         expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPEN);
 
-        await time.increase(OPEN_COOL_DOWN_S + 1);
-        await basket.connect(owner).close(basketId);
-
-        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.CLOSED);
-
-        await expect(basket.connect(owner).close(basketId))
-            .to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_OPEN);
+        await expect(basket.connect(owner).open(basketId))
+            .to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_CLOSED);
     });
     it("only owner can open basket", async () => {
         const { owner, receiver, basket } = await loadFixture(basketFixture);

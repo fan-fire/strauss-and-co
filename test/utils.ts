@@ -38,7 +38,7 @@ async function basketFixture() {
 
 const REVERT_MESSAGES = {
   ERC721_INVALID_TOKEN_ID: "ERC721: invalid token ID",
-  ERC721_NOT_APPROVED: "ERC721: caller is not token owner or approved",
+  ERC721_NOT_OWNER_OR_APPROVED: "ERC721: caller is not token owner or approved",
 
   BASKET_ERC721_NOT_APPROVED: "Basket: erc721 not approved for basket",
   BASKET_ERC721_NOT_OWNER: "Basket: caller not token owner",
@@ -54,6 +54,7 @@ const REVERT_MESSAGES = {
   BASKET_NOT_ALL_CLOSED: "Basket: not all baskets owned by owner closed",
   BASKET_OPEN_COOLDOWN_NOT_PASSED: "Basket: open cooldown not passed",
   BASKET_TOKEN_NOT_IN_BASKET: "Basket: token not in basket",
+  BASKET_NOT_FOUND: "Basket: not found",
 };
 
 const INTERFACE_IDS = {
