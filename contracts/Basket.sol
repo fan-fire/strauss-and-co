@@ -7,8 +7,10 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
+
+contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, ReentrancyGuard {
     using Counters for Counters.Counter;
 
     string internal _contractURI = "<ADD CONTRACT URI HERE>";
@@ -136,7 +138,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256 _basketId,
         address _erc721,
         uint256 _tokenId
-    ) public onlyBasketOwner(_basketId) {
+    ) public onlyBasketOwner(_basketId) nonReentrant(){
         // Checks
         require(_state[_basketId] == BasketState.OPENED, "Basket: is not open");
         require(_tokens[_basketId].length > 0, "Basket: is empty");

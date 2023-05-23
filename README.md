@@ -6,7 +6,7 @@ The basket NFT allows users to create a NFT Basket that contains multiple ERC721
 
 ## Introduction
 
-The Basket NFT is a ERC721 NFT that contains multiple ERC721 NFTs. The Basket NFT can be used to store and trade multiple NFTs at once. 
+The Basket NFT is a ERC721 NFT that contains multiple ERC721 NFTs. The Basket NFT can be used to store and trade multiple NFTs at once. [ERC-6551](https://eips.ethereum.org/EIPS/eip-6551) attempts to standardize something like the Basket NFT, but currenlty it is still in draft state. Moreover, within the FanFire ecosystem, we have a need for a Basket NFT that is compatible with the [Multiplace](https://github.com/fan-fire/multiplace) contract. As such, we have created our own Basket NFT that is compatible with the Multiplace contract. 
 
 More often then not there are a few tokens that a buyer or seller would like to package together. Instead of having to list each token individually, the seller can lock these tokens in a basket and list the basket for sale. The buyer can then purchase the basket and receive all the tokens in the basket and take out any tokens out of the basket if they so wish.
 
@@ -19,11 +19,36 @@ The basket supports all the standard ERC721 functions, including transfer, appro
 -   adding to a basket using the `add` function
 -   removing from a basket using the `remove` function
 
+## Usage
+Ensure you have the latest version of [Hardhat](https://hardhat.org) installed.
+
+You can install the dependencies using npm and run the tests as follows:
+
+```bash
+npm i
+npm test
+```
+
+Other commands include:
+
+```bash
+npm run coverage
+npm run gas # requires COINMARKETCAP_API_KEY for gas prices in USD 
+```
+
+To deploy the contract to a local hardhat network, run:
+
+```bash
+npx hardhat run scripts/deploy.ts --network <network>
+```
+
+> Note that the deployment script relies on the following environment variables: MUMBAI_NODE, POLYGON_NODE and DEPLOYER_PRIVATE_KEY - see hardhat.config.ts. Where MUMBAI_NODE and POLYGON_NODE are the RPC endpoints for the Mumbai and Polygon networks respectively, and DEPLOYER_PRIVATE_KEY is the private key of the deployer account.
+
 ## Design Decisions
 
 + We had to support the `setApprovalForAll` method for the basket NFT to be able to transfer baskets and this interface needs to be compatible with <a href='https://github.com/fan-fire/multiplace'>Fanfire's Multiplace</a> contract which checks if the sender is approved for all tokens owned by the owner before listing the tokens for sale. As such we had to impose the restriction that all baskets for the sender must be closed before the sender can approve an operator for all tokens owned by the sender, and subsequently all baskets needs to be closed before the sender can transfer a basket.
-+ The usage of `OPEN_COOL_DOWN_S` is set to 60 seconds by default. This means that a basket can only be closed 60 seconds after it has been opened. This is to prevent a malicious actor from opening and closing a basket within 1 block to prevent removing tokens from the basket before a transfer transaction is mined within the same block.
-+ Set approve to ZERO_ADDRESS for a specific token if the basket is oppend. 
++ The usage of `OPEN_COOL_DOWN_S` is set to 60 seconds by default. This means that a basket can only be closed 60 seconds after it has been opened. This is to prevent a malicious actor from opening and closing a basket within 1 block to prevent removing tokens from the basket before a transfer transaction is mined within the same block. See the test in `can't open and remove tokens and close from a basket in the same block as transfer` in `test/transfer.ts` for more details.
++ Set approve to ZERO_ADDRESS for a specific token if the basket is open. 
 
 ## Basket API
 
@@ -130,29 +155,3 @@ The methods in the Basket smart contract are:
 + `supportsInterface(bytes4 interfaceId) public pure override(ERC721, IERC165) returns (bool)`: Overrides the ERC721 `supportsInterface` function and checks that all baskets for the sender are closed. Currently supports ERC721, ERC165, IERC721Metadata, IERC721Receiver, and IBasket.
     - `interfaceId`: The interface id.
     - Returns true if the interface is supported, false otherwise.
-
-
-
-## Chat GPTs concerns
-
-The provided Solidity smart contract appears to be an implementation of an ERC721 token contract with additional functionality for managing baskets of ERC721 tokens. While I cannot guarantee that the code is free from all vulnerabilities without conducting a thorough security audit, I can identify potential issues and best practices that should be considered.
-
-Here are some potential vulnerabilities and suggestions for improvement:
-
-1. Lack of Access Control: The contract does not implement any access control mechanism for critical functions like minting, adding tokens, removing tokens, closing baskets, or burning baskets. It is important to restrict these functions to only authorized users or roles to prevent unauthorized actions. Consider implementing access control using a role-based access control (RBAC) or other suitable mechanism.
-
-2. Lack of Input Validation: The contract does not perform extensive input validation on parameters passed to functions. Ensure that appropriate checks are in place to validate inputs such as addresses, token IDs, and other relevant parameters. For example, the `add` function should validate that the `_tokenId` exists in the `_erc721` contract and that the sender is the owner of the token.
-
-3. Potential Reentrancy Attacks: The contract uses external calls to transfer tokens (`safeTransferFrom`) during the `add` and `remove` functions. Be cautious when interacting with external contracts, as they can execute arbitrary code. Consider using the "checks-effects-interactions" pattern to mitigate potential reentrancy attacks. Ensure that external contract calls are the last actions performed within a function.
-
-4. Lack of Event Data Validation: The contract emits events (`Mint`, `Add`, `Remove`, `Burn`, `Close`, `Open`) to notify external systems about state changes. Ensure that the event data is appropriately validated in the consuming applications to prevent potential issues or misinterpretation.
-
-5. Potential Denial-of-Service (DoS) Attacks: The contract uses an array to store the IDs of tokens within a basket (`_tokens` mapping). If a basket contains a large number of tokens, operations on the array, such as removal or iteration, may become inefficient and result in high gas costs or potential DoS attacks. Consider using alternative data structures or strategies, such as mapping or pagination, to handle large numbers of tokens more efficiently.
-
-6. Lack of Comprehensive Error Messages: The contract uses `require` statements to check conditions and revert the transaction if the conditions are not met. However, the error messages provided are generic and may not provide enough information for users to understand why their transaction failed. Consider providing more descriptive error messages to help users diagnose and resolve issues.
-
-7. Potential Gas Limit Issues: The contract may encounter gas limit issues if the `_baskets` array grows too large. When an array becomes too large, operations like pushing, popping, or iterating over it can consume excessive gas and potentially cause transactions to fail. Consider implementing pagination or other strategies to mitigate this issue.
-
-8. Lack of Function Documentation: The contract lacks comprehensive documentation for its functions. It is important to provide detailed documentation, including explanations of input parameters, return values, and potential side effects, to improve the contract's usability and facilitate its integration with external systems.
-
-Remember that these suggestions are not exhaustive, and it is always recommended to conduct a thorough security audit of the contract by an expert in smart contract security to identify and address any vulnerabilities specific to your use case.

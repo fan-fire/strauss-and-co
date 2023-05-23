@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx hardhat test",
-    "coverage": "npx hardhat coverage && open coverage/index.html"
+    "coverage": "npx hardhat coverage && open coverage/index.html",
+    "gas": "REPORT_GAS=true npx hardhat test"
   },
   "repository": {
     "type": "git",

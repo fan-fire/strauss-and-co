@@ -17,6 +17,24 @@ const config: HardhatUserConfig = {
       },
     ]
   },
+  gasReporter: {
+    enabled: (process.env.REPORT_GAS) ? true : false,
+    excludeContracts: ["Test721.sol", "IBasket.sol", "Not721.sol"],
+    gasPriceApi: `https://api.polygonscan.com/api?module=proxy&action=eth_gasPrice`,
+    currency: 'USD',
+    coinmarketcap: process.env.COINMARKETCAP_API_KEY,
+    token: 'MATIC',
+  },
+  networks: {
+    mumbai: {
+      url: process.env.MUMBAI_NODE,
+      accounts: [process.env.DEPLOYER_PRIVATE_KEY ?? ''],
+    },
+    polygon: {
+      url: process.env.POLYGON_NODE,
+      accounts: [process.env.DEPLOYER_PRIVATE_KEY ?? ''],
+    },
+  },
   contractSizer: {
     alphaSort: true,
     disambiguatePaths: false,

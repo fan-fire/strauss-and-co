@@ -346,7 +346,7 @@ describe("Transfer", function () {
 
     });
 
-    it("can't open, transfer and remove tokens from a basket in the same block as", async () => {
+    it("can't open, transfer and remove tokens from a basket in the same block", async () => {
         const { owner, receiver, deployer, basket, erc721 } = await loadFixture(basketFixture);
         let basketId0 = 0;
         let uri = 'uri';
