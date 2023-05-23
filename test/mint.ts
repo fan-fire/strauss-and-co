@@ -1,6 +1,6 @@
 import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { expect } from "chai";
-import { BASKET_STATE, basketFixture } from "./utils";
+import { BASE_TOKEN_URI, BASKET_STATE, CONTRACT_URI, basketFixture } from "./utils";
 
 describe("Mint", function () {
     it("can mint a new basket by any wallet", async () => {
@@ -57,10 +57,22 @@ describe("Mint", function () {
 
         const uri = 'uri';
         const basketId = 0;
+        const expectedUri = `${BASE_TOKEN_URI}${uri}`;
 
         await basket.connect(deployer).mint(owner.address, uri);
-        expect(await basket.tokenURI(basketId)).to.equal(uri);
+        expect(await basket.tokenURI(basketId)).to.equal(expectedUri);
     });
+
+    it("sets baseTokenURI correctly", async () => {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.baseTokenURI()).to.equal(BASE_TOKEN_URI);
+    });
+
+    it("set contractURI correctly", async () => {
+        const { basket } = await loadFixture(basketFixture);
+        expect(await basket.contractURI()).to.equal(CONTRACT_URI);
+    });
+
 
     it("mint basket sent to _to", async () => {
         const { deployer, owner, basket } = await loadFixture(basketFixture);

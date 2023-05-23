@@ -50,7 +50,7 @@ describe("Add", function () {
             .to.be.revertedWith(REVERT_MESSAGES.BASKET_ERC721_NOT_OWNER);
     });
 
-    it("can't add token of 721 if the basket has not been approved for transfer", async () => {
+    it("can't add token of 721 to the basket if it has not been approved for transfer", async () => {
         const { deployer, owner, basket, erc721 } = await loadFixture(basketFixture);
         const uri = 'uri';
 

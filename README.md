@@ -23,6 +23,7 @@ The basket supports all the standard ERC721 functions, including transfer, appro
 
 + We had to support the `setApprovalForAll` method for the basket NFT to be able to transfer baskets and this interface needs to be compatible with <a href='https://github.com/fan-fire/multiplace'>Fanfire's Multiplace</a> contract which checks if the sender is approved for all tokens owned by the owner before listing the tokens for sale. As such we had to impose the restriction that all baskets for the sender must be closed before the sender can approve an operator for all tokens owned by the sender, and subsequently all baskets needs to be closed before the sender can transfer a basket.
 + The usage of `OPEN_COOL_DOWN_S` is set to 60 seconds by default. This means that a basket can only be closed 60 seconds after it has been opened. This is to prevent a malicious actor from opening and closing a basket within 1 block to prevent removing tokens from the basket before a transfer transaction is mined within the same block.
++ Set approve to ZERO_ADDRESS for a specific token if the basket is oppend. 
 
 ## Basket API
 

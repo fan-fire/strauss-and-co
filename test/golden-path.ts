@@ -1,6 +1,6 @@
 import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { expect } from "chai";
-import { cleanToken, BASKET_STATE, basketFixture, INTERFACE_IDS, OPEN_COOL_DOWN_S } from "./utils";
+import { cleanToken, BASKET_STATE, basketFixture, INTERFACE_IDS, OPEN_COOL_DOWN_S, REVERT_MESSAGES } from "./utils";
 const { testUtils } = require('hardhat');
 const { time } = testUtils;
 describe("Golden Path", function () {
@@ -105,7 +105,7 @@ describe("Golden Path", function () {
         expect(await erc721.connect(owner).ownerOf(3)).to.be.equal(basket.address);
 
         // Try to send basket to receiver
-        await expect(basket.connect(owner).transferFrom(owner.address, receiver.address, basketId)).to.be.revertedWith("Basket: not all closed");
+        await expect(basket.connect(owner).transferFrom(owner.address, receiver.address, basketId)).to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_ALL_CLOSED);
 
         await time.increase(OPEN_COOL_DOWN_S + 1)
         // Close basket
@@ -115,7 +115,7 @@ describe("Golden Path", function () {
         expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.CLOSED);
 
         // Try to add token to closed basket
-        await expect(basket.connect(owner).add(basketId, erc721.address, 2)).to.be.revertedWith("Basket: is not open");
+        await expect(basket.connect(owner).add(basketId, erc721.address, 2)).to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_OPEN);
 
         // Send basket to receiver
         await basket.connect(owner).transferFrom(owner.address, receiver.address, basketId);
@@ -131,7 +131,7 @@ describe("Golden Path", function () {
         expect(await erc721.connect(receiver).ownerOf(3)).to.be.equal(basket.address);
 
         // try open basket as owner
-        await expect(basket.connect(owner).open(basketId)).to.be.revertedWith("Basket: not owner");
+        await expect(basket.connect(owner).open(basketId)).to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_OWNER);
 
         // Open basket as receiver
         await basket.connect(receiver).open(basketId);
@@ -154,7 +154,7 @@ describe("Golden Path", function () {
         expect(await erc721.connect(receiver).ownerOf(3)).to.be.equal(receiver.address);
 
         // try to burn basket as receiver
-        await expect(basket.connect(receiver).burn(basketId)).to.be.revertedWith("Basket: not closed");
+        await expect(basket.connect(receiver).burn(basketId)).to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_CLOSED);
 
         await time.increase(OPEN_COOL_DOWN_S + 1)
         // close basket
@@ -164,7 +164,7 @@ describe("Golden Path", function () {
         expect(await basket.connect(receiver).stateOf(basketId)).to.be.equal(BASKET_STATE.CLOSED);
 
         // try to burn with a token still in basket
-        await expect(basket.connect(receiver).burn(basketId)).to.be.revertedWith("Basket: not empty");
+        await expect(basket.connect(receiver).burn(basketId)).to.be.revertedWith(REVERT_MESSAGES.BASKET_NOT_EMPTY);
 
         // remove token 1 from basket
         await basket.connect(receiver).open(basketId);
@@ -188,7 +188,7 @@ describe("Golden Path", function () {
         expect(await basket.connect(receiver).stateOf(basketId)).to.be.equal(BASKET_STATE.BURNED);
 
         // Check if basket still exists
-        await expect(basket.connect(receiver).ownerOf(basketId)).to.be.revertedWith("ERC721: invalid token ID");
+        await expect(basket.connect(receiver).ownerOf(basketId)).to.be.revertedWith(REVERT_MESSAGES.ERC721_INVALID_TOKEN_ID);
 
     });
 });
