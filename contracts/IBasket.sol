@@ -22,20 +22,22 @@ interface IBasket is IERC721, IERC721Receiver {
         uint256 listPtr;
     }
 
-    event Burn(uint256 indexed basketId);
+    event Burn(uint256 indexed basketId, address indexed burner);
     event Mint(uint256 indexed basketId, address indexed owner, string uri);
 
-    event Close(uint256 indexed basketId);
-    event Open(uint256 indexed basketId);
+    event Close(uint256 indexed basketId, address indexed closer);
+    event Open(uint256 indexed basketId, address indexed opener);
     event Add(
         uint256 indexed basketId,
         address indexed erc721,
-        uint256 indexed tokenId
+        uint256 indexed tokenId,
+        address adder
     );
     event Remove(
         uint256 indexed basketId,
         address indexed erc721,
-        uint256 indexed tokenId
+        uint256 indexed tokenId,
+        address remover
     );
 
     event Received(

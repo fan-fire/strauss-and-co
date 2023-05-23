@@ -100,7 +100,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         // Integrations
         erc721.safeTransferFrom(tokenOwner, address(this), _tokenId);
 
-        emit Add(_basketId, _erc721, _tokenId);
+        emit Add(_basketId, _erc721, _tokenId, tokenOwner);
     }
 
     /**
@@ -148,7 +148,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
             token.tokenId
         );
 
-        emit Remove(_basketId, _erc721, _tokenId);
+        emit Remove(_basketId, _erc721, _tokenId, _msgSender());
     }
 
     /**
@@ -199,7 +199,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         // Integrations
         _burn(_basketId);
 
-        emit Burn(_basketId);
+        emit Burn(_basketId, _basketOwner);
     }
 
     /**
@@ -221,7 +221,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         _state[_basketId] = BasketState.CLOSED;
 
         // Integrations
-        emit Close(_basketId);
+        emit Close(_basketId, _msgSender());
     }
 
     /**
@@ -245,7 +245,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         _approve(address(0), _basketId);
 
         // Integrations
-        emit Open(_basketId);
+        emit Open(_basketId, _msgSender());
     }
 
     /**
