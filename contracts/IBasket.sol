@@ -11,7 +11,7 @@ import "@openzeppelin/contracts/interfaces/IERC721Receiver.sol";
  */
 interface IBasket is IERC721, IERC721Receiver {
     enum BasketState {
-        OPEN,
+        OPENED,
         CLOSED,
         BURNED
     }

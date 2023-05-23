@@ -44,7 +44,7 @@ describe("Events", function () {
 
         expect(await basket.connect(owner).tokensIn(basketId)).to.have.lengthOf(0);
         expect(await erc721.ownerOf(0)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         await expect(basket.connect(owner).add(basketId, erc721.address, tokenId))
             .to.emit(basket, 'Add')
@@ -63,7 +63,7 @@ describe("Events", function () {
 
         expect(await basket.connect(owner).tokensIn(basketId)).to.have.lengthOf(0);
         expect(await erc721.ownerOf(0)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         await expect(basket.connect(owner).add(basketId, erc721.address, tokenId))
             .to.emit(basket, 'Received')

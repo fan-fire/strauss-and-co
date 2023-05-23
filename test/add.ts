@@ -152,7 +152,7 @@ describe("Add", function () {
 
         expect(await basket.connect(owner).tokensIn(basketId)).to.have.lengthOf(0);
         expect(await erc721.ownerOf(0)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         await basket.connect(owner).add(basketId, erc721.address, tokenId);
         const tokens = await basket.connect(owner).tokensIn(basketId);
@@ -177,7 +177,7 @@ describe("Add", function () {
 
         expect(await basket.connect(owner).tokensIn(basketId)).to.have.lengthOf(0);
         expect(await erc721.ownerOf(0)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         // non owner of basket can add 1 token to basket
         await expect(basket.connect(deployer).add(basketId, erc721.address, tokenId))
@@ -203,7 +203,7 @@ describe("Add", function () {
         expect(await erc721.ownerOf(tokenId0)).to.be.equal(owner.address);
         expect(await erc721.ownerOf(tokenId1)).to.be.equal(owner.address);
         expect(await erc721.ownerOf(tokenId2)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         // non owner of basket can add 1 token to basket
         await basket.connect(owner).add(basketId, erc721.address, tokenId0);
@@ -248,7 +248,7 @@ describe("Add", function () {
         expect(await erc721.ownerOf(tokenId0)).to.be.equal(owner.address);
         expect(await erc721.ownerOf(tokenId1)).to.be.equal(owner.address);
         expect(await erc721.ownerOf(tokenId2)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         // non owner of basket can add 1 token to basket
         await basket.connect(owner).add(basketId, erc721.address, tokenId0);
@@ -296,7 +296,7 @@ describe("Add", function () {
         expect(await erc721.balanceOf(owner.address)).to.be.equal(N);
         expect(await basket.connect(owner).tokensIn(basketId)).to.have.lengthOf(0);
         expect(await erc721.ownerOf(tokenId0)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         for (let i = 0; i < N; i++) {
             await basket.connect(owner).add(basketId, erc721.address, i);
@@ -326,7 +326,7 @@ describe("Add", function () {
         expect(await basket.connect(owner).tokensIn(basketId)).to.have.lengthOf(0);
         expect(await erc721.ownerOf(tokenId0)).to.be.equal(owner.address);
         expect(await erc721.ownerOf(tokenId1)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         await basket.connect(owner).add(basketId, erc721.address, tokenId0);
 
@@ -362,7 +362,7 @@ describe("Add", function () {
         expect(await basket.connect(owner).tokensIn(basketId)).to.have.lengthOf(0);
         expect(await erc721.ownerOf(tokenId0)).to.be.equal(owner.address);
         expect(await erc721.ownerOf(tokenId1)).to.be.equal(owner.address);
-        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         expect(await basket.connect(owner).isTokenInBasket(basketId, erc721.address, tokenId0)).to.be.equal(false);
         expect(await basket.connect(owner).isTokenInBasket(basketId, erc721.address, tokenId1)).to.be.equal(false);

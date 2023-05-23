@@ -60,7 +60,7 @@ describe("Golden Path", function () {
         await basket.connect(owner).mint(owner.address, 'uri');
 
         // Check basket is in open state
-        expect(await basket.connect(owner).stateOf(owner.address)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(owner).stateOf(owner.address)).to.be.equal(BASKET_STATE.OPENED);
 
         // Get basket id
         const basketIds = await basket.connect(owner).basketsOf(owner.address);
@@ -137,7 +137,7 @@ describe("Golden Path", function () {
         await basket.connect(receiver).open(basketId);
 
         // Check basket is in open state
-        expect(await basket.connect(receiver).stateOf(basketId)).to.be.equal(BASKET_STATE.OPEN);
+        expect(await basket.connect(receiver).stateOf(basketId)).to.be.equal(BASKET_STATE.OPENED);
 
         // remove token 3 from basket
         await basket.connect(receiver).remove(basketId, erc721.address, 3);

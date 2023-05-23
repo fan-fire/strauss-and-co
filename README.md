@@ -31,7 +31,7 @@ The data structures used are:
 
 ```solidity
 enum BasketState {
-    OPEN,
+    OPENED,
     CLOSED,
     BURNED
 }

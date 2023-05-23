@@ -92,7 +92,7 @@ describe("Mint", function () {
         expect(balance).to.equal(1);
 
     });
-    it("basket is OPEN state after creation", async () => {
+    it("basket is OPENED state after creation", async () => {
         const { deployer, owner, basket } = await loadFixture(basketFixture);
 
         const uri = 'uri';
@@ -100,7 +100,7 @@ describe("Mint", function () {
 
         await basket.connect(deployer).mint(owner.address, uri);
         const state = await basket.stateOf(basketId);
-        expect(state).to.equal(BASKET_STATE.OPEN);
+        expect(state).to.equal(BASKET_STATE.OPENED);
 
     });
     it("baskets update correctly", async () => {

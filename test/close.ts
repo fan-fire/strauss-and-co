@@ -23,7 +23,7 @@ describe("Close", function () {
         await basket.connect(owner).mint(owner.address, uri);
         expect(await basket.balanceOf(owner.address)).to.equal(1);
         expect(await basket.ownerOf(basketId)).to.equal(owner.address);
-        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPEN);
+        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPENED);
 
         await expect(basket.connect(owner).close(basketId)).to.be.revertedWith(REVERT_MESSAGES.BASKET_OPEN_COOLDOWN_NOT_PASSED);
 
@@ -40,7 +40,7 @@ describe("Close", function () {
         await basket.connect(owner).mint(owner.address, uri);
         expect(await basket.balanceOf(owner.address)).to.equal(1);
         expect(await basket.ownerOf(basketId)).to.equal(owner.address);
-        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPEN);
+        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPENED);
 
         await time.increase(OPEN_COOL_DOWN_S + 1);
         await basket.connect(owner).close(basketId);
@@ -57,7 +57,7 @@ describe("Close", function () {
         await basket.connect(owner).mint(owner.address, uri);
         expect(await basket.balanceOf(owner.address)).to.equal(1);
         expect(await basket.ownerOf(basketId)).to.equal(owner.address);
-        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPEN);
+        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPENED);
 
         await time.increase(OPEN_COOL_DOWN_S + 1);
         await basket.connect(owner).close(basketId);
@@ -74,7 +74,7 @@ describe("Close", function () {
         await basket.connect(owner).mint(owner.address, uri);
         expect(await basket.balanceOf(owner.address)).to.equal(1);
         expect(await basket.ownerOf(basketId)).to.equal(owner.address);
-        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPEN);
+        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPENED);
 
         await time.increase(OPEN_COOL_DOWN_S + 1);
         await basket.connect(owner).close(basketId);
@@ -82,7 +82,7 @@ describe("Close", function () {
         expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.CLOSED);
 
         await basket.connect(owner).open(basketId);
-        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPEN);
+        expect(await basket.stateOf(basketId)).to.equal(BASKET_STATE.OPENED);
 
     });
 

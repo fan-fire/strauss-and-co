@@ -8,7 +8,7 @@ const OPEN_COOL_DOWN_S = 60;
 
 
 const BASKET_STATE = {
-  OPEN: 0,
+  OPENED: 0,
   CLOSED: 1,
   BURNED: 2,
 };

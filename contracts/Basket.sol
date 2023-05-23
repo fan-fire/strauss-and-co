@@ -44,17 +44,17 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     }
 
     /**
-     * @dev Mints a new basket in an open state
+     * @dev Allows anyone to Mint a new basket in an open state
      *
      * @param _to The address of the basket owner
-     * @param _uri The URI of the basket
+     * @param _uri The URI of the basket - this is the metadata for the basket and will be appended to the baseTokenURI. Usually a JSON file called {tokenId}.json
      *
      * Emits a Mint event
      */
     function mint(address _to, string memory _uri) public {
         // effects
         uint256 basketId = curBasketId();
-        _state[basketId] = BasketState.OPEN;
+        _state[basketId] = BasketState.OPENED;
         _baskets[_to].push(basketId);
         _basketOpenCoolDown[basketId] = block.timestamp + OPEN_COOL_DOWN_S;
 
@@ -65,7 +65,16 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     }
 
     /**
-     * @dev Add a token to a basket
+     * @dev Allows anyone to add a erc721 token to a basket
+     * 
+     * The basket MUST exist
+     * The basket MUST be open
+     * The caller MUST be the owner of the token to be added
+     * The token being added MUST have the basket contract approved to spend all tokens
+     * The token being added MUST be owned by the caller
+     * The token being added MUST be a IERC721
+     * The token being added MUST not be the ZERO address or the address of this contract
+     * The token being added MUST not already be in the basket
      *
      * @param _basketId The id of the basket
      * @param _erc721 The address of the ERC721 contract
@@ -77,7 +86,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         // Checks
 
         require(_exists(_basketId), "Basket: does not exist");
-        require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
+        require(_state[_basketId] == BasketState.OPENED, "Basket: is not open");
 
         require(
             _erc721 != address(0) && _erc721 != address(this),
@@ -109,7 +118,12 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     }
 
     /**
-     * @dev Remove a token from a basket
+     * @dev Remove a token from a basket and into the basket owners wallet
+     * 
+     * The basket MUST exist
+     * The basket MUST be open
+     * The token MUST be in the basket
+     * The caller MUST be the owner of the basket
      *
      * @param _basketId The id of the basket
      * @param _erc721 The address of the ERC721 contract
@@ -124,7 +138,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256 _tokenId
     ) public onlyBasketOwner(_basketId) {
         // Checks
-        require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
+        require(_state[_basketId] == BasketState.OPENED, "Basket: is not open");
         require(_tokens[_basketId].length > 0, "Basket: is empty");
         require(
             isTokenInBasket(_basketId, _erc721, _tokenId),
@@ -158,6 +172,10 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
     /**
      * @dev Burn a basket
+     * 
+     * The basket MUST exist
+     * The basket MUST be closed and empty
+     * The basket owner MUST be the caller
      *
      * @param _basketId The id of the basket
      *
@@ -209,14 +227,19 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
     /**
      * @dev Close a basket
-     *
+     * 
+     * The basket MUST exist
+     * The basket MUST be open
+     * The basket owner MUST be the caller
+     * The basket MUST be open for at least OPEN_COOL_DOWN_S seconds
+     * 
      * @param _basketId The id of the basket
      *
      * Emits a Close event
      */
     function close(uint256 _basketId) public onlyBasketOwner(_basketId) {
         // Checks
-        require(_state[_basketId] == BasketState.OPEN, "Basket: is not open");
+        require(_state[_basketId] == BasketState.OPENED, "Basket: is not open");
         require(
             basketOpenCoolDown(_basketId) < block.timestamp,
             "Basket: open cooldown not passed"
@@ -231,7 +254,11 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
     /**
      * @dev Open a basket
-     *
+     * 
+     * The basket MUST exist
+     * The basket MUST be closed
+     * The basket owner MUST be the caller
+     * 
      * @param _basketId The id of the basket
      *
      * Emits a Open event
@@ -244,7 +271,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         );
 
         // Effects
-        _state[_basketId] = BasketState.OPEN;
+        _state[_basketId] = BasketState.OPENED;
         _basketOpenCoolDown[_basketId] = block.timestamp + OPEN_COOL_DOWN_S;
         // set approve to ZERO address to ensure that when you open the vault wallet that was allowed to spend is revoked
         _approve(address(0), _basketId);
@@ -255,6 +282,14 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
 
     /**
      * @dev Transfer a basket
+     * 
+     * Overrides ERC721 _transfer function to add basket transfer logic
+     * 
+     * This will be called by safeTransferFrom and transferFrom
+     * 
+     * The basket MUST exist
+     * The basket MUST be closed
+     * All other baskets for the sender MUST be closed
      *
      * @param from The address of the basket owner
      * @param to The address of the new basket owner
@@ -336,7 +371,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         uint256[] memory ownedBaskets = _baskets[_owner];
         for (uint256 i = 0; i < ownedBaskets.length; i++) {
             uint256 basketId = ownedBaskets[i];
-            if (_state[basketId] == BasketState.OPEN) {
+            if (_state[basketId] == BasketState.OPENED) {
                 return false;
             }
         }
@@ -360,7 +395,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     /**
      * @dev approve - override ERC721 approve function
      *
-     * Checks that all baskets for the sender is closed
+     * Checks that all baskets for the sender are closed, if so then approves the spender
      *
      */
     function approve(
