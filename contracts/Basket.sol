@@ -31,11 +31,11 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     }
 
     /**
-     * @dev Modifier that checks that all baskets for the sender is closed
+     * @dev Modifier that checks that all other baskets for the owner of basketId are closed
      *
      * @param _basketId: The id of the basket
      */
-    modifier allBasketsClosed(uint256 _basketId) {
+    modifier allOtherBasketsClosed(uint256 _basketId) {
         require(
             isAllBasketsClosed(ownerOf(_basketId)),
             "Basket: not all baskets owned by owner closed"
@@ -267,16 +267,19 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         address from,
         address to,
         uint256 tokenId
-    ) internal override(ERC721) allBasketsClosed(tokenId) {
-        require(
-            ownerOf(tokenId) == from,
-            "Basket: transfer of token that is not own"
-        );
+    ) internal override(ERC721) allOtherBasketsClosed(tokenId) {
+        bool found = false;
+        uint256 indx;
 
-        uint256 indx = 0;
-        while (_baskets[from][indx] != tokenId) {
-            indx++;
+        for (uint256 i = 0; i < _baskets[from].length; i++) {
+            if (_baskets[from][i] == tokenId) {
+                found = true;
+                indx = i;
+                break;
+            }
         }
+
+        assert(found);
 
         if (_baskets[from].length == 1) {
             _baskets[from].pop();
@@ -363,7 +366,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
     function approve(
         address to,
         uint256 tokenId
-    ) public override(IERC721, ERC721) allBasketsClosed(tokenId) {
+    ) public override(IERC721, ERC721) allOtherBasketsClosed(tokenId) {
         super.approve(to, tokenId);
     }
 

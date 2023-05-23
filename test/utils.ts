@@ -23,7 +23,7 @@ const cleanToken = (token: IBasket.TokenStructOutput) => {
 };
 
 async function basketFixture() {
-  const [deployer, owner, receiver] = await ethers.getSigners();
+  const [deployer, owner, receiver, approvee] = await ethers.getSigners();
 
   const Basket = await ethers.getContractFactory("Basket");
   const Test721 = await ethers.getContractFactory("Test721");
@@ -33,7 +33,7 @@ async function basketFixture() {
   const erc721 = await Test721.deploy();
   const not721 = await Not721.deploy();
 
-  return { deployer, owner, receiver, basket, erc721, not721 };
+  return { deployer, owner, receiver, basket, erc721, not721, approvee };
 }
 
 const REVERT_MESSAGES = {

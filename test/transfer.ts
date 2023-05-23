@@ -415,4 +415,27 @@ describe("Transfer", function () {
         expect(tokensAfter).to.have.lengthOf(2);
 
     });
+
+    it("can't transfer basket not owned by from address", async () => {
+        const { owner, receiver, basket, approvee } = await loadFixture(basketFixture);
+        let basketOwnedByOwner = 0;
+        let basketOwnedByReceiver = 1;
+        let basketOwnedByApprovee = 2;
+        let uri = 'uri';
+
+        await basket.connect(owner).mint(owner.address, uri);
+        await basket.connect(receiver).mint(receiver.address, uri);
+        await basket.connect(approvee).mint(approvee.address, uri);
+        await time.increase(OPEN_COOL_DOWN_S + 1);
+
+        await basket.connect(owner).close(basketOwnedByOwner);
+        await basket.connect(receiver).close(basketOwnedByReceiver);
+        await basket.connect(approvee).close(basketOwnedByApprovee);
+
+        await basket.connect(owner).setApprovalForAll(approvee.address, true);
+        await basket.connect(owner).setApprovalForAll(approvee.address, true);
+
+        await expect(basket.connect(approvee).transferFrom(owner.address, receiver.address, basketOwnedByReceiver))
+            .to.be.revertedWith(REVERT_MESSAGES.ERC721_NOT_OWNER_OR_APPROVED);
+    });
 });
