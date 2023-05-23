@@ -30,6 +30,11 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         _;
     }
 
+    /**
+     * @dev Modifier that checks that all baskets for the sender is closed
+     *
+     * @param _basketId: The id of the basket
+     */
     modifier allBasketsClosed(uint256 _basketId) {
         require(
             isAllBasketsClosed(ownerOf(_basketId)),
@@ -263,18 +268,15 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable {
         address to,
         uint256 tokenId
     ) internal override(ERC721) allBasketsClosed(tokenId) {
-        bool found = false;
-        uint256 indx;
+        require(
+            ownerOf(tokenId) == from,
+            "Basket: transfer of token that is not own"
+        );
 
-        for (uint256 i = 0; i < _baskets[from].length; i++) {
-            if (_baskets[from][i] == tokenId) {
-                found = true;
-                indx = i;
-                break;
-            }
+        uint256 indx = 0;
+        while (_baskets[from][indx] != tokenId) {
+            indx++;
         }
-
-        require(found, "Basket: not found");
 
         if (_baskets[from].length == 1) {
             _baskets[from].pop();
