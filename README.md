@@ -4,6 +4,8 @@ The basket NFT allows users to create a NFT Basket that contains multiple ERC721
 
 > ⚠️ Note: This is a generic basket. Depending on the use case, the basket NFT can be wrapped using OpenZeppelin's Access Control to restrict spesific functions to only authorized users or roles.
 
+An audit for this contract is available [here](https://solidity.finance/audits/FanFireBasket/).
+
 ## Introduction
 
 The Basket NFT is a ERC721 NFT that contains multiple ERC721 NFTs. The Basket NFT can be used to store and trade multiple NFTs at once. [ERC-6551](https://eips.ethereum.org/EIPS/eip-6551) attempts to standardize something like the Basket NFT, but currenlty it is still in draft state. Moreover, within the FanFire ecosystem, we have a need for a Basket NFT that is compatible with the [Multiplace](https://github.com/fan-fire/multiplace) contract. As such, we have created our own Basket NFT that is compatible with the Multiplace contract. 
