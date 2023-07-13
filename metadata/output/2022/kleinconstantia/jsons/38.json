@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2009",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/38.jpg",
-  "description": "\u2018Rich and unctuous, yet superbly racy, this offers a gorgeous panoply of dried apricot, fig, mango and quince flavors, underscored by a lively blood orange note and backed by a long, ginger- and green tea\u2014filled finish. Youthfully tight, this should cruise for some time in the cellar. Muscat de Frontignan. Best from 2016 through 2030.\u2019 - James Molesworth, Winespectator.com, 95/100 (2015)\n\u2018The 2009 Vin de Constance Natural Sweet Wine had been in bottle around six weeks when I tasted it at the estate. It was harvested over three months from 25 separate batches, each bunch selected by hand and raised for six months to one year in 500-liter barrels. Matthew told me that he is looking for less time in barrel and more time in bottle before release. Then again, the 2003 is still in barrel! This is the first vintage Matthew Day has been involved with from start to finish and he sees it as a cross between the 2007 and 2008. It has an intense marmalade, dried apricot, beeswax and honeycomb scents, your quintessential Vin de Constance nose, and it seems to muster more vigor with aeration. The palate is well-balanced with a spicy tincture on the entry, slightly oxidative, with nutty notes infusing the thickly layered honeyed fruit with touches of papaya and mango toward the finish with touches of rosewater and gripe water (a children's medicine for anyone without the privilege) on the aftertaste. Another superb Vin de Constance from Matthew Day.\u2019 - Neal Martin, Robertparker.com, 94/100 (2014)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Rich and unctuous, yet superbly racy, this offers a gorgeous panoply of dried apricot, fig, mango and quince flavors, underscored by a lively blood orange note and backed by a long, ginger- and green tea\u2014filled finish. Youthfully tight, this should cruise for some time in the cellar. Muscat de Frontignan. Best from 2016 through 2030.\u2019* - James Molesworth, Wine Spectator, 95/100 (2015)\n\n\n*\u2018The 2009 Vin de Constance Natural Sweet Wine had been in bottle around six weeks when I tasted it at the estate. It was harvested over three months from 25 separate batches, each bunch selected by hand and raised for six months to one year in 500-liter barrels. Matthew told me that he is looking for less time in barrel and more time in bottle before release. Then again, the 2003 is still in barrel! This is the first vintage Matthew Day has been involved with from start to finish and he sees it as a cross between the 2007 and 2008. It has an intense marmalade, dried apricot, beeswax and honeycomb scents, your quintessential Vin de Constance nose, and it seems to muster more vigor with aeration. The palate is well-balanced with a spicy tincture on the entry, slightly oxidative, with nutty notes infusing the thickly layered honeyed fruit with touches of papaya and mango toward the finish with touches of rosewater and gripe water (a children's medicine for anyone without the privilege) on the aftertaste. Another superb Vin de Constance from Matthew Day.\u2019* - Neal Martin, Robertparker.com, 94/100 (2014)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/38.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 2009
+      "value": "2009"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "7299 - 733971"
     }
   ]
 }

@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2005",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/26.jpg",
-  "description": "\u2018Pure orange peel, tangerine, persimmon and clementine flavors are laced with hints of green tea, candied lime peel and honeysuckle. Rich, but racy and mouthwatering. The gorgeous amber color and a caressing mouthfeel just add to the pleasure. Lovely precision. Should age nicely. Drink now through 2023.\u2019 - James Molesworth, Winespectator.com, 94/100 (2010)\n\u2018Iconic dessert from unbotrytised Muscat de Frontignan. '05 sleek, gleaming acidity in different, finer balance to previous (160 g/l RS; 12.2% alc). Lovely floral depth, precise long-lingering finish. These reward 5-10+ years in cellar with more complexity. \u00b1 3 years in combo steel, oak.\u2019 - Platter\u2019s SA Wine Guide 2009, 4.5*",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "Burnt caramel, marmalade, oranges, knife-edge acidity, lots of sticky sugar on the finish \u2013 but not at all cloying, Great length, complex, generous and broad.' - Richard Hemming MW, JancisRobinson.com, 17.5/20 (Sept 2010) *\u2018Pure orange peel, tangerine, persimmon and clementine flavors are laced with hints of green tea, candied lime peel and honeysuckle. Rich, but racy and mouthwatering. The gorgeous amber color and a caressing mouthfeel just add to the pleasure. Lovely precision. Should age nicely. Drink now through 2023.\u2019* - James Molesworth, Wine Spectator, 94/100 (2010)\n\n\n*\u2018Iconic dessert from unbotrytised Muscat de Frontignan. '05 sleek, gleaming acidity in different, finer balance to previous (160 g/l RS; 12.2% alc). Lovely floral depth, precise long-lingering finish. These reward 5-10+ years in cellar with more complexity. \u00b1 3 years in combo steel, oak.\u2019* - Platter\u2019s SA Wine Guide 2009, 4.5\u2606\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/26.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 2005
+      "value": "2005"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "5650 - 768679"
     }
   ]
 }

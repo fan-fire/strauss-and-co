@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2014",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/50.jpg",
-  "description": "\u2018Arguably the Cape\u2019s most famous wine, crafted to emulate the great Constantia sweet desserts of the 18th century. 2014 from raisined Muscat de Frontignan, as always, impossibly complex and detailed, with seductive perfume, opulent fruit and finely modulated acidity. Intricate vinification, 3 years 500L barrels of various wood types. 500 ml, magnums too.\u2019 -\u00a0 Platter\u2019s SA Wine Guide 2019, 5* (95/100) \u2018This is not the densest or most exotic of recent Vin de Constance releases, but what it lacks in power it more than makes up for with elegance. More Barsac than Sauternes-like perhaps? Quince, pastry and orange zest notes, with lovely tarte tatin acidity, subtle vanilla spice and a long, nuanced finish. 2019-35.\u2019 - Tim Atkin MW, SA Special Report 2017, 96/100\u00a0 ",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Arguably the Cape\u2019s most famous wine, crafted to emulate the great Constantia sweet desserts of the 18th century. 2014 from raisined Muscat de Frontignan, as always, impossibly complex and detailed, with seductive perfume, opulent fruit and finely modulated acidity. Intricate vinification, 3 years 500L barrels of various wood types. 500 ml, magnums too.\u2019* -\u00a0 Platter\u2019s SA Wine Guide 2019, 5\u2606 (95/100)\n\n *\u2018This is not the densest or most exotic of recent Vin de Constance releases, but what it lacks in power it more than makes up for with elegance. More Barsac than Sauternes-like perhaps? Quince, pastry and orange zest notes, with lovely tarte tatin acidity, subtle vanilla spice and a long, nuanced finish. 2019-35.\u2019* - Tim Atkin MW, SA Special Report 2017, 96/100\u00a0 \n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/50.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 1500
     },
     {
       "trait_type": "Vintage",
-      "value": 2014
+      "value": "2014"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "8121 - 109368"
     }
   ]
 }

@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 2017",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/98.jpg",
-  "description": "Seal Code: 9019 - 171749\n\n",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Celebrated Cabernet-based Bordeaux flagship since its debut in 1980. 2017 Cabernet increased from 49% in 2016 (4.5 stars, 93 pts) to 68%, with Merlot, Cabernet Franc, and Petit Verdot. Classic, elegant; dark berry, cedary scents still introverted, though suggest depth and future complexity. Firm structure. 60% new oak.\u2019* - Platter\u2019s SA Wine Guide 2021, 5\u2606 (95/100)\n\n *'A classy wine from a really top vintage. What\u2019s not to like, as they say? Marrying Cabernet Sauvignon with 32% Merlot, Cabernet Franc and Petit Verdot, this is a subtle, refined, nuanced Rubicon with herbal, earthy, tobacco and graphite perfume, fine 60% new wood, polished tannins and a long, graceful finish. Traditional in style and rightly proud of it. 2023-32'* - Tim Atkin MW, SA Special Report 2021, 96/100\n\n\n*\u2018The 2017 Rubicon, Meerlust's flagship Bordeaux blend (68% Cabernet Sauvignon, 16% Merlot, 12% Cabernet Franc, 4% Petit Verdot) offers attractive blackberry, raspberry coulis and floral scents on the nose, plus just a touch of glycerol. The palate is harmonious and medium-bodied with supple tannins, fine acidity and an almost understated but long finish.\u2019* - Neal Martin, Vinous, 92/100 (Nov 2021)\n\n The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/98.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2017
+      "value": "2017"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "9019 - 171749"
     }
   ]
 }

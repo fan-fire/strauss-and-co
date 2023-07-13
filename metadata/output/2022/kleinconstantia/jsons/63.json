@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2018",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/63.jpg",
-  "description": "\u2018Made from raisined Muscat de Frontignan grapes - only the 1997 and 2011 releases had a little botrytis - this is the latest in a run of world-class releases of Vin de Constance. Showing remarkable purity and elegance, despite the heat of 2018, it has 60% new wood, 172 grams of sugar, fine balance, racy acidity and flavours of patisserie, tangerine and pear. The essence of Muscat. 2023-35.\u2019 - Tim Atkin MW, SA Special Report 2021 - Overall Sweet Wine of the Year, 97/100  \u2018Another brilliant nose from Vin de Constance. Very floral, with notes of fresh grapes, sultanas and honey. The palate is fleshy and complex with spice. Ginger, lemongrass and yuzu come through with further notes of honey and sultana. Despite the sweetness, there is a lightness of touch. Vibrant, powerful fruit and earthy ginger and saffron linger on a very long finish.\u2019 - Tom Parker MW, JancisRobinson.com, 18/20 (Sept 2021)     ",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Made from raisined Muscat de Frontignan grapes - only the 1997 and 2011 releases had a little botrytis - this is the latest in a run of world-class releases of Vin de Constance. Showing remarkable purity and elegance, despite the heat of 2018, it has 60% new wood, 172 grams of sugar, fine balance, racy acidity and flavours of patisserie, tangerine and pear. The essence of Muscat. 2023-35.\u2019* - Tim Atkin MW, SA Special Report 2021 - Overall Sweet Wine of the Year, 97/100 \n\n *\u2018Another brilliant nose from Vin de Constance. Very floral, with notes of fresh grapes, sultanas and honey. The palate is fleshy and complex with spice. Ginger, lemongrass and yuzu come through with further notes of honey and sultana. Despite the sweetness, there is a lightness of touch. Vibrant, powerful fruit and earthy ginger and saffron linger on a very long finish.\u2019* - Tom Parker MW, JancisRobinson.com, 18/20 (Sept 2021)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/63.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 1500
     },
     {
       "trait_type": "Vintage",
-      "value": 2018
+      "value": "2018"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "9380 - 967283"
     }
   ]
 }

@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2016",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/56.jpg",
-  "description": "\u2018Iconic reprise of legendary 18th-and 19-century Constantia sweet wine. Spectacular 2016 from Muscat de Frontignan, harvested as ripe berries (for acidity) and raisins (for sugar concentration), delivers fragrant aromatic spices, honeyed floral highlights and piercing freshness, all in perfect balance and harmony after 36 months in oak (500L barrels and foudres) and acacia. 500 ml and magnum.\u2019 - Platter\u2019s SA Wine Guide 2021, 5* (96/100) \u2018Increasingly celebrated as one of the great sweet wines of the world, not just the Cape, Vin de Constance is a delight to taste and review. Slightly drier than the 205 release at 165 grams of sugar, it has more in common with the Loire or Tokaji than it does with Sauternes in terms of freshness and structure. Fresh, balanced and floral, with incredible delicacy, racy acidity, fine oak and flavours of pear tart, crystallised lemons and orange zest. 2019-35.\u2019 - Tim Atkin MW, SA Special Report 2019 - Overall Sweet Wine of the Year, 98/100 \u2018Sweet and fragrant on the nose. Layers of honey, acacia, sultana and earthy spices. The palate is sweet but not remotely cloying, with bright acidity and great intensity of fruit and marmalade. Harmonious and intense, with superb purity and vibrancy. Mellow raisined notes are lifted by floral orange blossom, cinnamon and sweet vanilla spice. Unerring and long on the finish, superb!\u2019 - Tom Parker MW, JancisRobinson.com, 18.5/20 (Sept 2019)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Iconic reprise of legendary 18th-and 19-century Constantia sweet wine. Spectacular 2016 from Muscat de Frontignan, harvested as ripe berries (for acidity) and raisins (for sugar concentration), delivers fragrant aromatic spices, honeyed floral highlights and piercing freshness, all in perfect balance and harmony after 36 months in oak (500L barrels and foudres) and acacia. 500 ml and magnum.\u2019* - Platter\u2019s SA Wine Guide 2021, 5\u2606 (96/100)\n\n *\u2018Increasingly celebrated as one of the great sweet wines of the world, not just the Cape, Vin de Constance is a delight to taste and review. Slightly drier than the 205 release at 165 grams of sugar, it has more in common with the Loire or Tokaji than it does with Sauternes in terms of freshness and structure. Fresh, balanced and floral, with incredible delicacy, racy acidity, fine oak and flavours of pear tart, crystallised lemons and orange zest. 2019-35.\u2019* - Tim Atkin MW, SA Special Report 2019 - Overall Sweet Wine of the Year, 98/100\n\n *\u2018Sweet and fragrant on the nose. Layers of honey, acacia, sultana and earthy spices. The palate is sweet but not remotely cloying, with bright acidity and great intensity of fruit and marmalade. Harmonious and intense, with superb purity and vibrancy. Mellow raisined notes are lifted by floral orange blossom, cinnamon and sweet vanilla spice. Unerring and long on the finish, superb!\u2019* - Tom Parker MW, JancisRobinson.com, 18.5/20 (Sept 2019)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/56.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 1500
     },
     {
       "trait_type": "Vintage",
-      "value": 2016
+      "value": "2016"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "8826 - 519216"
     }
   ]
 }

@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2015",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/15.jpg",
-  "description": "A great wine, with a distinguished track record in one of the best-ever Cape vintages: if any South African wine deserves 100 points, and I strongly believe that it does, then it is the brilliant 2015 Paul Sauer, one of the greatest young wines I have ever tasted.\u2019\u00a0 Tim Atkin SA Special Report 2018, 100/100\n'Rightly regarded as SA \u2018first growth\u2019 Bordeaux blend, traditionally Cabernet-based with Merlot, Cabernet Franc; 70/15/15 in 2015 which, though less plush than 2014 in cooler summer, exudes a controlled opulence thanks to satisfying dry finish and firm tannic foundation for extended ageing.' - Platter's SA Wine Guide 2019, 5* (95/100)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*A great wine, with a distinguished track record in one of the best-ever Cape vintages: if any South African wine deserves 100 points, and I strongly believe that it does, then it is the brilliant 2015 Paul Sauer, one of the greatest young wines I have ever tasted.\u2019*\u00a0 Tim Atkin SA Special Report 2018, 100/100\n\n\n*'Rightly regarded as SA \u2018first growth\u2019 Bordeaux blend, traditionally Cabernet-based with Merlot, Cabernet Franc; 70/15/15 in 2015 which, though less plush than 2014 in cooler summer, exudes a controlled opulence thanks to satisfying dry finish and firm tannic foundation for extended ageing.'* - Platter's SA Wine Guide 2019, 5\u2606 (95/100)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/15.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2015
+      "value": "2015"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "8293 - 414835"
     }
   ]
 }

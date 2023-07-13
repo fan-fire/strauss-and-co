@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2010",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/10.jpg",
-  "description": "\u2018Thrilling return to form for iconic Bordeaux blend Cabernet Sauvignon (68%) and equal Merlot, Cabernet Franc. 2010 red and black fruit, incense on the nose, plenty of reined-in power on the palate. Great fruit definition, bright acidity, firm but fine tannins. 100% new oak, 26 months. Promises to give much pleasure in the future.\u2019 \u2013 Platter\u2019s SA Wine Guide, 4.5* (2014)\n\u2018A direct beam of blackberry and black currant fruit is intertwined with savory, sanguine and lightly singed cedar notes. Shows good focus through the finish, where a perfumy rooibos tea accent lingers. Sneakily long and should unfold more in the cellar. Cabernet Sauvignon, Cabernet Franc and Merlot.\u2019 \u2013 James Molesworth, Wine Spectator, 91/100 (Apr 2015)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018*Thrilling return to form for iconic Bordeaux blend Cabernet Sauvignon (68%) and equal Merlot, Cabernet Franc. 2010 red and black fruit, incense on the nose, plenty of reined-in power on the palate. Great fruit definition, bright acidity, firm but fine tannins. 100% new oak, 26 months. Promises to give much pleasure in the future.\u2019* \u2013 Platter\u2019s SA Wine Guide, 4.5\u2606 (2014)\n\n\n*\u2018A direct beam of blackberry and black currant fruit is intertwined with savory, sanguine and lightly singed cedar notes. Shows good focus through the finish, where a perfumy rooibos tea accent lingers. Sneakily long and should unfold more in the cellar. Cabernet Sauvignon, Cabernet Franc and Merlot.\u2019* \u2013 James Molesworth, Wine Spectator, 91/100 (Apr 2015)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/10.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2010
+      "value": "2010"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "6557 - 842687"
     }
   ]
 }

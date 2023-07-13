@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Series C 2008",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmUouAE1ZsyGp2PuEu4ruCZ6iuS9AM9pq84ZRbAvULdKhE/35.jpg",
-  "description": "\u2018The 2008 Series C shows more grip and bruising structure than previous vintages of the Cabernet-based blend, with gripping tannins framing the hugely concentrated and heady blackberry, boysenberry and deep plum flavors. Tight and firm in the mouth, complex backnotes of black licorice, cigar tobacco and crushed African violet petals appear once the structure subsides and remain through the very long close.\u2019 - Lauren Buzzeo, Wine Enthusiast, 93/100 (Nov 2011)\u00a0 \u2018Raised for 22 months in 80% new French oak, the 2008 Series C is a blend of 66% Cabernet Sauvignon, 28% Merlot and 6% Malbec. It is already showing great lift and freshness on the nose with more red fruit character than the 2007, doubtless due to the higher percentage of Merlot. There is also a floral component that is not evident in earlier vintages. The palate is very well balanced with lush ripe red-berried fruit that is beautifully integrated with the oak, with caressing tannins on the velvety dark plum and creme de cassis infused finish. This is a simply delicious wine that will put a smile on your face.\u2019 - Neal Martin, Wine Advocate, 93/100 (Aug 2011)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*'Series C 2008 - unique and refined'* - Zelma Long\n\n *\u2018The 2008 Series C shows more grip and bruising structure than previous vintages of the Cabernet-based blend, with gripping tannins framing the hugely concentrated and heady blackberry, boysenberry and deep plum flavors. Tight and firm in the mouth, complex backnotes of black licorice, cigar tobacco and crushed African violet petals appear once the structure subsides and remain through the very long close.\u2019* - Lauren Buzzeo, Wine Enthusiast, 93/100 (Nov 2011)\u00a0\n\n *\u2018Raised for 22 months in 80% new French oak, the 2008 Series C is a blend of 66% Cabernet Sauvignon, 28% Merlot and 6% Malbec. It is already showing great lift and freshness on the nose with more red fruit character than the 2007, doubtless due to the higher percentage of Merlot. There is also a floral component that is not evident in earlier vintages. The palate is very well balanced with lush ripe red-berried fruit that is beautifully integrated with the oak, with caressing tannins on the velvety dark plum and creme de cassis infused finish. This is a simply delicious wine that will put a smile on your face.\u2019* - Neal Martin, Wine Advocate, 93/100 (Aug 2011)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2029) or withdrawal. An exclusive & exceptional dinner for 3 guests at acclaimed Stellenbosch restaurant Rykaarts hosted by Vilafont\u00e9 owner Michael S. Ratcliffe and/or Head Winemaker Chris de Vries. A selection of vintage Vilafont\u00e9 to be carefully paired with the evening.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmQLa6wkLzfGVFDHBhfDkCsrnVHyVW4nqFsmcx1YEbeSQq/35.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2008
+      "value": "2008"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "5814 - 133022"
     }
   ]
 }

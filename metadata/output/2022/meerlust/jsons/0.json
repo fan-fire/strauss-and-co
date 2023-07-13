@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 1980",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/0.jpg",
-  "description": "Seal Code: FS002 - 561013\n\n",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018Since 1978 Nico Myburgh and his cellarmaster Giorgio Dalla Cia have been perfecting the blend in the M\u00e9doc tradition, using mostly (60% in \u201880) Cabernet Sauvignon. Merlot and Cabernet Franc have been blended in the following proportions in the \u201880: Merlot 30% and Cabernet Franc 10%. The Merlot, especially, has proved a lovely, round, soft wine, but the backbone of the Cabernet Sauvignon is necessary. Rubicon has complexity, richness and perfumed breadth uncommon in Cape reds. First release \u201880 - Superior.\u2019 - Platter\u2019s SA Wine Guide 1984, 5\u2606 The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/0.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 1980
+      "value": "1980"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "FS002 - 561013"
     }
   ]
 }

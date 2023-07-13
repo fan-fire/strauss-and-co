@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 1994",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/8.jpg",
-  "description": "\u2018A vintage with immense power and concentration, and still in quite a burly and youthful stage, almost bold and brooding. Big and luscious, but with superb definition. One for the long haul\u2019 \u2013 Higgo Jacobs 2016, 95/100",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "Constance might not overpower, but it has its own riveting, complex minty, sweet lemon-honey impact, with an obvious but more restrained than usual Muscat flair. Latest '94 propels the style, burnished gold, delicate lime nuances, enticing nut flavours, neat sweet tang.' - Platter's SA Wine Guide 1999, 5\u2606 **\u2018***A vintage with immense power and concentration, and still in quite a burly and youthful stage, almost bold and brooding. Big and luscious, but with superb definition. One for the long haul\u2019* \u2013 Higgo Jacobs 2016, 95/100\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/8.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 1994
+      "value": "1994"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "0661 - 750238"
     }
   ]
 }

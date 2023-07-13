@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 2015",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/84.jpg",
-  "description": "Seal Code: 8370 - 616445\n\n",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Cabernet-based flagship - 61% in 2015 - with Merlot, Cabernet Franc and Petit Verdot. The finest, most elegant of the reds, refined and intense, full of subtle flavour, with cigarbox overtones and classic dry herbal element. Tannin and acid fully involved in the whole, promising harmony. 14.1% alcohol; 66% new oak.\u2019* - Platter\u2019s SA Wine Guide 2019, 4.5\u2606 (93/100)\u00a0\n\n*\u2018A blend of 61% Cabernet Sauvignon, 23% Merlot, 12% Cabernet Franc and 4% Petit Verdot, the nose shows red and black fruit, an attractive herbal note, pencil shavings and oak spice. The palate is medium bodied and has a lovely composure about it \u2013 excellent fruit definition, zippy acidity and fine-grained tannins (alc: 14%). It\u2019s being talked up as being able to last for decades and I think it will but not because of any massive structure but rather how pure and harmonious it is. It pretty much corresponds to your mind\u2019s eye picture of what Rubicon at its best should taste like.\u2019* - Christian Eedes, WineMag.co.za, 94/100 (Apr 2018)\n\n *\u2018A mesmerizingly dark black purple colour, this youthful wine is wonderfully crystalline, focused and pure, possessing such pretty aromatics of cherry blossom, rose petals, caramelised cranberries, violets, cherry pie, raspberry infused herbal tea and a subtle creamy vanilla pod extravagance. The palate is ultra suave, opulent yet effortlessly fresh and defined, supremely balanced and concentrated. Such gorgeous depth and seamless elegance, a tantalising br\u00fbl\u00e9ed buttered brown toast complexity, creamy filigree tannins and an incredibly long, spellbinding finish. This is going to be a definite future icon vintage on par with the very best Cru Classe wines produced in Bordeaux but at a fraction of the price. This is one of the most profound Rubicons of the modern era. Drink from 2020 to 2045+.\u2019* - Greg Sherwood MW, Wine Safari, 97+/100 (Jan 2018)\n\n The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/84.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2015
+      "value": "2015"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "8370 - 616445"
     }
   ]
 }

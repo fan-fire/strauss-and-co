@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 2016",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/92.jpg",
-  "description": "Seal Code: 8620 - 676533\n\n",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018Fine Cabernet-based flagship - 49% in 2016 (a bit less Cabernet each year it seems) - with Merlot, Cabernet Franc and Petit Verdot. Elegant, fresh and refined, yet with a touch of velvet opulence. Just under 14% alcohol, firm structure, all in balance, though 55% cedary new oak needs time to harmonise.\u2019 - Platter\u2019s SA Wine Guide 2020, 4.5\u2606 (93/100) \u2018Cedar wood, spice, a touch of fynbos on nose and palate. Good acidity and layers of flavour that balance the ripe fruit, with a deft touch.\u2019 - Andy Howard MW, Decanter, 93/100 (Feb 2020) \u2018Revisiting this classic wine after extra time in bottle helps it shine ever so brighter. There is sleek textural elegance, plush sweet polished tannins and earthy red and black currant fruit notes. Seamlessly assembled, this is a triumph for the vintage and shows a very agreeable early drinking opulence combined with palate breadth and depth. The cream always rises to the top. Ready to enjoy now!\u2019 - Greg Sherwood MW, Fine Wine Safari, 93+/100 (Jan 2020)\n The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/92.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2016
+      "value": "2016"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "8620 - 676533"
     }
   ]
 }

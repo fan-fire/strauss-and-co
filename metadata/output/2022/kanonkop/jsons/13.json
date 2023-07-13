@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2013",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/13.jpg",
-  "description": "Regarded as a SA \u2018first growth\u2019 Bordeaux-style blend, traditionally Cabernet-based with Cabernet Franc, Merlot, as in 2013. Reflects vintage\u2019s bright fruit; elegantly spiced Cabernet berries. Fresher, less muscular than 2012 but no shortage of potential.' - Platter's SA Wine Guide 4.5*, 2017",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "Regarded as a SA \u2018first growth\u2019 Bordeaux-style blend, traditionally Cabernet-based with Cabernet Franc, Merlot, as in 2013. Reflects vintage\u2019s bright fruit; elegantly spiced Cabernet berries. Fresher, less muscular than 2012 but no shortage of potential.' - Platter's SA Wine Guide 2017, 4.5\u2606 The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/13.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2013
+      "value": "2013"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "7651 - 499759"
     }
   ]
 }

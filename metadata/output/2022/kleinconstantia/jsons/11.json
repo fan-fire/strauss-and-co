@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 1997",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/11.jpg",
-  "description": "\u2018Candied orange peel, cherries, and spices are intermingled with hints of honey in its gorgeously defined aromatics. This wine, produced entirely from Muscat, is lively, elegant, packed with nuanced flavours, and sports a long, supple, expressive finish.\u2019\u00a0 Pierre Rovani, Wine Advocate, 93/100 (Feb 2003)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018Latest \u201897 brilliantly packaged as ever; shimmering saffron heralds cornucopia of tropical scents layered with spice, creamy, freshly baked apple pie, all deliciously cut by tart, sweet-sour citric twist in the tail. Handles 15% alcohol with aplomb. Picked ultra-ripe (42\u00b0B) rounded-off for 18 months in seasoned 500l oak barrels.\u2019 - Platter\u2019s SA Wine Guide 2002, 4.5\u2606*\u2018Candied orange peel, cherries, and spices are intermingled with hints of honey in its gorgeously defined aromatics. This wine, produced entirely from Muscat, is lively, elegant, packed with nuanced flavours, and sports a long, supple, expressive finish.\u2019* Pierre Rovani, Wine Advocate, 93/100 (Feb 2003)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/11.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 1997
+      "value": "1997"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "3055 - 834156"
     }
   ]
 }

@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 1991",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/5.jpg",
-  "description": "\u2018One of the Cape\u2019s few cult wines - justified as much as inherent individuality as its icon status with the British - UK visitors to the Cape can be identified by the number of cases of Constance in their luggage. \u201c \u2013 Platter's SA Wine Guide 1996, 5*\n\u2018Part of a wine legitimately taking on icon status is that it should impress most times it is drunk and the Vin de Constance 1991 from Klein Constantia didn\u2019t disappoint yesterday. Deep brown in colour, it nevertheless had fantastic aromatics and flavour \u2013 dried flowers, mint humbug, caramel, mushroom, a certain loaminess. Intricate and wonderfully balanced \u2013 nothing obvious or aggressive about it. A special treat.\u2019\u00a0\u2013 Christian Eedes, Winemag.co.za 95/100 (2014)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018*One of the Cape\u2019s few cult wines - justified as much as inherent individuality as its icon status with the British - UK visitors to the Cape can be identified by the number of cases of Constance in their luggage*. \u201c \u2013 Platter's SA Wine Guide 1996, 5\u2606\n\n\n\u2018*Part of a wine legitimately taking on icon status is that it should impress most times it is drunk and the Vin de Constance 1991 from Klein Constantia didn\u2019t disappoint yesterday. Deep brown in colour, it nevertheless had fantastic aromatics and flavour \u2013 dried flowers, mint humbug, caramel, mushroom, a certain loaminess. Intricate and wonderfully balanced \u2013 nothing obvious or aggressive about it. A special treat.\u2019*\u00a0\u2013 Christian Eedes, Winemag.co.za 95/100 (2014)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/5.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 1991
+      "value": "1991"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "0220 - 864092"
     }
   ]
 }

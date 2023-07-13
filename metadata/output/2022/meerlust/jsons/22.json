@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 1997",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/22.jpg",
-  "description": "Seal Code: 0781 - 058228\n\n",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018Upcoming \u201897, from extended ripening season in cooler year, closed-in nose but intense berry/black cherry concentration in palate; dense, latticed, dry tannins finish with extraordinary length. No obviously cheery fruit here. Arresting\u00a0 extraction suggests this deserved keeping a minimum of 7 years, preferably longer. Such density needs forbearance and will bring its rewards. On par with \u201895, \u201891 and greats of the 80\u2019s.\u2019 - Platter\u2019s SA Wine Guide 2001, 4.5\u2606 The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/22.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 1997
+      "value": "1997"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "0781 - 058228"
     }
   ]
 }

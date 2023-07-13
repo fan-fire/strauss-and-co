@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 2001",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/31.jpg",
-  "description": "Seal Code: 3930 - 740072\n\nOne of the all time greats from Meerlust, this was one of Giorgio dalla Cia\u2019s last great vintages which won the Chateau Pichon Longueville Comtesse de Lalande Best Bordeaux Blend Trophy in 2006. Still beautifully vital and intensely coloured showing a crystalline ruby red hue. The nose is jam packed full of black cassis fruit, br\u00fbl\u00e9ed coffee beans, violets and sweet dried baking spices. Plush, lush and almost weightless in the mouth, the palate is so broad, concentrated, vibrant and intense, with the most harmonious youthful balance and seamless silky balance with just a hint of salinity and mineral graphite on the finish. So suave, so regal, this is a wine that defines elegance. A true South African icon. Drink now to 2040+. - Wine Safari Score: 96+/100 Greg Sherwood MW (2019)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018After 26 years, this ground-breaking Bordeaux-style red still commands cachet and respect. 70% Cabernet Sauvignon in current 2001 with 20% Merlot, 10% Cabernet Franc, shows strength of classic Cabernet year: deep, dark fruits nose and flavour; powerful, rich (though retains hallmark moderate alcohol) and still constrained by vibrant, grainy tannins; mocha tones from new oak (80% for 2 years) adds class.\u2019 - Platter\u2019s SA Wine Guide 2006, 4.5\u2606\n\n*One of the all time greats from Meerlust, this was one of Giorgio dalla Cia\u2019s last great vintages which won the IWSC Ch\u00e2teau Pichon Longueville Comtesse de Lalande Best Bordeaux Blend Trophy in 2006. Still beautifully vital and intensely coloured showing a crystalline ruby red hue. The nose is jam packed full of black cassis fruit, br\u00fbl\u00e9ed coffee beans, violets and sweet dried baking spices. Plush, lush and almost weightless in the mouth, the palate is so broad, concentrated, vibrant and intense, with the most harmonious youthful balance and seamless silky balance with just a hint of salinity and mineral graphite on the finish. So suave, so regal, this is a wine that defines elegance. A true South African icon. Drink now to 2040+.* - Wine Safari Score: 96+/100 Greg Sherwood MW (2019)\n\n The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/31.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2001
+      "value": "2001"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "3930 - 740072"
     }
   ]
 }

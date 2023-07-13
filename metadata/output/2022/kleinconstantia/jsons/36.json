@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2008",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/36.jpg",
-  "description": "'The first wine to be blended by the 'new' team in 2012, further time in bottle has added complexity on the palate. Intensely aromatic with a medium-burnished gold hue and nutty, clove and honeysuckle/jasmine notes on the nose. Acidity is more prominent here but cuts through the richness, with mellow oak and orange-marmalade zest on the finish. A highly impressive Vin de Constance with 150g/l RS which is in great shape for further maturation. Drinking Window 2020 - 2040.\u2019 - Decanter.com, 97/100 (2020)\n\u2018Iconic dessert from unbotrytised Muscat de Frontignan. Rich and satisfying 2008 offers fragrant aromas of candied orange peel, faint scent of fynbos. Warm alcohol asserts on entry, then unctuous flavours of toffee apples and glazed pineapples. 54 months 60% new oak, French and Hungarian.\u2019 - Platter\u2019s SA Wine Guide 2015, 4.5* ",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*'The first wine to be blended by the 'new' team in 2012, further time in bottle has added complexity on the palate. Intensely aromatic with a medium-burnished gold hue and nutty, clove and honeysuckle/jasmine notes on the nose. Acidity is more prominent here but cuts through the richness, with mellow oak and orange-marmalade zest on the finish. A highly impressive Vin de Constance with 150g/l RS which is in great shape for further maturation. Drinking Window 2020 - 2040.\u2019* - Decanter.com, 97/100 (2020)\n\n\n*\u2018Iconic dessert from unbotrytised Muscat de Frontignan. Rich and satisfying 2008 offers fragrant aromas of candied orange peel, faint scent of fynbos. Warm alcohol asserts on entry, then unctuous flavours of toffee apples and glazed pineapples. 54 months 60% new oak, French and Hungarian.\u2019* - Platter\u2019s SA Wine Guide 2015, 4.5\u2606 \n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/36.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 2008
+      "value": "2008"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "6655 - 846088"
     }
   ]
 }

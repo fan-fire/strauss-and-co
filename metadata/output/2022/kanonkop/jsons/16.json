@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2016",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/16.jpg",
-  "description": "Stately and ageworthy Bordeaux blend. Mostly Cabernet Sauvignon, as ever, in 2016 with Merlot, Cabernet Franc (62/25/13); classic bouquet of cassis, lead pencil and hedgerow fruit with extra flesh from slightly more Merlot than usual. Hallmark oystershell minerality, fine powdery tannins. Like Cabernet Sauvignon sibling, proud record of, now, 12 maximum ratings.' - Platter's SA Wine Guide 2020, 5* (96/100)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*'Stately and ageworthy Bordeaux blend. Mostly Cabernet Sauvignon, as ever, in 2016 with Merlot, Cabernet Franc (62/25/13); classic bouquet of cassis, lead pencil and hedgerow fruit with extra flesh from slightly more Merlot than usual. Hallmark oystershell minerality, fine powdery tannins. Like Cabernet Sauvignon sibling, proud record of, now, 12 maximum ratings.'* - Platter's SA Wine Guide 2020, 5\u2606 (96/100) \n\n *\u2018How do you follow a 100-point red? It's not easy when the vintage was 2016, which didn't have the class of 2015. But by any standards, this blend of Cabernet Sauvignon with 15% each of Merlot and Cabernet Franc is still one hell of a wine, even in a difficult year. Grippy, focused and slightly leaner than the 2015, but with savoury tannins and plenty of youthful fruit concentration. 2022-36.\u2019* - Tim Atkin MW, SA Special Report 2019, 96/100\n\n *\u2018The 2016 Paul Sauer is a blend of 62% Cabernet Sauvignon, 25% Merlot and 13% Cabernet Franc matured for 24 months in 100% new oak. It has a supremely well defined bouquet of pure blackberry, boysenberry and violet aromas, the oak seamlessly integrated. The palate is medium-bodied with fine-grained tannins, perfectly pitched acidity and a caressing texture. This was actually tasted after a fantastic 1994 Paul Sauer was opened the previous night; who is to say that it will not age as well over the next quarter-century? Not only is this a superb wine, but it surely represents one of the best quality-to-price ratios in the world.\u2019* - Neal Martin, Vinous, 96/100 (Nov 2019)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/16.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2016
+      "value": "2016"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "8616 - 149648"
     }
   ]
 }

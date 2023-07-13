@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2006",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/30.jpg",
-  "description": "\u2018This is gorgeous from the start, proffering sweet but precise tangerine, nectarine and clementine fruit flavors laced with date, orange blossom and green tea notes. Long and pure through the finish, with a lingering echo of bitter orange. The track record for this wine keeps getting better. Drink now through 2020.\u2019 - James Molesworth, Wine Spectator, 95/100 (2012)\n'Previewed last year, 2006 iconic dessert wine from unbotrytised Muscat de Fontignan. 42 months oak (500L barrels, 20% new) melts into concentration of sweet mango, kumquat and glac\u00e9 pineapple. Uncloyingly rich, courtesy tangy acidity. Stately successor to sleek and floral 2005 (4.5 stars).\u2019 - Platter\u2019s SA Wine Guide 2011, 5* ",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018This is gorgeous from the start, proffering sweet but precise tangerine, nectarine and clementine fruit flavors laced with date, orange blossom and green tea notes. Long and pure through the finish, with a lingering echo of bitter orange. The track record for this wine keeps getting better. Drink now through 2020.\u2019* - James Molesworth, Wine Spectator, 95/100 (2012)\n\n\n*'Previewed last year, 2006 iconic dessert wine from unbotrytised Muscat de Fontignan. 42 months oak (500L barrels, 20% new) melts into concentration of sweet mango, kumquat and glac\u00e9 pineapple. Uncloyingly rich, courtesy tangy acidity. Stately successor to sleek and floral 2005 (4.5 stars).\u2019* - Platter\u2019s SA Wine Guide 2011, 5\u2606 \n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/30.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 2006
+      "value": "2006"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "5857 - 474165"
     }
   ]
 }

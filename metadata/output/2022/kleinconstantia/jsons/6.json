@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 1992",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/6.jpg",
-  "description": "\u2018Nuts, Christmas spices, oranges and starfruit \u2013 delicious citric spritz. Caramel, cream, lemon, lime, orange, preserved tropical fruits. Still very powerful and focused, with a persistent length and a really quite youthful sort of concentration as well as plenty of secondary character.\u2019 - Richard Hemming MW, JancisRobinson.com, 17.5+/20 (2009)\n\u2018Brilliant gold, amber tinge at centre. Fresh mint, raisins, lime marmalade scents. Similarly vibrant apricot, citrus concentration; mouthcoating richness; excellent sugar / acid balance.\u2019 \u2013 Angela Lloyd 2002, 4.5 Stars\n'A lighter and more subtle vintage, with lower intensity and sweetness. Elegant and drier expression of Vin de Constance.\u2019 \u2013 Higgo Jacobs 2016, 92/100",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Nuts, Christmas spices, oranges and starfruit \u2013 delicious citric spritz. Caramel, cream, lemon, lime, orange, preserved tropical fruits. Still very powerful and focused, with a persistent length and a really quite youthful sort of concentration as well as plenty of secondary character.\u2019* - Richard Hemming MW, JancisRobinson.com, 17.5+/20 (2009)\n\n\n\u2018*Brilliant gold, amber tinge at centre. Fresh mint, raisins, lime marmalade scents. Similarly vibrant apricot, citrus concentration; mouthcoating richness; excellent sugar / acid balance*.\u2019 \u2013 Angela Lloyd 2002, 4.5 Stars\n\n\n*'A lighter and more subtle vintage, with lower intensity and sweetness. Elegant and drier expression of Vin de Constance*.\u2019 \u2013 Higgo Jacobs 2016, 92/100\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/6.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 1992
+      "value": "1992"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "0357 - 634251"
     }
   ]
 }

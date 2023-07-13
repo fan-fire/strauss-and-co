@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2011",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/43.jpg",
-  "description": "\u2018Consistently one of the best sweet wines in the world, this tea-leafy, honeyed, orange peel-scented Muscat is rich and sweet, with 152 grams of sugar, some skin tannins, nutmeg and ginger spice and a weighty, dense texture. Long, complex and assured. Drink: 2015-25.\u2019 \u2013 Tim Atkin MW, SA Special Report 2015, 96/100\n\u2018The nose is pretty and entirely captivating \u2013 citrus, lilac, herbs, spice, even a little mint. The palate, meanwhile, shows pure fruit and zippy acidity \u2013 it\u2019s an extraordinarily vivid glass of wine \u2013 the finish suitably long without being astringent. Really classy.\u2019- Christian Eedes, Winemag.co.za, 96/100 (2015)\n\u2018Iconic, ageworthy dessert from unbotrytised Muscat de Frontignan aged in French and Hungarian oak (some new). 2011 generous and satisfying with silky texture, sweetness lifted by racy acidity. 3 years oaked vs 4 for also-tasted 2009, with similar candied orange, fynbos fragrance, vanilla fudge and glazed pineapple flavours. No 2010. \u2019 - Platter\u2019s SA Wine Guide 2016, 5* ",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Consistently one of the best sweet wines in the world, this tea-leafy, honeyed, orange peel-scented Muscat is rich and sweet, with 152 grams of sugar, some skin tannins, nutmeg and ginger spice and a weighty, dense texture. Long, complex and assured. Drink: 2015-25.\u2019* \u2013 Tim Atkin MW, SA Special Report 2015, 96/100\n\n\n*\u2018The nose is pretty and entirely captivating \u2013 citrus, lilac, herbs, spice, even a little mint. The palate, meanwhile, shows pure fruit and zippy acidity \u2013 it\u2019s an extraordinarily vivid glass of wine \u2013 the finish suitably long without being astringent. Really classy.\u2019*- Christian Eedes, Winemag.co.za, 96/100 (2015)\n\n\n*\u2018Iconic, ageworthy dessert from unbotrytised Muscat de Frontignan aged in French and Hungarian oak (some new). 2011 generous and satisfying with silky texture, sweetness lifted by racy acidity. 3 years oaked vs 4 for also-tasted 2009, with similar candied orange, fynbos fragrance, vanilla fudge and glazed pineapple flavours. No 2010. \u2019* - Platter\u2019s SA Wine Guide 2016, 5\u2606 \n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/43.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 2011
+      "value": "2011"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "7347 - 503693"
     }
   ]
 }

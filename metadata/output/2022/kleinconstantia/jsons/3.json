@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 1989",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/3.jpg",
-  "description": "\u2018Offers a lovely amber color, with blood orange, bitter almond, clove, green tea and dried persimmon notes backed by a noticeably spicy Muscat hint on the finish. More rustic and broader than the other vintages, and not quite as deep or long.--Non-blind Vin de Constance vertical. Drink now through 2017. 2,425 cases made.\u2019 \u2013 Wine Spectator (Tasted 2010), 90/100",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018Not a botrytis wine. \u201889 gorgeously perfumed, deep-gold hued, honeyed, hints of marmalade. Estate\u2019s 4th re-enactment of Cape\u2019s most glorious wine times, two centuries ago. In traditional squat black 500ml bottle. From Muscat de Frontignan.\u2019 - Platter\u2019s SA Wine Guide 1994, 4\u2606\u2018*Offers a lovely amber color, with blood orange, bitter almond, clove, green tea and dried persimmon notes backed by a noticeably spicy Muscat hint on the finish. More rustic and broader than the other vintages, and not quite as deep or long.--Non-blind Vin de Constance vertical. Drink now through 2017. 2,425 cases made.*\u2019 \u2013 Wine Spectator (Tasted 2010), 90/100\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/3.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 1989
+      "value": "1989"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "0037 - 975339 (QY 486713)"
     }
   ]
 }

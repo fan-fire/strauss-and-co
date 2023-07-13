@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 1995",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/17.jpg",
-  "description": "Seal Code: 0745 - 070191\n\n\"For many - including followers abroad - this remains an ultimate name and statement in Cape claret style. The upcoming, rich cherry, chocolatey '95 due out in 2000, will be a serious collector's piece, matching the four finest years of the past decade or so - '86, '87, '89, '91.\" - Platter's SA Wine Guide 2000, 4* <p><br>This iconic vintage graced the back page of Decanter&rsquo;s magazine in 2000 with Michael Broadbent describing the vintage as &lsquo;One of the Cape&rsquo;s classics&hellip; Good fruit, lovely flavour and remarkably good value.&rsquo; In the same year Pierre Rovani reviewed the wine for The Wine Advocate, finding a cornucopia of fruits: &lsquo;It exhibits fabulous aromas of dark fruits, spices, and some candied strawberries. It has a lovely satiny structure, excellent focus, elegance, and is crafted in a feminine style. This concentrated, spicy, cherry and blackberry syrup-flavoured offering has an exceptional finish filled with plums and tangy blackcurrants.&rsquo;</p><p>Stored in professional cellaring since release, this is an extraordinarily rare investment opportunity to purchase a pristine 6-bottle case of arguably the greatest Rubicon vintage.</p>",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018For many - including followers abroad - this remains an ultimate name and statement in Cape claret style. The upcoming, rich cherry, chocolatey \u201895 due out in 2000, will be a serious collector\u2019s piece, matching the four finest years of the past decade or so - \u201886, \u201887, \u201889, \u201891.\u2019* - Platter\u2019s SA Wine Guide 2000, 4\u2606\n\n This iconic vintage graced the back page of Decanter\u2019s magazine in 2000 with Michael Broadbent describing the vintage as \u2018One of the Cape\u2019s classics\u2026 Good fruit, lovely flavour and remarkably good value.\u2019 In the same year Pierre Rovani reviewed the wine for The Wine Advocate, finding a cornucopia of fruits: \u2018It exhibits fabulous aromas of dark fruits, spices, and some candied strawberries. It has a lovely satiny structure, excellent focus, elegance, and is crafted in a feminine style. This concentrated, spicy, cherry and blackberry syrup-flavoured offering has an exceptional finish filled with plums and tangy blackcurrants.\u2019\n\n The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/17.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 1995
+      "value": "1995"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "0745 - 070191"
     }
   ]
 }

@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2000",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/0.jpg",
-  "description": "\u2018Great character in this throwback wine, with a thicket of dark currant, blackberry, tar, beef, chestnut, mineral and sanguine flavors. Long finish is etched with bittersweet chocolate and another layer of really ripe blackberry fruit. Impressive. Cabernet Sauvignon, Cabernet Franc and Merlot.\u2019 - James Molesworth, Winespectator, 92/100 (2004)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Legend in its own time, Cape classic in its own right. Bordeaux-style blend from low-yielding 30-plus year old vines, usually 80% Cabernet Sauvignon, 10% each Cabernet Franc and Merlot. Traditionally vinified in open fermenters, 2 years in new French oak. 2000 very ripe but strikingly balanced, wild-scrub/herbs folded with forest-floor fruit, plush yet lissome tannins button up the excitement to come from 2005 onwards.\u2019* - Platter\u2019s SA Wine Guide 2004, 4.5\u2606\n\n *\u2018Great character in this throwback wine, with a thicket of dark currant, blackberry, tar, beef, chestnut, mineral and sanguine flavors. Long finish is etched with bittersweet chocolate and another layer of really ripe blackberry fruit. Impressive.\u2019* - James Molesworth, Wine Spectator, 92/100 (Apr 2004)\n\n*\u2018Great character in this throwback wine, with a thicket of dark currant, blackberry, tar, beef, chestnut, mineral and sanguine flavors. Long finish is etched with bittersweet chocolate and another layer of really ripe blackberry fruit. Impressive. Cabernet Sauvignon, Cabernet Franc and Merlot.\u2019* - James Molesworth, Wine Spectator, 92/100 (2004)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/0.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2000
+      "value": "2000"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "3469 - 435297"
     }
   ]
 }

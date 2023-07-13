@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2004",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/4.jpg",
-  "description": "A classic since 1981. '04 has 70% Cabernet Sauvignon, with equal amounts Merlot and Cabernet Franc. Winning aromas cedar, spice, subtle berry, leading to oaky palate a touch lighter, less fruit-substantial than usual, but promising useful development. Vinified traditionally, like all these, in open fermenters. 2 years in French oak.' - Platter's SA Wine Guide 2008, 4.5*",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*'A classic since 1981. '04 has 70% Cabernet Sauvignon, with equal amounts Merlot and Cabernet Franc. Winning aromas cedar, spice, subtle berry, leading to oaky palate a touch lighter, less fruit-substantial than usual, but promising useful development. Vinified traditionally, like all these, in open fermenters. 2 years in French oak.'* - Platter's SA Wine Guide 2008, 4.5\u2606\n\n *\u2018Luscious, full-bodied and sophisticated, this red blend starts with aromas of blackberry, anise and spice, followed by black frit, cedar, mocha and spice flavors. Elegant and complex, with a long, spicy finish.\u2019* - Susan Kostrzewa, Wine Enthusiast, 92/100 (Dec 2009)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/4.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2004
+      "value": "2004"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "4667 - 0364785"
     }
   ]
 }

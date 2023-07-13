@@ -1,17 +1,20 @@
 {
-  "img_avail": false,
-  "name": "Vin de Constance No.10",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/54.jpg",
-  "description": "",
+  "name": "Olerasay No.10",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "No critic ratings are available for this vintage yet. The wines will continue to be cellared at the Mullineux vintage cellar until maturity (estimated 2039) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/Qmf4H4QkSBbrgPFdY1yWU1DvwvzLggzg8BBKm8RZqeg3LN/54.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 375
     },
     {
       "trait_type": "Vintage",
       "value": "No.10"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "N/A"
     }
   ]
 }

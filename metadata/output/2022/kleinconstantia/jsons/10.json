@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 1996",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/10.jpg",
-  "description": "\u2018This has the color of dark iced tea, with a burnished edge to the maple, clove, date, green tea and mulled spice notes all laced with tangy acidity and a long, incense-infused finish. Clearly maturing in its flavor profile, but still with plenty of zip.--Non-blind Vin de Constance vertical ... 1,036 cases made.\u2019 \u2013 Wine Spectator \u00a092/100 (2010)\n\u2018The 1996 Vin de Constance is has a lucid amber hue. The nose is very engaging: marmalade, seaweed, quince, frangipane and a touch of chlorine \u2013 more like a mature Barsac than mature Sauternes. The palate is medium-bodied with a restrained viscous entry of mandarin, orange rind and quince. It is nicely focused and precise, even if it does not quite possess the delineation of the 2007 and 2008 on the finish. Very fine.\u2019 \u2013 Neal Martin, Wine Advocate 94/100 (Oct 2013)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018One of the Cape\u2019s few cult wines, as always, brilliantly presented. Burnished gold perhaps the only indication of more than usual raisined percentage, otherwise characteristic mint/toffee/lime aromas true to the style; a bold structure (14.7% alcohol) ensures keepability, promises a long, operatic unfurling in bottle. On the sweet side of many desserts, at about 120g/l sugar. Picked ultra-ripe (40\u00b0B) with berries at all stages of dehydration (yield 4t/hectare); requires Herculean effort from fermenting yeasts, which stumble to defeat, then 18 months rounding-off in seasoned 500l oak casks.\u2019 - Platter\u2019s SA Wine Guide 2001, 5\u2606\u2018*This has the color of dark iced tea, with a burnished edge to the maple, clove, date, green tea and mulled spice notes all laced with tangy acidity and a long, incense-infused finish. Clearly maturing in its flavor profile, but still with plenty of zip.--Non-blind Vin de Constance vertical ... 1,036 cases made*.\u2019 \u2013 Wine Spectator \u00a092/100 (2010)\n\n\n\u2018*The 1996 Vin de Constance is has a lucid amber hue. The nose is very engaging: marmalade, seaweed, quince, frangipane and a touch of chlorine \u2013 more like a mature Barsac than mature Sauternes. The palate is medium-bodied with a restrained viscous entry of mandarin, orange rind and quince. It is nicely focused and precise, even if it does not quite possess the delineation of the 2007 and 2008 on the finish. Very fine*.\u2019 \u2013 Neal Martin, Wine Advocate 94/100 (Oct 2013)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/10.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 1996
+      "value": "1996"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "1112 - 423695"
     }
   ]
 }

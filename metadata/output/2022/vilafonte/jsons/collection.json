@@ -1,7 +1,7 @@
 {
-  "image": "https://ipfs.fanfire.ai/ipfs/QmYtdmaxTrnfkmb8FzxLLZimQ8sp8PyCvwSWcKaJVqXV5d",
-  "description": "",
-  "name": "Vilafonte Series C Demo",
-  "seller_fee_basis_points": 500,
-  "fee_recipient": "0xC4E9C436C4aB9071F996487811F7FeC7CdeE16a7"
+  "image": "https://ipfs.fanfire.ai/ipfs/QmSN8w4zjJdo1Gp8vjfkFJe4eTErH8Tfc1hkKcNU9cfTmh/1.jpg",
+  "description": "Strauss Series C 03-27 NFT captures a 6-bottle case from each of the first 25 years of Vilafont\u00e9. Vilafont\u00e9 was recently crowned Outstanding Wine Producer and Best Red Wine Producer of the Year by The International Wine and Spirits Competition.\n\nThe wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2029) or withdrawal. An exclusive & exceptional dinner for 3 guests at acclaimed Stellenbosch restaurant Rykaarts hosted by Vilafont\u00e9 owner Michael S. Ratcliffe and/or Head Winemaker Chris de Vries. A selection of vintage Vilafont\u00e9 to be carefully paired with the evening.",
+  "name": "Strauss & Co Vilafonte Series C 2003 - 2027",
+  "seller_fee_basis_points": "1000",
+  "fee_recipient": "0x25375E1DaFa37a31069d323a37A6f93eaF356123"
 }

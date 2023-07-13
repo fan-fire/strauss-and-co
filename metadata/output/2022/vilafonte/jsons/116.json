@@ -1,9 +1,8 @@
 {
-  "img_avail": false,
   "name": "Series C 2022",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmUouAE1ZsyGp2PuEu4ruCZ6iuS9AM9pq84ZRbAvULdKhE/116.jpg",
-  "description": "",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "No critic ratings are available for this vintage yet. The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2029) or withdrawal. An exclusive & exceptional dinner for 3 guests at acclaimed Stellenbosch restaurant Rykaarts hosted by Vilafont\u00e9 owner Michael S. Ratcliffe and/or Head Winemaker Chris de Vries. A selection of vintage Vilafont\u00e9 to be carefully paired with the evening.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmQLa6wkLzfGVFDHBhfDkCsrnVHyVW4nqFsmcx1YEbeSQq/116.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2022
+      "value": "2022"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "N/A"
     }
   ]
 }

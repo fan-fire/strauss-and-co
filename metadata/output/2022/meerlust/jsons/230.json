@@ -1,9 +1,8 @@
 {
-  "img_avail": false,
   "name": "Rubicon 2030",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/230.jpg",
-  "description": "",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "No critic ratings are available for this vintage yet. The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/230.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2030
+      "value": "2030"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "N/A"
     }
   ]
 }

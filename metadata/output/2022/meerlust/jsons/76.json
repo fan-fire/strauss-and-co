@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 2013",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/76.jpg",
-  "description": "Seal Code: 7720 - 419650\n\n",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018\u2018Superlative\u2019 and \u2018sensational\u2019 are common epithets for this flagship Cabernet Sauvignon-dominated (\u00b160%) Bordeaux blend. Lithe 2013 & sleek 2012 take up the baton of 2010 (5 stars, 98 pts) after 2011 not made. Plush, the dark fruit integrates the oak influence (65% new, 20 months) within complex, dense structure. For the long haul.\u2019* - Platter\u2019s SA Wine Guide 2017, 4.5\u2606\n\n\n*\u2018Meerlust\u2019s top red is a Cabernet Sauvignon-based blend with Merlot, Cabernet Franc and Petit Verdot as the chorus. It\u2019s a frm, serious, almost austere red that\u2019s clearly built to age. I\u2019d like a little more fruit on the tannic bones, but this is well made in a traditional style.\u2019* - Tim Atkin SA Special Report 2016, 90/100\n\n The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/76.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2013
+      "value": "2013"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "7720 - 419650"
     }
   ]
 }

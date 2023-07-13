@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2006",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/6.jpg",
-  "description": "\u2018Iconic blend led by Cabernet Sauvignon, with Cabernet Franc, Merlot - 65/20/15 in 06; classic style after more modern 05; impressively powerful: dense, richly layered fruit shows remarkable depth and complexity. 2 yrs new Fr oak effortlessly absorbed.\u2019\u00a0- Platter\u2019s SA Wine Guide, 5* (2010)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Iconic blend led by Cabernet Sauvignon, with Cabernet Franc, Merlot - 65/20/15 in 06; classic style after more modern 05; impressively powerful: dense, richly layered fruit shows remarkable depth and complexity. 2 yrs new Fr oak effortlessly absorbed.\u2019*\u00a0- Platter\u2019s SA Wine Guide, 5\u2606 (2010)\n\n \u2018Rich but racy, with tangy minerality coursing through the core of loganberry, plum and fig fruit flavors. There's also roasted mesquite and iron, adding length to the finish, where a maduro tobacco note lingers. Should age nicely.\u2019 - James Molesworth, Wine Spectator, 92/100 (Jun 2010) The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/6.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2006
+      "value": "2006"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "5179 - 0486869"
     }
   ]
 }

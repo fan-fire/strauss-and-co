@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2014",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/14.jpg",
-  "description": "\u2018Paul Sauer is one of the few genuine Cape icons. Blending mostly Cabernet Sauvignon with Merlot and Cabernet Franc, it always seems to absorb its 24 months in new oak with ease. More forward than the straight Kanonkop Cabernet but just as age worthy, this is savoury and focused with leafy freshness. Drink 2019-30.\u2019 - Tim Atkin MW, SA Special Report 2017, 96/100\n\u2018Regarded as a SA \u2018first growth\u2019 Bordeaux blend, traditionally Cabernet-based with Merlot, Cabernet Franc, as in 2014 with 74/17/9 composition. Plush fruit soaks up 100% new French oak, is reined in by long, structuring tannins. Trademark ageability, as for bright-fruited 2013 (4.5 stars, 92 pts). Formats up to 18L.\u2019 - Platter\u2019s Guide, 5* (95/100) (2018)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Paul Sauer is one of the few genuine Cape icons. Blending mostly Cabernet Sauvignon with Merlot and Cabernet Franc, it always seems to absorb its 24 months in new oak with ease. More forward than the straight Kanonkop Cabernet but just as age worthy, this is savoury and focused with leafy freshness. Drink 2019-30.\u2019* - Tim Atkin MW, SA Special Report 2017, 96/100\n\n\n*\u2018Regarded as a SA \u2018first growth\u2019 Bordeaux blend, traditionally Cabernet-based with Merlot, Cabernet Franc, as in 2014 with 74/17/9 composition. Plush fruit soaks up 100% new French oak, is reined in by long, structuring tannins. Trademark ageability, as for bright-fruited 2013 (4.5 stars, 92 pts). Formats up to 18L.\u2019* - Platter\u2019s Guide, 5\u2606 (95/100) (2018)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/14.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2014
+      "value": "2014"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "7969 - 396819"
     }
   ]
 }

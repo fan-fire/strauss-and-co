@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 1986",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/5.jpg",
-  "description": "Seal Code: F064 - 419500\n\n",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018In an increasingly crowded field of local excellence, this remains among the top South African claret blends; consistently elegant (where others sometimes score with overpowering force), medium-bodied, carefully oaked, restrained but perfumed, with some classic, minerally, claret undertones. There\u2019s a pleasing consistency of style from the beginning in which Giorgio Dalla Cia takes justifiable pride. \u201886 will outclass them all, very tight at present, but should open dramatically; concentrated cedary/vanilla notes flow from bouquet onto palate of ample blackcurrant fruit with tough tannic reserves aboard for longevity. A blend of 70% Cabernet Sauvignon, 20% Merlot and 10% Cabernet Franc. Hannes Myburgh and Dalla Cia have joined the contemporary race and stepped up the new oak maturation.\u2019 - Platter\u2019s SA Wine Guide 1990, 4.5\u2606 The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/5.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 1986
+      "value": "1986"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "F064 - 419500"
     }
   ]
 }

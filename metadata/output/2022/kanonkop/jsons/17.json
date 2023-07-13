@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2017",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/17.jpg",
-  "description": "Easily amongst Cape\u2019s most renowned wines. Cabernet upped to 76% in 2017; Cabernet Franc 17%, Merlot. Classic aromas of cedar and cassis plus vanilla and tobacco from all-new oak that time will integrate. Firm, excellent tannic structure, supple and rich, still with sweet primary fruit plus savoury intensity. Long, long finish points to great concentration. A wine for decades to come.' - Platter's SA Wine Guide 2021, 5* (98/100)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*'Easily amongst Cape\u2019s most renowned wines. Cabernet upped to 76% in 2017; Cabernet Franc 17%, Merlot. Classic aromas of cedar and cassis plus vanilla and tobacco from all-new oak that time will integrate. Firm, excellent tannic structure, supple and rich, still with sweet primary fruit plus savoury intensity. Long, long finish points to great concentration. A wine for decades to come.'* - Platter's SA Wine Guide 2021, 5\u2606 (98/100)\n\n *\u2018Would I or wouldn't I give this 100 points? I tasted it over a period of five days against a number of its competitors, and it nearly got there. Time may prove me wrong, but I don't think this is quite at the level of the 2015. But it's still a stunning wine, combining Cabernet Sauvignon with 17% Cabernet Franc and 7% Merlot. Youthful, concentrated and less immediate than the 2015, with a little more oak spice, it's a taut, ageworthy style with layers of bramble, cigar box and blackcurrant fruit and sinewy tannins. 2025-35.\u2019* - Tim Atkin MW, SA Special Report 2020, 98/100\n\n *\u2018Super-clean nose with syrupy blackcurrant fruit, dense dark chocolate and feathery tannins on the palate that knit everything together handsomely. Very gratifying to drink now, such is the power of that primary fruit, but there is no doubt it will age magnificently.\u2019* - Richard Hemming MW, JancisRobinson.com, 17.5/20 (Mar 2021)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/17.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2017
+      "value": "2017"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "9036 - 905841"
     }
   ]
 }

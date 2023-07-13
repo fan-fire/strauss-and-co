@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2003",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/3.jpg",
-  "description": "2003 is considered among the best Cape vintages post the turn of the century.\n\u00a0\u2018A classic since 1981: has Cape character plus international sophistication. Vinified traditionally, like all these, in open fermenters. 03\u2019s 63% Cabernet Sauvignon in line with previous, but just 6% Merlot, rest Cabernet Franc. Dominated in youth by oak and spicy tobacco, but rich fruit lurking: deserves at least half-decade maturation for violets, tea-leaf, black berries to play full role within firm, ripe structure.\u2019\u00a0\u2013 Platter\u2019s SA Wine Guide 2007, 4.5*\n\u2018(63% Cabernet Sauvignon, 31% Cabernet Franc and 6% Merlot) Medium ruby-red. Explosive aromas of blackberry, violet, iron, graphite, meat, leather and licorice, all lifted by a floral note. Sweet, dense and silky, with highly concentrated candied fruit flavors and superb inner-palate verve. Complicating notes of tar and forest floor. Finishes firmly tannic and very long. An outstanding vintage for this South African classic.\u00a0\u2013 Stephen Tanzer, Vinous,  92+/100 (March 2007)\n\u2018The 2003 Kanonkop Paul Sauer Stellenbosch has the highest percentage of Cabernet Franc used to date (31%) with 6% Merlot and 63% Cabernet Sauvignon. It has a very refined bouquet, very pure, with star-anise-tinged black fruit with hints of bell pepper and tertiary notes emerging with time. The palate has an understated entry with a slightly grainy texture: blackberry, black olive, a touch of menthol and dried orange rind toward the finish. This is drinking now, but will continue to evolve over 15 to 20 years.\u2019\u00a0\u2013\u00a0Neal Martin, Wine Advocate (October 2014), 91/100\n\u2018This is solid, with mature hints of cedar and tobacco now weaving through the core of red currant, damson plum and red licorice. A nice briary edge frames the tangy finish. Cabernet Sauvignon, Cabernet Franc and Merlot.--Non-blind Kanonkop vertical tasting (2010). Drink now. 4,125 cases made.\u2019 \u2013 Wine Spectator (Tasted 2010), 90/100",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "2003 is considered among the best Cape vintages post the turn of the century.\n\n\n\u00a0\u2018*A classic since 1981: has Cape character plus international sophistication. Vinified traditionally, like all these, in open fermenters. 03\u2019s 63% Cabernet Sauvignon in line with previous, but just 6% Merlot, rest Cabernet Franc. Dominated in youth by oak and spicy tobacco, but rich fruit lurking: deserves at least half-decade maturation for violets, tea-leaf, black berries to play full role within firm, ripe structure.\u2019*\u00a0\u2013 Platter\u2019s SA Wine Guide 2007, 4.5\u2606\n\n\n*\u2018(63% Cabernet Sauvignon, 31% Cabernet Franc and 6% Merlot) Medium ruby-red. Explosive aromas of blackberry, violet, iron, graphite, meat, leather and licorice, all lifted by a floral note. Sweet, dense and silky, with highly concentrated candied fruit flavors and superb inner-palate verve. Complicating notes of tar and forest floor. Finishes firmly tannic and very long. An outstanding vintage for this South African classic.*\u2013 Stephen Tanzer, Vinous, 92+/100 (March 2007)\n\n\n\u2018*The 2003 Kanonkop Paul Sauer Stellenbosch has the highest percentage of Cabernet Franc used to date (31%) with 6% Merlot and 63% Cabernet Sauvignon. It has a very refined bouquet, very pure, with star-anise-tinged black fruit with hints of bell pepper and tertiary notes emerging with time. The palate has an understated entry with a slightly grainy texture: blackberry, black olive, a touch of menthol and dried orange rind toward the finish. This is drinking now, but will continue to evolve over 15 to 20 years.\u2019*\u00a0*\u2013*Neal Martin, Wine Advocate (October 2014), 91/100\n\n\n\u2018*This is solid, with mature hints of cedar and tobacco now weaving through the core of red currant, damson plum and red licorice. A nice briary edge frames the tangy finish. Cabernet Sauvignon, Cabernet Franc and Merlot. 4,125 cases made.*\u2019 \u2013 Wine Spectator (Tasted 2010), 90/100\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/3.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2003
+      "value": "2003"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "4353 - 775747"
     }
   ]
 }

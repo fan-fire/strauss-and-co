@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Rubicon 1991",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/10.jpg",
-  "description": "Seal Code: 0135 - 996413\n\n'Latest release of this Bordeaux-style blend - among first in the Cape with 1980. Remains true to type, elegant rather than showy, supple rather than bold. Touch uncharacteristic gaminess on nose.' - Platter's SA Wine Guide 1996, 4* <br> 'Very fine wet earth complexity to begin, this wine is perfumed and intense showing saline cassis, iodine, briney oyster shell, sweet boxwood notes and complex hints of grilled herbs. The palate still shows such rich vibrancy, sweet black tea intensity, black currant coulis and a suave, creamy sweet tannin finish. So fresh, bright, pure, dense and utterly youthful! Lovely structure balanced by big concentration. Utterly spellbinding. Drink now to 2035+.' - Greg Sherwood MW, Wine Safari, 96/100 (Jan 2018)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Latest release of this Bordeaux-style blend - among first in the Cape with 1980. Remains true to type, elegant rather than showy, supple rather than bold. Touch uncharacteristic gaminess on nose.\u2019* - Platter\u2019s SA Wine Guide 1996, 4\u2606\n\n *\u2018Very fine wet earth complexity to begin, this wine is perfumed and intense showing saline cassis, iodine, briney oyster shell, sweet boxwood notes and complex hints of grilled herbs. The palate still shows such rich vibrancy, sweet black tea intensity, black currant coulis and a suave, creamy sweet tannin finish. So fresh, bright, pure, dense and utterly youthful! Lovely structure balanced by big concentration. Utterly spellbinding. Drink now to 2035+.\u2019* - Greg Sherwood MW, Wine Safari, 96/100 (Jan 2018)\n\n The wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmVdwWvWdtyQ6xPMcPM6ZEWfUtRVgRvryK9vf4kJkvCzrL/10.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 1991
+      "value": "1991"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "0135 - 996413"
     }
   ]
 }

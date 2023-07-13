@@ -1,9 +1,8 @@
 {
-  "img_avail": false,
   "name": "Paul Sauer 2025",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/65.jpg",
-  "description": "",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "No critic ratings are available for this vintage yet. The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/65.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2025
+      "value": "2025"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "N/A"
     }
   ]
 }

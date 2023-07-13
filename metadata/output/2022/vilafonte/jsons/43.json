@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Series C 2010",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmUouAE1ZsyGp2PuEu4ruCZ6iuS9AM9pq84ZRbAvULdKhE/43.jpg",
-  "description": "'A ripe, flavoursome Cabernet-based blend (hence C) with lesser amounts of Merlot, Cabernet Franc and Malbec, this takes its inspiration from Australia and California rather than Bordeaux. Rich, oaky and flirting with over-ripeness, it's a bold statement of a wine with lots of sweet, fleshy plum and blackberry fruit. Drink 2015-22' - Tim Atkin, SA Wine Report 2013, 93/100\n\u2018Intense black fruit aromas, cassis and almond notes on plush and concentrated 2010 - Cabernet-dominated as always, with 25% Cabernet Franc, Merlot, and Malbec. Opulent, brocaded textures and real mid-palate weight are defining features of this iconically styled wine, a near clone to super-rich, finely balanced 2009.\u2019 - Platter\u2019s SA Wine Guide 2013, 4.5*\n\u2018The bouquet of this wine is immediately full and lush, with aromas of brambly blackberry, cassis, crushed violet and cocoa-dusted raspberry. The flavors are similarly ripe and juicy on the palate, but don't taste overly so, with rich notes of black cherry, berry and toasted sweet spice. The texture is round yet structured, with medium tannins that linger through the finish.\u2019 - Lauren Buzzeo, Wine Enthusiast, 92/100 (Jul 2014)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "Series C 2010 - firm and deep' - Zelma Long *'A ripe, flavoursome Cabernet-based blend (hence C) with lesser amounts of Merlot, Cabernet Franc and Malbec, this takes its inspiration from Australia and California rather than Bordeaux. Rich, oaky and flirting with over-ripeness, it's a bold statement of a wine with lots of sweet, fleshy plum and blackberry fruit. Drink 2015-22' -* Tim Atkin, SA Wine Report 2013, 93/100\n\n\n*\u2018Intense black fruit aromas, cassis and almond notes on plush and concentrated 2010 - Cabernet-dominated as always, with 25% Cabernet Franc, Merlot, and Malbec. Opulent, brocaded textures and real mid-palate weight are defining features of this iconically styled wine, a near clone to super-rich, finely balanced 2009.\u2019* - Platter\u2019s SA Wine Guide 2013, 4.5\u2606\n\n\n\u2018*The bouquet of this wine is immediately full and lush, with aromas of brambly blackberry, cassis, crushed violet and cocoa-dusted raspberry. The flavors are similarly ripe and juicy on the palate, but don't taste overly so, with rich notes of black cherry, berry and toasted sweet spice. The texture is round yet structured, with medium tannins that linger through the finish.\u2019* - Lauren Buzzeo, Wine Enthusiast, 92/100 (Jul 2014)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2029) or withdrawal. An exclusive & exceptional dinner for 3 guests at acclaimed Stellenbosch restaurant Rykaarts hosted by Vilafont\u00e9 owner Michael S. Ratcliffe and/or Head Winemaker Chris de Vries. A selection of vintage Vilafont\u00e9 to be carefully paired with the evening.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmQLa6wkLzfGVFDHBhfDkCsrnVHyVW4nqFsmcx1YEbeSQq/43.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2010
+      "value": "2010"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "6551 - 904869"
     }
   ]
 }

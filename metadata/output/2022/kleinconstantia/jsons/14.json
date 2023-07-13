@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2000",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/14.jpg",
-  "description": "\u2018Continually reclaiming the international renown its ancestor enjoyed 2 centuries back; from usually unbotrytised but superbly ripe Muscat de Frontignan giving a long-lived, silkily textured wine with fine mineral acidity. Riveting old-gold-coloured '00 somewhat drier (141g/L), full, gorgeously complex panoply of a aromas/flavours (from muscatty grape to citrus, dried peach to marmalade), refined silky richness, balanced acidity. There some 2 years in used 500L French oak barrels, after ferment/time in tank. In specially made 500ml hand-blown-style-bottles.\u2019 \u2013 Platter\u2019s SA Wine Guide 2006, 5*\n\u2018Runny caramel on the nose, and a lovely amber hue in the glass. Roasted nuts, musk, very lengthy black-treacle finish and orange and quince fruit \u2013 the fruit is definitely past its first flush, though the wine is still very much alive.\u2019 \u2013 Richard Hemming MW, JancisRobinson.com, 17/20 (2009)\n\u00a0",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018*Continually reclaiming the international renown its ancestor enjoyed 2 centuries back; from usually unbotrytised but superbly ripe Muscat de Frontignan giving a long-lived, silkily textured wine with fine mineral acidity. Riveting old-gold-coloured '00 somewhat drier (141g/L), full, gorgeously complex panoply of a aromas/flavours (from muscatty grape to citrus, dried peach to marmalade), refined silky richness, balanced acidity. There some 2 years in used 500L French oak barrels, after ferment/time in tank. In specially made 500ml hand-blown-style-bottles.**\u2019* \u2013 Platter\u2019s SA Wine Guide 2006, 5\u2606\n\n\n\u2018*Runny caramel on the nose, and a lovely amber hue in the glass. Roasted nuts, musk, very lengthy black-treacle finish and orange and quince fruit \u2013 the fruit is definitely past its first flush, though the wine is still very much alive.\u2019* *\u2013* Richard Hemming MW, JancisRobinson.com, 17/20 (2009)\n\n\n\u00a0\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/14.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 2000
+      "value": "2000"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "3938 - 853612"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "image": "https://ipfs.fanfire.ai/ipfs/QmYtdmaxTrnfkmb8FzxLLZimQ8sp8PyCvwSWcKaJVqXV5d",
-  "description": "",
-  "name": "Klein Constantia Demo",
-  "seller_fee_basis_points": 500,
-  "fee_recipient": "0xC4E9C436C4aB9071F996487811F7FeC7CdeE16a7"
+  "image": "https://ipfs.fanfire.ai/ipfs/QmSN8w4zjJdo1Gp8vjfkFJe4eTErH8Tfc1hkKcNU9cfTmh/2.gif",
+  "description": "Strauss Vin de Constance 86-27 NFT offers the first 40 vintages of Klein Constantia\u2019s world-famous sweet wine made from Muscat de Frontignan. Vin de Constance is firmly established and highly sought-after with current vintages trading on the Bordeaux market. The NFT includes 47 bottles from 1986 through to 2012 in varying quantities depending on their rarity. Three magnums of each vintage from 2013-2027 add stature to this incredible collection of Vin de Constance.\n\nThe wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "name": "Strauss & Co Klein Constantia Vin de Constance 1986 - 2027",
+  "seller_fee_basis_points": "1000",
+  "fee_recipient": "0x25375E1DaFa37a31069d323a37A6f93eaF356123"
 }

@@ -1,7 +1,7 @@
 {
-  "image": "https://ipfs.fanfire.ai/ipfs/QmYtdmaxTrnfkmb8FzxLLZimQ8sp8PyCvwSWcKaJVqXV5d",
-  "description": "",
-  "name": "Meerlust Rubicon Demo",
-  "seller_fee_basis_points": 500,
-  "fee_recipient": "0xC4E9C436C4aB9071F996487811F7FeC7CdeE16a7"
+  "image": "https://ipfs.fanfire.ai/ipfs/QmSN8w4zjJdo1Gp8vjfkFJe4eTErH8Tfc1hkKcNU9cfTmh/0.gif",
+  "description": "Regarded for its classic styling and long-ageing, the Strauss Rubicon 80-34 NFT includes the first 50 vintages of this icon South African wine in varying quantities to total 288 bottles.\n\nThe wines will continue to be cellared at the Meerlust vintage cellar until maturity (estimated 2028) or withdrawal. Rubicon is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 50 consecutive vintages",
+  "name": "Strauss & Co Meerlust Rubicon 1980 - 2034",
+  "seller_fee_basis_points": "1000",
+  "fee_recipient": "0x25375E1DaFa37a31069d323a37A6f93eaF356123"
 }

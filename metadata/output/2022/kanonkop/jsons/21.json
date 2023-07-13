@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2018",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/21.jpg",
-  "description": "Renowned as among the Cape\u2019s greatest reds. 2018 has 70% Cabernet Sauvignon with Cabernet Franc and Merlot. Classic aromas cedar and cassis plus vanilla and tobacco from all-new oak. Fine wine, with less concentration and density than 2017 (5 stars, 98 pts), but some might even prefer its lighter, supple elegance.' - Platter's SA Wine Guide 2022, 4.5* (94/100)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*'Renowned as among the Cape\u2019s greatest reds. 2018 has 70% Cabernet Sauvignon with Cabernet Franc and Merlot. Classic aromas cedar and cassis plus vanilla and tobacco from all-new oak. Fine wine, with less concentration and density than 2017 (5 stars, 98 pts), but some might even prefer its lighter, supple elegance.'* - Platter's SA Wine Guide 2022, 4.5\u2606 (94/100)\n\n *'The latest vintage of this iconic Cape cuv\u00e9e marries Cabernet Sauvignon with 15% each of Cabernet Franc and Merlot. There's no sign of the heat of the vintage or of the extraction you find in some Stellenbosch reds in 2018. Subtle, smooth and graceful, this is characteristically perfumed and complete, with fine new wood, detailed tannins, racy acidity and tobacco, green herb and cassis flavours. 2024-35.\u2019* - Tim Atkin MW, SA Special Report 2021, 96/100\n\n *\u2018The 2018 Paul Sauer is backward, almost surly on the nose and needs a few minutes to really find its voice, offering blackberry, raspberry coulis, aniseed and light floral scents. The oak is very well integrated here. The harmonious palate is medium-bodied with supple tannins, and one of the most sensual I can recall in recent years. Suave and sophisticated, this is Cape wine from the top drawer.\u2019* - Neal Martin, Vinous, 96/100 (Nov 2021)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/21.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2018
+      "value": "2018"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "9316 - 807840"
     }
   ]
 }

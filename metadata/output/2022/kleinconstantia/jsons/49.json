@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2013",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/49.jpg",
-  "description": "\u2018A Cape classic, painstakingly crafted dessert wine from raisined Muscat de Frontignan, our Unfortified Dessert Wine of the Year. 2013 emerges triumphant from 3 years in various types and sizes of barrel, showing pedigree and class. Perfumed and exotically spicy, with silky texture, dried peach and melon fruit. Also in magnum.\u2019 - Platter\u2019s SA Wine Guide 2018, 5* (99/100) \u2018The 2013 Vin de Constance Natural Sweet Wine was matured in 500-liter barrels for around 36 months. It has a beautiful bouquet with honey, quince, pressed yellow flowers and Mirabelle. It has wonderful definition and purity. The palate is very well balanced with a mellifluous texture and beautifully judged acidity as it just sashays along. It fans out on the finish with honey, quince, a touch of rhubarb and ginger, extraordinarily persistent in the mouth. Matthew Day, current winemaker, opined that he thought the 2012 would be the best ever, but the freshness might see it overtaken. This is awesome.\u2019 - Neal Martin, Wine Advocate, 96/100 (Apr 2017)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018A Cape classic, painstakingly crafted dessert wine from raisined Muscat de Frontignan, our Unfortified Dessert Wine of the Year. 2013 emerges triumphant from 3 years in various types and sizes of barrel, showing pedigree and class. Perfumed and exotically spicy, with silky texture, dried peach and melon fruit. Also in magnum.\u2019* - Platter\u2019s SA Wine Guide 2018, 5\u2606 (99/100)\n\n *\u2018The 2013 Vin de Constance Natural Sweet Wine was matured in 500-liter barrels for around 36 months. It has a beautiful bouquet with honey, quince, pressed yellow flowers and Mirabelle. It has wonderful definition and purity. The palate is very well balanced with a mellifluous texture and beautifully judged acidity as it just sashays along. It fans out on the finish with honey, quince, a touch of rhubarb and ginger, extraordinarily persistent in the mouth. Matthew Day, current winemaker, opined that he thought the 2012 would be the best ever, but the freshness might see it overtaken. This is awesome.\u2019* - Neal Martin, Wine Advocate, 96/100 (Apr 2017)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/49.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 1500
     },
     {
       "trait_type": "Vintage",
-      "value": 2013
+      "value": "2013"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "7764 - 166549"
     }
   ]
 }

@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 2004",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/25.jpg",
-  "description": "Iconic dessert wine from unbotrytised Muscat de Frontignan, No 2003; '04 charming peach and spicy-nutty cream. Less intense than some years, but still luscious and dense. 130 g/l RS, 14.2% alc in full, rich finish.' - Platter's SA Wine Guide 2009, 4.5*",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*'Iconic dessert wine from unbotrytised Muscat de Frontignan, No 2003; '04 charming peach and spicy-nutty cream. Less intense than some years, but still luscious and dense. 130 g/l RS, 14.2% alc in full, rich finish.'* - Platter's SA Wine Guide 2009, 4.5\u2606\n\n *'Lime and lemon cordial; floral, golden syrup. Acidity is bright and refreshing, and cuts the viscosity with razor-sharp precision. Treacle and caramelised fruits on the palate. There is a metallic tingle on the finish. Good, but not as finely balanced as other vintages by comparison.'* - Richard Hemming MW, JancisRobinson.com, 16.5/20 (Feb 2009)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/25.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 2004
+      "value": "2004"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "5000 - 0040648"
     }
   ]
 }

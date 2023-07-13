@@ -1,7 +1,7 @@
 {
-  "image": "https://ipfs.fanfire.ai/ipfs/QmYtdmaxTrnfkmb8FzxLLZimQ8sp8PyCvwSWcKaJVqXV5d",
-  "description": "",
-  "name": "Mullineux",
-  "seller_fee_basis_points": 500,
-  "fee_recipient": "0xC4E9C436C4aB9071F996487811F7FeC7CdeE16a7"
+  "image": "https://ipfs.fanfire.ai/ipfs/QmSN8w4zjJdo1Gp8vjfkFJe4eTErH8Tfc1hkKcNU9cfTmh/4.jpg",
+  "description": "Strauss Mullineux Olerasay 1-20 includes the first 20 iterations of Mullineux Olerasay, the benchmark sweet wine. Containing 6 bottles per release, the second iteration received the first South African 100 points from a US based wine publication by Neal Martin. Neal suggests a drinking window from 2020-2080!\n\nThe wines will continue to be cellared at the Mullineux vintage cellar until maturity (estimated 2039) or withdrawal.",
+  "name": "Strauss & Co Mullineux Olerasay 2001-2020",
+  "seller_fee_basis_points": "1000",
+  "fee_recipient": "0x25375E1DaFa37a31069d323a37A6f93eaF356123"
 }

@@ -1,17 +1,20 @@
 {
-  "img_avail": true,
   "name": "Vin de Constance 1999",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/13.jpg",
-  "description": "\u2018Confirming anew the international status its ancestor enjoyed 2 centuries back, and fortunately soon in greater quantities as new plantings of Muscat de Frontignan come into production. Frequent 5* over the years. Usually no botrytis, just healthy ripeness taken to a superb extreme, to give a silkily textured wine, with fine mineral acidity. Raisiny luxuriance of '99 also evokes dried apricot, marmalade, shot through with thrilling acid; fine lingering farewell. 14.5%; 183g/L sugar.\u2019\u00a0\u2013 Platter\u2019s SA Wine Guide 2005, 4.5*\nVanilla pod, mixed peel, spiced oranges, cloves, raisins, thick and gloopy but with a whistlingly fresh finish from the acidity that keeps magnificent balance. The orange character is really pure on the palate, like tangerine slices \u2013 tangy and freshly-peeled.\u2019\u00a0\u2013\u00a0Richard Hemming MW, JancisRobinson.com \u00a017.5/20 (2009)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "\u2018*Confirming anew the international status its ancestor enjoyed 2 centuries back, and fortunately soon in greater quantities as new plantings of Muscat de Frontignan come into production. Frequent 5\u2606 over the years. Usually no botrytis, just healthy ripeness taken to a superb extreme, to give a silkily textured wine, with fine mineral acidity. Raisiny luxuriance of '99 also evokes dried apricot, marmalade, shot through with thrilling acid; fine lingering farewell. 14.5%; 183g/L sugar.\u2019*\u00a0\u2013 Platter\u2019s SA Wine Guide 2005, 4.5\u2606\n\n\n*Vanilla pod, mixed peel, spiced oranges, cloves, raisins, thick and gloopy but with a whistlingly fresh finish from the acidity that keeps magnificent balance. The orange character is really pure on the palate, like tangerine slices \u2013 tangy and freshly-peeled.\u2019*\u00a0*\u2013*Richard Hemming MW, JancisRobinson.com \u00a017.5/20 (2009)\n\n The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/13.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 500
     },
     {
       "trait_type": "Vintage",
-      "value": 1999
+      "value": "1999"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "3596 - 686300"
     }
   ]
 }

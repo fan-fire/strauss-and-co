@@ -1,17 +1,20 @@
 {
-  "img_avail": false,
   "name": "Vin de Constance 2025",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/85.jpg",
-  "description": "2028",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "No critic ratings are available for this vintage yet. The wines will continue to be cellared at the Klein Constantia\u2019s vintage cellar until maturity (estimated 2031) or withdrawal. Vin de Constance is not produced every year. If a vintage is not produced, the NFT will include the next vintage, to total 40 consecutive vintages.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmWww9kRSyH5D2H3xfZ4YR6TtqQvkMJiSeam6fTxaSci51/85.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
-      "value": 750
+      "value": 1500
     },
     {
       "trait_type": "Vintage",
-      "value": 2025
+      "value": "2025"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "N/A"
     }
   ]
 }

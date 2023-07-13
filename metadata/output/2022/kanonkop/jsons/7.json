@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2007",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/7.jpg",
-  "description": "\u2018Magnificent 2007 an indulgence to rival the best. Complex opulence held back in restrained, compact form, promises to reveal over decades. Blend Cabernet (68%), Cabernet Franc, Merlot; 2 years all-new French adds authority, plush tannins to remarkable mix. Follows impressively powerful 2006 (5 stars).\u2019 \u2013 Platter\u2019s SA Wine Guide, 4.5* (2011)\u2018(68% Cabernet Sauvignon, 17% Cabernet Franc and 15% Merlot; aged for 24 months in all new French oak) Bright medium red. Dark aromas of blueberry, boysenberry, licorice and mint, lifted by a floral topnote. Intensely flavored, juicy and gripping, with terrific energy and a distinct cool-vintage character. Sexy oak adds complexity to the very long, firmly tannic finish. This very dense, rich wine is still folded in on itself and will require extended aging.\u2019 \u2013 Stephen Tanzer, Vinous, 92+/100 (Mar 2011)\u2018Balanced and forward with enticing notes of cedar and smoked meat among aromas of mulled blackberries and licorice. Lush dark black fruit floods the velvety mouth, while tobacco and sweet spice linger through the lengthy close.\u2019 \u2013 Lauren Buzzeo, Wine Enthusiast, 91/100 (Jan 2011)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018Magnificent 2007 an indulgence to rival the best. Complex opulence held back in restrained, compact form, promises to reveal over decades. Blend Cabernet (68%), Cabernet Franc, Merlot; 2 years all-new French adds authority, plush tannins to remarkable mix. Follows impressively powerful 2006 (5 stars).\u2019* \u2013 Platter\u2019s SA Wine Guide, 4.5\u2606 (2011)  \n  \n*\u2018(68% Cabernet Sauvignon, 17% Cabernet Franc and 15% Merlot; aged for 24 months in all new French oak) Bright medium red. Dark aromas of blueberry, boysenberry, licorice and mint, lifted by a floral topnote. Intensely flavored, juicy and gripping, with terrific energy and a distinct cool-vintage character. Sexy oak adds complexity to the very long, firmly tannic finish. This very dense, rich wine is still folded in on itself and will require extended aging.\u2019* \u2013 Stephen Tanzer, Vinous, 92+/100 (Mar 2011)  \n  \n*\u2018Balanced and forward with enticing notes of cedar and smoked meat among aromas of mulled blackberries and licorice. Lush dark black fruit floods the velvety mouth, while tobacco and sweet spice linger through the lengthy close.\u2019* \u2013 Lauren Buzzeo, Wine Enthusiast, 91/100 (Jan 2011)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/7.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2007
+      "value": "2007"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "5592 - 633540"
     }
   ]
 }

@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2002",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/2.jpg",
-  "description": "64% Cabernet Sauvignon and equal amounts Merlot and Cabernet Franc in lesser vintage '02, also good and serious, long-flavoured  but less subtuously fruited, more severe, with big dry tannins. 2 years in French oak. WO Simonsberg-Stellenbosch.' - Platter's SA Wine Guide 2006, 4.5*'Quite ripe and rather full, with a nice velvety feel to the dark plum, mashed currant and fig paste notes, all laced with maduro tobacco and bittersweet cocoa hints. The muscular finish has an iron hint buried. Much better than on release, when it had an inconsistent showing. Drink now through 2022. 3,209 cases made.' - James Molesworth, Non-blind Kanonkop vertical tasting, Wine Spectator 2010, 91/100 & Top 100 listing\nDecanter Magazine 2006 edition (UK) - 5 Stars",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "64% Cabernet Sauvignon and equal amounts Merlot and Cabernet Franc in lesser vintage '02, also good and serious, long-flavoured but less subtuously fruited, more severe, with big dry tannins. 2 years in French oak. WO Simonsberg-Stellenbosch.' - Platter's SA Wine Guide 2006, 4.5\u2606*'Quite ripe and rather full, with a nice velvety feel to the dark plum, mashed currant and fig paste notes, all laced with maduro tobacco and bittersweet cocoa hints. The muscular finish has an iron hint buried. Much better than on release, when it had an inconsistent showing. Drink now through 2022. 3,209 cases made.'* - James Molesworth, Non-blind Kanonkop vertical tasting, Wine Spectator 2010, 91/100 & Top 100 listing\n\n\n*Decanter Magazine 2006 edition (UK) - 5 Stars*\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/2.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2002
+      "value": "2002"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "4098 - 796360"
     }
   ]
 }

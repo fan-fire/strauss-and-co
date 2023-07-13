@@ -1,9 +1,8 @@
 {
-  "img_avail": true,
   "name": "Paul Sauer 2005",
-  "external_url": "",
-  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/5.jpg",
-  "description": "\u2018The 2005 Paul Sauer offers an exuberant bouquet with dried prune, licorice, a touch of caramel and fig that just soars from the glass. The palate is medium-bodied with a harmonious, focused opening. The tannins lend the 2005 a firm structure, but there is plenty of fruit to back it up and the finish fans out with luscious licorice, sea salt and black fruits that linger. Superb. Drink 2014-2025.\u2019\u00a0- Neal Martin, Robertparker.com, 93/100 (2013)\n\u00a0\u2018Confident, refined 05, 70% Cabernet Sauvignon with equal Merlot and Cabernet Franc spent 2 years in new casks after traditional fermentation in open kuipe. Seductive cedar, spice and richly layered fruit will appeal to eager audience, as will plush, lengthy finish. 14.5% alc. 2008 Calyon trophy for 04.\u2019\u00a0- Platter\u2019s SA Wine Guide, 4.5* (2009)",
+  "external_url": "https://strauss.fanfire.ai/",
+  "description": "*\u2018The 2005 Paul Sauer offers an exuberant bouquet with dried prune, licorice, a touch of caramel and fig that just soars from the glass. The palate is medium-bodied with a harmonious, focused opening. The tannins lend the 2005 a firm structure, but there is plenty of fruit to back it up and the finish fans out with luscious licorice, sea salt and black fruits that linger. Superb. Drink 2014-2025.\u2019*\u00a0- Neal Martin, Wine Advocate, 93/100 (2013)\n\n\n*\u2018Confident, refined 05, 70% Cabernet Sauvignon with equal Merlot and Cabernet Franc spent 2 years in new casks after traditional fermentation in open kuipe. Seductive cedar, spice and richly layered fruit will appeal to eager audience, as will plush, lengthy finish. 14.5% alc. \u2019*\u00a0- Platter\u2019s SA Wine Guide, 4.5\u2606 (2009)\n\n The wines will be cellared at Wine Cellar (Professional wine storage, Cape Town) vintage cellar until maturity (estimated 2028) or withdrawal.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPEFx7ZrypSwjjVivh4Y3mHCBVB1w81aLFhP1LEcd9V43/5.jpg",
   "attributes": [
     {
       "trait_type": "Volume (ml)",
@@ -11,7 +10,11 @@
     },
     {
       "trait_type": "Vintage",
-      "value": 2005
+      "value": "2005"
+    },
+    {
+      "trait_type": "Seal Codes",
+      "value": "4901 - 0310663"
     }
   ]
 }
