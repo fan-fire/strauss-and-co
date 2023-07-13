@@ -22,6 +22,12 @@ interface IBasket is IERC721, IERC721Receiver {
         uint256 listPtr;
     }
 
+    // Disable trading for staked or locked tokens on OpenSea
+    // https://docs.opensea.io/docs/metadata-standards#disable-trading-for-staked-or-locked-tokens
+    // ERC-5192 (recommended for gas efficiency)
+    event Locked(uint256 tokenId);
+    event Unlocked(uint256 tokenId);
+
     event Burn(uint256 indexed basketId, address indexed burner);
     event Mint(uint256 indexed basketId, address indexed owner, string uri);
 

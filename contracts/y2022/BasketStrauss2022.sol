@@ -2,19 +2,36 @@
 // OpenZeppelin Contracts (last updated v4.5.0) (token/ERC721/ERC721.sol)
 
 pragma solidity 0.8.18;
-import "./IBasket.sol";
+import "../interfaces/IBasket.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/interfaces/IERC2981.sol";
+import "@openzeppelin/contracts/access/AccessControl.sol";
 
-
-contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, ReentrancyGuard {
+contract BasketStrauss2022 is
+    IBasket,
+    ERC721,
+    ERC721URIStorage,
+    ERC721Burnable,
+    ReentrancyGuard,
+    AccessControl
+{
     using Counters for Counters.Counter;
 
-    string internal _contractURI = "<ADD CONTRACT URI HERE>";
-    string internal _baseTokenURI = "<ADD BASE URI HERE>";
+    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+    bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
+    bytes32 public constant SETTER_ROLE = keccak256("SETTER_ROLE");
+    bytes32 public constant ADDER_ROLE = keccak256("ADDER_ROLE");
+
+    address private _royaltyReceiver =
+        0x25375E1DaFa37a31069d323a37A6f93eaF356123;
+    uint256 private _royaltyBasisPoint = 1000;
+
+    string internal _contractURI = "https://ipfs.fanfire.ai/ipfs/QmYo25Z5mWw4casmgwTAUAG7BJmP9tWx3YKdHRdVD8g6oV/collection.json";
+    string internal _baseTokenURI = "https://ipfs.fanfire.ai/ipfs/QmYo25Z5mWw4casmgwTAUAG7BJmP9tWx3YKdHRdVD8g6oV/";
     uint256 public constant OPEN_COOL_DOWN_S = 60;
     Counters.Counter internal _tokenIdCounter;
 
@@ -25,7 +42,17 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
     mapping(address => uint256[]) internal _baskets; // basketOwners owner -> basketIds
     mapping(uint256 => uint256) internal _basketOpenCoolDown; // vaultId -> openCoolDown
 
-    constructor() ERC721("Fanfire Basket", "FFB") {}
+    event RoyaltiesSet(
+        address indexed newRecipient,
+        uint256 indexed newBasisPoints
+    );
+    event BaseTokenURIChanged(string newBaseTokenURI);
+    // ERC-4906 events to update OpenSea when updating baseTokenURI
+    event BatchMetadataUpdate(uint256 _fromTokenId, uint256 _toTokenId);
+    
+    constructor() ERC721("Basket Strauss 2022", "BS2022") {
+        _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
+    }
 
     modifier onlyBasketOwner(uint256 _basketId) {
         require(ownerOf(_basketId) == _msgSender(), "Basket: not owner");
@@ -53,7 +80,10 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
      *
      * Emits a Mint event
      */
-    function mint(address _to, string memory _uri) public {
+    function mint(
+        address _to,
+        string memory _uri
+    ) public onlyRole(MINTER_ROLE) {
         // effects
         uint256 basketId = curBasketId();
         _state[basketId] = BasketState.OPENED;
@@ -68,7 +98,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
 
     /**
      * @dev Allows anyone to add a erc721 token to a basket
-     * 
+     *
      * The basket MUST exist
      * The basket MUST be open
      * The caller MUST be the owner of the token to be added
@@ -84,9 +114,12 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
      *
      * Emits a Add event
      */
-    function add(uint256 _basketId, address _erc721, uint256 _tokenId) public {
+    function add(
+        uint256 _basketId,
+        address _erc721,
+        uint256 _tokenId
+    ) public onlyRole(ADDER_ROLE) {
         // Checks
-
         require(_exists(_basketId), "Basket: does not exist");
         require(_state[_basketId] == BasketState.OPENED, "Basket: is not open");
 
@@ -121,7 +154,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
 
     /**
      * @dev Remove a token from a basket and into the basket owners wallet
-     * 
+     *
      * The basket MUST exist
      * The basket MUST be open
      * The token MUST be in the basket
@@ -138,7 +171,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
         uint256 _basketId,
         address _erc721,
         uint256 _tokenId
-    ) public onlyBasketOwner(_basketId) nonReentrant(){
+    ) public onlyBasketOwner(_basketId) nonReentrant {
         // Checks
         require(_state[_basketId] == BasketState.OPENED, "Basket: is not open");
         require(_tokens[_basketId].length > 0, "Basket: is empty");
@@ -174,7 +207,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
 
     /**
      * @dev Burn a basket
-     * 
+     *
      * The basket MUST exist
      * The basket MUST be closed and empty
      * The basket owner MUST be the caller
@@ -185,7 +218,11 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
      */
     function burn(
         uint256 _basketId
-    ) public override(IBasket, ERC721Burnable) onlyBasketOwner(_basketId) {
+    )
+        public
+        override(IBasket, ERC721Burnable)
+        onlyRole(BURNER_ROLE)
+    {
         // Checks
         require(
             _state[_basketId] == BasketState.CLOSED,
@@ -229,12 +266,12 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
 
     /**
      * @dev Close a basket
-     * 
+     *
      * The basket MUST exist
      * The basket MUST be open
      * The basket owner MUST be the caller
      * The basket MUST be open for at least OPEN_COOL_DOWN_S seconds
-     * 
+     *
      * @param _basketId The id of the basket
      *
      * Emits a Close event
@@ -252,15 +289,16 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
 
         // Integrations
         emit Close(_basketId, _msgSender());
+        emit Unlocked(_basketId);
     }
 
     /**
      * @dev Open a basket
-     * 
+     *
      * The basket MUST exist
      * The basket MUST be closed
      * The basket owner MUST be the caller
-     * 
+     *
      * @param _basketId The id of the basket
      *
      * Emits a Open event
@@ -280,22 +318,23 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
 
         // Integrations
         emit Open(_basketId, _msgSender());
+        emit Locked(_basketId);
     }
 
     /**
      * @dev Transfer a basket
-     * 
+     *
      * Overrides ERC721 _transfer function to add basket transfer logic
-     * 
+     *
      * This will be called by safeTransferFrom and transferFrom
-     * 
+     *
      * The basket MUST exist
      * The basket MUST be closed
      * All other baskets for the sender MUST be closed
      *
      * @param from The address of the basket owner
      * @param to The address of the new basket owner
-     * @param tokenId The id of the basket
+     * @param tokenId The id of the baskets
      *
      * Checks that all baskets for the sender is closed
      *
@@ -392,6 +431,7 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
+        emit Locked(tokenId);
     }
 
     /**
@@ -494,11 +534,13 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
 
     function supportsInterface(
         bytes4 interfaceId
-    ) public pure override(ERC721, IERC165) returns (bool) {
+    ) public pure override(AccessControl, ERC721, IERC165) returns (bool) {
         return (interfaceId == type(IERC721).interfaceId ||
             interfaceId == type(IERC165).interfaceId ||
             interfaceId == type(IERC721Metadata).interfaceId ||
             interfaceId == type(IERC721Receiver).interfaceId ||
+            interfaceId == type(IAccessControl).interfaceId ||
+            interfaceId == type(IERC2981).interfaceId ||
             interfaceId == type(IBasket).interfaceId);
     }
 
@@ -518,5 +560,71 @@ contract Basket is IBasket, ERC721, ERC721URIStorage, ERC721Burnable, Reentrancy
 
     function _baseURI() internal view override returns (string memory) {
         return _baseTokenURI;
+    }
+
+    /**
+     *
+     * @dev EIP2981 royalty standard
+     *
+     * Currently we are not setting royalties to on a per tokenId basis, but
+     * rather on a per contract basis.
+     *
+     * @param _tokenId - token id of which to get royalty info
+     * @param _salePrice - sale price that the royalty is being calculated for
+     * @return receiver - address of the royalty receiver for this token
+     * @return royaltyAmount - amount of royalty to be paid
+     */
+    function royaltyInfo(
+        uint256 _tokenId,
+        uint256 _salePrice
+    ) external view returns (address receiver, uint256 royaltyAmount) {
+        return (
+            _royaltyReceiver,
+            (_salePrice * _royaltyBasisPoint) / 10000 + _tokenId * 0
+        );
+    }
+
+    /**
+     * @dev See {IFF721-setRoyalties}.
+     */
+    function setRoyalties(
+        address newRecipient,
+        uint256 newBasisPoints
+    ) external onlyRole(SETTER_ROLE) {
+        _setRoyalties(newRecipient, newBasisPoints);
+    }
+
+    /**
+     * @dev Internal function to set the royalties for this contract
+     *
+     * @param newRecipient - address of the new royalty receiver
+     * @param newBasisPoints - basis points of the new royalty amount
+     *
+     * Emits a {RoyaltiesSet} event.
+     */
+    function _setRoyalties(
+        address newRecipient,
+        uint256 newBasisPoints
+    ) internal {
+        require(
+            newRecipient != address(0),
+            "Royalties: new recipient is the zero address"
+        );
+        _royaltyReceiver = newRecipient;
+        _royaltyBasisPoint = newBasisPoints;
+        emit RoyaltiesSet(newRecipient, newBasisPoints);
+    }
+
+    /**
+     * @dev See {IFF721-setBaseTokenURI}.
+     *
+     * emits {IFF721-BaseTokenURIChanged} event
+     */
+    function setBaseTokenURI(string memory uri) public onlyRole(SETTER_ROLE) {
+        _baseTokenURI = uri;
+
+        emit BaseTokenURIChanged(uri);
+        // from ERC-4906
+        emit BatchMetadataUpdate(0, type(uint256).max);
     }
 }
