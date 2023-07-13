@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx hardhat test",
+    "deploy-mumbai": "npm run clean && npx hardhat run ./scripts/deploy-ff721s.ts --network mumbai",
     "coverage": "npx hardhat coverage && open coverage/index.html",
-    "gas": "REPORT_GAS=true npx hardhat test"
+    "gas": "REPORT_GAS=true npx hardhat test",
+    "clean": "rm -rf ./artifacts ./cache ./typechain-types ./build"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
     "solidity-coverage": "^0.8.2"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.2"
+    "@openzeppelin/contracts": "^4.8.2",
+    "@rarible/trezor-provider": "^0.0.13",
+    "@truffle/hdwallet-provider": "^2.1.12"
   }
 }

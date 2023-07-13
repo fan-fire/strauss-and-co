@@ -3,6 +3,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-contract-sizer";
 import 'solidity-coverage';
 import 'hardhat-test-utils';
+
 const config: HardhatUserConfig = {
   solidity: {
     compilers: [
@@ -29,10 +30,14 @@ const config: HardhatUserConfig = {
     mumbai: {
       url: process.env.MUMBAI_NODE,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY ?? ''],
+      gasPrice: 2e9,
+      chainId: 80001,
     },
     polygon: {
       url: process.env.POLYGON_NODE,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY ?? ''],
+      gasPrice: 400e9,
+      chainId: 137,
     },
   },
   contractSizer: {
