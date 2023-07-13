@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1955",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Georges Braque - Celebrating a magnificent vintage with the simplicity of a great artist. Features in last scene of 'Diamonds are Forever' James Bond movie (1971)",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/13.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 1500
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1955"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1674"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Wine Advocate - 98/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

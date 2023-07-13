@@ -1,0 +1,17 @@
+{
+  "img_avail": true,
+  "name": "Paul Sauer 2000",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/0.jpg",
+  "description": "\u2018Great character in this throwback wine, with a thicket of dark currant, blackberry, tar, beef, chestnut, mineral and sanguine flavors. Long finish is etched with bittersweet chocolate and another layer of really ripe blackberry fruit. Impressive. Cabernet Sauvignon, Cabernet Franc and Merlot.\u2019 - James Molesworth, Winespectator, 92/100 (2004)",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2000
+    }
+  ]
+}

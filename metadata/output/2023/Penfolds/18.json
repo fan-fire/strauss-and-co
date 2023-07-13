@@ -1,0 +1,36 @@
+{
+    "name": "Penfolds Grange 1964",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Penfolds/images/19.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1964"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "Yes"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1017"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Robert Parker - 90/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

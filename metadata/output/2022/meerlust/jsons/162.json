@@ -1,0 +1,17 @@
+{
+  "img_avail": false,
+  "name": "Rubicon 2024",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/162.jpg",
+  "description": NaN,
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2024
+    }
+  ]
+}

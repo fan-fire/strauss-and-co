@@ -1,0 +1,36 @@
+{
+    "name": "Domaine de la Roman\u00e9e-Conti Roman\u00e9e-Saint-Vivant 2014",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Romanee/images/68.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "2014"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "2549"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Decanter - 96/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Jancis Robinson - 18.5/20"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": "Wine Advocate - 95/100"
+        }
+    ]
+}

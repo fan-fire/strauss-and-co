@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1997",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Niki de Saint Phalle - A sparkling, festive allegory of the pleasures of the table, and then the serpent temper. Instead of the traditional apple, this serpent, more wine-loving than malign, is offering Eve a bottle.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/118.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 3000
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1997"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "2628"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Robert Parker - 91-93/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Decanter - 91/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 2003",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "2003 marked the 150th anniversary of Mouton's entry into the Rothschild family. This label is dedicated to Baron Nathaniel de Rothschild, who acquired the estate on 11 May  1853. Baron Nathaniel's photograph is placed on the back, which is a close up of the estate's deed of purchase.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/143.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "2003"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1734"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Robert Parker - 95-96/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Wine Enthusiast - 94/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

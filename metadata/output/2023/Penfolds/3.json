@@ -1,0 +1,36 @@
+{
+    "name": "Penfolds Grange 1955",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "The 1955 Grange was his crown jewel. It has been recognized as a \u201cheritage wine\u201d by the Australian National Trust, having won more awards (52 gold medals and 12 trophies) than any other Penfolds Grange vintage.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Penfolds/images/4.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1955"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "Yes"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "695"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Jancis Robinson - 18.5/20"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Wine Spectator - 90/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

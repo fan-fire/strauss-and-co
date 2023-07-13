@@ -1,0 +1,36 @@
+{
+    "name": "Ch\u00e2teau d'Yquem Sauternes 1944",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Yquem/images/40.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1944"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "425"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Jancis Robinson - 18/20"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

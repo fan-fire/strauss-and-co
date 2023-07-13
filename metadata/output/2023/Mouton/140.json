@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 2002",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Ilya Kabakov - 'Okho' meaning window in Russian, behind the 'pane' of the bottle, the artist shows us another world: whirling to infinity, myriads of wings, bearing us off joyfully towards the realm of dreams and bliss, in a transparent allegory of the magic of a great wine.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/141.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "2002"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1737"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Jancis Robinson - 18.5/20"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Decanter - 95/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": "Robert Parker - 93/100"
+        }
+    ]
+}

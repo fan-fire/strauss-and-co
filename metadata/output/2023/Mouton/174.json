@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 2013",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art for the 2013 vintage was signed by Lee Ufan, a Korean artist and philosopher born in 1936. Under the purple red shape, the richness of a fine wine is hidden. Much like how wines are brought to life by the patience and secrecy of a cellar\u2019s fermenting room. ",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/175.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 1500
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "2013"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1724"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Wine Enthusiast - 96/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Decanter - 94/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": "Wine Advocate - 92/100"
+        }
+    ]
+}

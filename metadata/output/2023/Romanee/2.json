@@ -1,0 +1,36 @@
+{
+    "name": "Domaine de la Roman\u00e9e-Conti \u00c9ch\u00e9zeaux 2010",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "One of the top scoring vintages.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Romanee/images/3.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "2010"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "778"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Jancis Robinson - 17.5/20"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Vinous - 93+/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": "Wine Advocate - 93-95/100"
+        }
+    ]
+}

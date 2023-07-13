@@ -1,0 +1,16 @@
+{
+  "name": "Screaming Eagle 1995-2010 Collection",
+  "external_url": "https://strauss.fanfire.ai",
+  "description": "The highly coveted California Cabernet is one of the most collectible, sought-after, wines of the world, due to its high critic ratings and extremely limited production, 'Cult' status was quickly sealed. Notoriously difficult to secure a bottle due to the small production and exclusive DTC mailing list (with an incredibly long waiting list of more than a decade). Its maiden vintage production of only 225 cases available to purchase, saw prices skyrocket and demand increased rapidly.\n\nScreaming Eagle is one of California's top investment wines, which has seen sustained growth over the past decade, with a rising demand. As an investment or as a wine to simply take pleasure in, Screaming Eagle never fails to impress.\n\nScreaming Eagle has been recognised by the greatest international wine critics for its extreme finesse since the release of its first vintage in 1992. The highly influential US wine critic, Robert Parker, scored the 1992 maiden vintage a whopping 99 out of 100 points, igniting overnight success for the young winery. Since then, the 1997 and 2007 vintages both achieved the coveted 100-point rating from Parker, the Napa Cabernet aficionado, held responsible for Screaming Eagle's quick rise to fame! 2010 Sauvignon Blanc is the first vintage of the estate's extremely rare Sauvignon Blanc. There are only two acres of this white wine grape on the Screaming Eagle estate \u2014 they made just 200 bottles in 2010!\n\nThe code for this project can be found on [GitHub](https://github.com/fan-fire/strauss-and-co). Note that the tokens in this collection serve as a [basket](https://github.com/fan-fire/NFB) where each basket owns all the underlying tokens for each estate, and only the owner of the basket can open and remove wines from the basket. Reach out to us on our [website](https://www.fanfire.ai/) or [Discord](https://discord.gg/kB7GFaBX7E) if you have any questions.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Screaming-Eagle/collection.jpeg",
+  "attributes": [
+    {
+      "trait_type": "Nr Bottles",
+      "value": 19
+    },
+    {
+      "trait_type": "Basket Id",
+      "value": 4
+    }
+  ]
+}

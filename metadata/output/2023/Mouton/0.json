@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1945",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "In 1945, to commemorate the Allied victory, Baron Philippe de Rothschild had the idea of embellishing the Mouton Rothschild label with art-work: in this instance, a symbolic return of peace. He commissioned this from young unknown artist, Philippe Jullian. Having displayed early promise as a designer. This label is based on the famous 'V for Victory' that Churchill used throughout the war to rally the forces of freedom.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/1.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1945"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "2347"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Wine Advocate - 100/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Jancis Robinson - 19/20"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

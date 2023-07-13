@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 2014",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "The year 2014 was marked by the passing of Baronne Philippine de Rothschild, the owner of the Mouton Rothschild estate since 1988. The label was a tribute to her, signed by her close personal friend David Hockney. Two glasses, one empty and the other filled, radiating light, which represents joy and astonishment. This piece tells the eternal miracle of the long awaited birth of a certain fine wine: Chateau Mouton Rothschild.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/176.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 3000
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "2014"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "2631"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Wine Advocate - 95/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Jancis Robinson - 18.5/20"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": "Decanter - 95/100"
+        }
+    ]
+}

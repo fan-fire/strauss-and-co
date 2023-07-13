@@ -1,0 +1,36 @@
+{
+    "name": "Penfolds Grange 1951",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "The first experimental Grange made by Max Schubert and extremely rare. A valuable collector\u2019s item because of its historical significance. Rare hand-blown bottles. ",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Penfolds/images/1.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1951"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "Yes"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1016"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

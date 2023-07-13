@@ -1,0 +1,17 @@
+{
+  "img_avail": true,
+  "name": "Vin de Constance 2004",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/25.jpg",
+  "description": "Iconic dessert wine from unbotrytised Muscat de Frontignan, No 2003; '04 charming peach and spicy-nutty cream. Less intense than some years, but still luscious and dense. 130 g/l RS, 14.2% alc in full, rich finish.' - Platter's SA Wine Guide 2009, 4.5*",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2004
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Ch\u00e2teau d'Yquem 1892-2010 Collection",
+  "external_url": "https://strauss.fanfire.ai",
+  "description": "Ch\u00e2teau d`Yquem, often described as the greatest sweet wine in the world and the only Sauternes First Growth of Bordeaux. Few wines in the world have produced consistently noble quality for more than 4 centuries.\n\nEstablished in 1593, the property consists of a 110-hectare vineyard planted with 80% Semillon and 20% Sauvignon Blanc. The wines are created from botrytized fruit that is picked by hand in several passes 'tiers' by up to 150 harvesters. Ch\u00e2teau d'Yquem is the product of meticulous work in the vineyard, along with the estate's exceptional terroir, and centuries of inherited knowledge since 1593, it has gained the reputation of the world's finest sweet wine.\n\nIn the Bordeaux Classification of 1855, Ch\u00e2teau d'Yquem was given the unique and unsurpassable rank of Premier Cru Sup\u00e9rieur, ahead of all other Sauternes, indicating its perceived superiority and ability to command by far the highest prices. The wines of Ch\u00e2teau d'Yquem are characterised by their complexity, concentration and longevity. In a good year, a bottle will only begin to show its qualities after a decade or two of cellaring and with proper care, will keep for a century or more, gradually adding layers of complexity.\n\nThe code for this project can be found on [GitHub](https://github.com/fan-fire/strauss-and-co). Note that the tokens in this collection serve as a [basket](https://github.com/fan-fire/NFB) where each basket owns all the underlying tokens for each estate, and only the owner of the basket can open and remove wines from the basket. Reach out to us on our [website](https://www.fanfire.ai/) or [Discord](https://discord.gg/kB7GFaBX7E) if you have any questions.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Yquem/collection.jpeg",
+  "attributes": [
+    {
+      "trait_type": "Nr Bottles",
+      "value": 184
+    },
+    {
+      "trait_type": "Basket Id",
+      "value": 5
+    }
+  ]
+}

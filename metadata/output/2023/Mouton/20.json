@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1963",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Bernard Dufour - Grapes and a recumbent human figure, with a line from Mallarm\u00e9's L'Apr\u00e8s-midi d'un faune - 'Ainsi, quand des raisins j'ai suc\u00e9 la cart\u00e9...' (Just so I sucked once the lustre from the grapes.)",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/21.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 1500
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1963"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1668"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

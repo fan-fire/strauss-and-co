@@ -1,0 +1,16 @@
+{
+  "name": "Penfolds Grange 1951-2008 Collection",
+  "external_url": "https://strauss.fanfire.ai",
+  "description": "Penfolds was founded by Dr Christopher and Mary Penfold in 1844, who arrived in Australia with their vine cuttings in hand. They had no prior history in winemaking but set about inventing tonics, brandies, and fortified wines. Mary took charge, blending the wines to her taste and enforcing the winemaking philosophies that Penfolds still follows today. Penfolds Grange was created in the 1950s and holds a high reputation worldwide.\n\nSublime, voluptuous, beguiling, inviting, opulent, layered. These are some of the words often used to describe Penfolds Grange. Unlike the most expensive wines of Europe, Grange is not a single vineyard production, but rather a carefully blended composition of high-quality grapes harvested from a wide region. The craft and expertise that goes into each vintage gives Penfolds Grange its prestige pedigree.\n\nThe code for this project can be found on [GitHub](https://github.com/fan-fire/strauss-and-co). Note that the tokens in this collection serve as a [basket](https://github.com/fan-fire/NFB) where each basket owns all the underlying tokens for each estate, and only the owner of the basket can open and remove wines from the basket. Reach out to us on our [website](https://www.fanfire.ai/) or [Discord](https://discord.gg/kB7GFaBX7E) if you have any questions.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Penfolds/collection.jpeg",
+  "attributes": [
+    {
+      "trait_type": "Nr Bottles",
+      "value": 232
+    },
+    {
+      "trait_type": "Basket Id",
+      "value": 0
+    }
+  ]
+}

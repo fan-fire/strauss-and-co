@@ -1,0 +1,17 @@
+{
+  "img_avail": false,
+  "name": "Series C 2025",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmUouAE1ZsyGp2PuEu4ruCZ6iuS9AM9pq84ZRbAvULdKhE/136.jpg",
+  "description": "",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2025
+    }
+  ]
+}

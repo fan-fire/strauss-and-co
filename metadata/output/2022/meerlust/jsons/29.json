@@ -1,0 +1,17 @@
+{
+  "img_avail": true,
+  "name": "Rubicon 2000",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/29.jpg",
+  "description": "Seal Code: 3711 - 324788\n\n\u201cDeep purple ink colour. A spicy tobacco leaf and cigar box bouquet. Firm tannins, youthful palate. The wine is well-balanced and has good ageing potential.\u201d - Best in Class Silver - International Wine and Spirits Competition ( IWCS ) 2005",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2000
+    }
+  ]
+}

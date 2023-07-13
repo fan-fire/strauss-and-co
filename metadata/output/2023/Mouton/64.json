@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1984",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Yaacov Agam.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/65.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 3000
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1984"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "2648"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Wine Spectator - 92/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

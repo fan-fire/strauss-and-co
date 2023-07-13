@@ -1,0 +1,17 @@
+{
+  "img_avail": true,
+  "name": "Vin de Constance 1994",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/8.jpg",
+  "description": "\u2018A vintage with immense power and concentration, and still in quite a burly and youthful stage, almost bold and brooding. Big and luscious, but with superb definition. One for the long haul\u2019 \u2013 Higgo Jacobs 2016, 95/100",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 1994
+    }
+  ]
+}

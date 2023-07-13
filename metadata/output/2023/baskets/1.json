@@ -1,0 +1,16 @@
+{
+  "name": "Harlan Estate 1990-2012 Collection",
+  "external_url": "https://strauss.fanfire.ai",
+  "description": "Harlan Estate, seen as Napa's 'First-Growth' is a high-profile, critically acclaimed wine producer in Oakville AVA, Napa Valley, situated on the hills just north of Napa town. Its Cabernet Sauvignon-based flagship wine is one of California's most sought-after wines, regularly commanding exuberant prices.\n\nOf the so-called 'cult' wineries that burst on the scene in the 1990s, Harlan is most fascinating, where every detail, from vineyards to label to winery design, reflects the relentless drive for quality. The wines are bold, voluptuous, and rich, yet polished and balanced, despite their alcohol.\n\nThe debut 1990 Harlan Estate, of which only 300 cases were made, were all sold directly to the mailing list. Over the years, they've attained global success. Demand outstrips supply, even with a hefty pre-release bottle price.\n\nThe 19th-century image that adorns the label came from the 250-year-old American Bank Note Company and it's printed on banknote paper, way ahead on the anti-counterfeit curve. The idea was to create a label that looked like an engraving for a bottle, that by itself was a piece of art.\n\nThe code for this project can be found on [GitHub](https://github.com/fan-fire/strauss-and-co). Note that the tokens in this collection serve as a [basket](https://github.com/fan-fire/NFB) where each basket owns all the underlying tokens for each estate, and only the owner of the basket can open and remove wines from the basket. Reach out to us on our [website](https://www.fanfire.ai/) or [Discord](https://discord.gg/kB7GFaBX7E) if you have any questions.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Harlan/collection.jpeg",
+  "attributes": [
+    {
+      "trait_type": "Nr Bottles",
+      "value": 40
+    },
+    {
+      "trait_type": "Basket Id",
+      "value": 1
+    }
+  ]
+}

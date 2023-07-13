@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1990",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Francis Bacon - For the 1990 label of Mouton Rothschild, as a wine lover, Bacon created a wine-glass held by a mysterious distorted figure.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/91.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 1500
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1990"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "2309"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Decanter - 94/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Jancis Robinson - 17/20"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

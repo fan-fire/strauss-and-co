@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1966",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Pierre Alechinsky - The 'Ram-Drinker' powerful but full of humour, seems to almost to leap off the bottle.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/24.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1966"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1778"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Robert Parker - 90/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

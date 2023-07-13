@@ -1,0 +1,17 @@
+{
+  "img_avail": true,
+  "name": "Rubicon 2015",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPLqnoRDz6vh1EnFpyPW18j5UYJG55W5U9B89oYXxt42t/88.jpg",
+  "description": "Seal Code: 8370 - 616446\n\n",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2015
+    }
+  ]
+}

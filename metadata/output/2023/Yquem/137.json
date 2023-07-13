@@ -1,0 +1,36 @@
+{
+    "name": "Ch\u00e2teau d'Yquem Sauternes 2001",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "This benchmark vintage scored 100 Parker points.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Yquem/images/138.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "2001"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "128"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Wine Advocate - 100/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Wine Spectator - 100/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": "Jancis Robinson - 20/20"
+        }
+    ]
+}

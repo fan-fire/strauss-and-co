@@ -1,0 +1,17 @@
+{
+  "img_avail": true,
+  "name": "Paul Sauer 2016",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/16.jpg",
+  "description": "Stately and ageworthy Bordeaux blend. Mostly Cabernet Sauvignon, as ever, in 2016 with Merlot, Cabernet Franc (62/25/13); classic bouquet of cassis, lead pencil and hedgerow fruit with extra flesh from slightly more Merlot than usual. Hallmark oystershell minerality, fine powdery tannins. Like Cabernet Sauvignon sibling, proud record of, now, 12 maximum ratings.' - Platter's SA Wine Guide 2020, 5* (96/100)",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2016
+    }
+  ]
+}

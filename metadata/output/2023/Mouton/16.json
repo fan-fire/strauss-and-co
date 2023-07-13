@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1960",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Jacques Villon - capturing the movement of the birds in the static geometry of the vines.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/17.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 1500
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1960"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1530"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

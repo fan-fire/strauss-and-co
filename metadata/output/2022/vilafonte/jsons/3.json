@@ -1,0 +1,17 @@
+{
+  "img_avail": true,
+  "name": "Series C 2003",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmUouAE1ZsyGp2PuEu4ruCZ6iuS9AM9pq84ZRbAvULdKhE/3.jpg",
+  "description": "\u2018A fairly big (14.5% alcohol), chewy wine, but one that delivers waves of lush fruit. Plum and cassis notes are framed by hints of smoke and cedar; the merest hint of green herbs adds complexity without detracting. Long and supple on the finish.\u2019 - Wine Enthusiast, 92/100 (Nov 2005)\n'The \u2018C\u2019 is for Cabernet Sauvignon, whose structure and power inform the masterly Bordeaux blend. It\u2019s dark-berried opulence is still swaddled in youthfully dense and austere tannins. One for the patient - should evolve into something majestic. 82% Cabernet Sauvignon with Merlot, Cabernet Franc and Malbec. 54% new French oak for 18 months.'- Platter\u2019s SA Wine Guide 2006, 4.5*",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2003
+    }
+  ]
+}

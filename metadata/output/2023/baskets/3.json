@@ -1,0 +1,16 @@
+{
+  "name": "Domaine de la Roman\u00e9e-Conti 1999-2015 Collection",
+  "external_url": "https://strauss.fanfire.ai",
+  "description": "Domaine de la Roman\u00e9e-Conti is one of the most enigmatic names in the wine world, conjuring up notions of exclusivity and desirability. It is the only Burgundy wine producer with a status comparable to the top Bordeaux producers. Its prestige, and historical links with royalty, has made it the foremost name in Burgundy, a region which has been experiencing significantly increased demand over recent years, becoming a priority for international collectors.\n\nOne of the most renowned vineyards in the world, located in the commune of Vosne-Roman\u00e9e. The wines of incredible Grand cru sites of \u00c9ch\u00e9zeaux, Grands \u00c9ch\u00e9zeaux, La T\u00e2che, Richebourg and Roman\u00e9e-Saint-Vivant, are praised for their subtle and mysterious nature.\n\nGuided by the relentless pursuit of excellence, passed down from generation to generation, Domaine de la Roman\u00e9e-Conti's mission is to make its Grands Crus the greatest in all of Burgundy. Few would dispute that the wines of DRC are some of the world's finest.\n\nThe code for this project can be found on [GitHub](https://github.com/fan-fire/strauss-and-co). Note that the tokens in this collection serve as a [basket](https://github.com/fan-fire/NFB) where each basket owns all the underlying tokens for each estate, and only the owner of the basket can open and remove wines from the basket. Reach out to us on our [website](https://www.fanfire.ai/) or [Discord](https://discord.gg/kB7GFaBX7E) if you have any questions.",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Romanee/collection.jpeg",
+  "attributes": [
+    {
+      "trait_type": "Nr Bottles",
+      "value": 80
+    },
+    {
+      "trait_type": "Basket Id",
+      "value": 3
+    }
+  ]
+}

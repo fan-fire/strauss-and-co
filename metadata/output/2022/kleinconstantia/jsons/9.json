@@ -1,0 +1,17 @@
+{
+  "img_avail": true,
+  "name": "Vin de Constance 1995",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmZQKiG4zePeAP1GxY1ZbLFZy2A5ctkTc8YGRHCGbAq9sX/9.jpg",
+  "description": "'A definite dark rusty amber now, and showing much more oxidative aromas. Minty, orange peel, very complex flavours, and finely layered like puff pastry. Rasping acidity that keeps the thick marmalade unctuousness under control'. \u2013 Jancis Robinson, 17.5/20",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 1995
+    }
+  ]
+}

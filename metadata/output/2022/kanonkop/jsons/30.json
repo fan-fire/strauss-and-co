@@ -1,0 +1,17 @@
+{
+  "img_avail": false,
+  "name": "Paul Sauer 2020",
+  "external_url": "",
+  "image": "https://ipfs.fanfire.ai/ipfs/QmPjJKKrHyjUuQ5Q8ZouYfZHhqHjvRksMqn3fmHrgyCSC9/30.jpg",
+  "description": "",
+  "attributes": [
+    {
+      "trait_type": "Volume (ml)",
+      "value": 750
+    },
+    {
+      "trait_type": "Vintage",
+      "value": 2020
+    }
+  ]
+}

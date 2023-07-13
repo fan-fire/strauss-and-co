@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1988",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Keith Haring - Satirical version of the Dancing Rams theme.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/83.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 1500
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1988"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "2285"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Jancis Robinson - 18.5/20"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

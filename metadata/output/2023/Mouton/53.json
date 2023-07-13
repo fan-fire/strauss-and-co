@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1982",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by John Huston - one of the last pictures he painted. Sensual, graceful, using deep, warm colours, it returns in representational style to the symbolic theme of the Ram, leaping in dionysiac joy, accompanied by its inseparable companions, the sun and the vine.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/54.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1982"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1087"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Wine Advocate - 100/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Decanter - 97/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}

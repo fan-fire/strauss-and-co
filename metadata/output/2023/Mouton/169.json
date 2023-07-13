@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 2011",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Guy de Rougemont - A red-dark color, symbolizing the darkness of a wine cellar to the brightness of sunny vineyards, the work of Rougemont takes us on a journey through the different steps of producing a fine wine.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/170.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 3000
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "2011"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "2644"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Decanter - 97/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": "Wine Enthusiast - 95/100"
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": "Wine Advocate - 93-96/100"
+        }
+    ]
+}

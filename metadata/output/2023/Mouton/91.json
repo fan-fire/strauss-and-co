@@ -1,0 +1,36 @@
+{
+    "name": "Mouton Rothschild Pauillac 1991",
+    "external_url": "https://strauss.fanfire.ai",
+    "description": "Label art by Setsuko - Retells in her own way the story of wine: The bunch of grapes that once was blossom and became fruit, full as an ear of wheat at harvest time; then, in the end, the wine in the decanter and the pleasure of drinking it.",
+    "image": "https://ipfs.fanfire.ai/ipfs/QmV7WGPHwSYYHcM6pUocKmVTi3BZBZVi61tkAoF8iGNS5e/Mouton/images/92.png",
+    "attributes": [
+        {
+            "trait_type": "Volume (ml)",
+            "value": 750
+        },
+        {
+            "trait_type": "Vintage",
+            "value": "1991"
+        },
+        {
+            "trait_type": "Recorked",
+            "value": "No"
+        },
+        {
+            "trait_type": "Authentication Code",
+            "value": "1152"
+        },
+        {
+            "trait_type": "Rating 1",
+            "value": "Wine Spectator - 89/100"
+        },
+        {
+            "trait_type": "Rating 2",
+            "value": ""
+        },
+        {
+            "trait_type": "Rating 3",
+            "value": ""
+        }
+    ]
+}
